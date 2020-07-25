@@ -10,7 +10,7 @@ Welcome to Programming Bootcamp 2020's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   _sources/syllabus
+   source/syllabus
 
 Indices and tables
 ==================
