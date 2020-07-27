@@ -54,13 +54,9 @@
     }
    ],
    "source": [
-    "############\n",
-    "# solution\n",
-    "############\n",
-    "\n",
-    "A = np.matrix([[3,2,1],[6,-3,0],[1,2,9]])\n",
-    "B = np.matrix([[-4,1],[7,3],[2,5]])\n",
-    "C = A*B\n",
+    "A = np.matrix(...)\n",
+    "B = ...\n",
+    "C = ...\n",
     "\n",
     "print(C)"
    ]
@@ -101,9 +97,9 @@
     }
    ],
    "source": [
-    "D = np.array(A)\n",
-    "E = np.array(B)\n",
-    "F = D@B\n",
+    "D = np.array(...)\n",
+    "E = ...\n",
+    "F = ...\n",
     "\n",
     "print(F)"
    ]
@@ -124,13 +120,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": 19,
    "metadata": {},
    "outputs": [],
    "source": [
-    "############\n",
-    "# solution\n",
-    "############\n"
+    "################\n",
+    "# your solution\n",
+    "################\n"
    ]
   },
   {
@@ -139,7 +135,7 @@
    "source": [
     "## Problem 3: \n",
     "\n",
-    "1. Compute and print the eigenvalues, $\\lambda_i$, and eigenvectors, ${\\bf n}_i$, of\n",
+    "1. Compute the eigenvalues, $\\lambda_i$, and eigenvectors, ${\\bf n}_i$, of\n",
     "$$\n",
     "   {\\bf A} =\n",
     "   \\left[ \\begin{array}{ccccc}\n",
@@ -150,11 +146,7 @@
     "   0 & 0 & 1 & 2 & 3 \n",
     "   \\end{array} \\right]\n",
     "$$\n",
-    "2. Show that\n",
-    "$$\n",
-    "   {\\rm det}({\\bf A}) = \\prod_{i=1}^5 \\lambda_i\n",
-    "$$\n",
-    "3. Verify the following relation\n",
+    "2. Verify the following relation\n",
     "$$\n",
     "   {\\bf A} = \\sum_{i=1}^{5} \\lambda_i\\,{\\bf n}_i\\otimes{\\bf n}_i\n",
     "$$"
@@ -162,10 +154,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 20,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "################\n",
+    "# your solution\n",
+    "################\n"
+   ]
   }
  ],
  "metadata": {
