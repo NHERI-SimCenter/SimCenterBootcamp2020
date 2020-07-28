@@ -23,8 +23,5 @@ help:
 
 release:
 	make clean
-	rm -fr ../docs/_sources
-	rm -fr ../docs/_static
-	rm -fr ../docs/_images
-	rm -fr ../docs/common
+	rm -fr ../docs/*
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" ../docs $(O)
