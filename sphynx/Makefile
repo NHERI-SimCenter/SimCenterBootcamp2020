@@ -25,3 +25,4 @@ release:
 	make clean
 	rm -fr ../docs/*
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" ../docs $(O)
+	cp ../.nojekyll ../docs
