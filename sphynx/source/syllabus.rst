@@ -2,8 +2,7 @@
 Syllabus
 *********
 
-Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering
-will be solely online, though the SimCenter team is putting in all effort to recreate some
+Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering will be solely online. A drawback of an online offering is the lack of interaction among the participants. The SimCenter team is putting in all effort to recreate some
 of the community building benefits through discussion sessions and social time.
 
 The bootcamp is organized as a series of live video conferencing (ZOOM), prerecorded video
