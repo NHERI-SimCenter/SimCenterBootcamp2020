@@ -11,6 +11,7 @@ Welcome to Programming Bootcamp 2020's documentation!
    :caption: Contents:
 
    source/syllabus
+   source/setupInstructions
 
 Indices and tables
 ==================
