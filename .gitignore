@@ -269,6 +269,9 @@ TSWLatexianTemp*
 latexmkrc
 
 
+a.out
+*.o
+*.s
 *~
 .DS_STORE
 *.pyc
