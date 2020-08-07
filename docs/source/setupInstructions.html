@@ -88,7 +88,15 @@
 <li class="toctree-l3"><a class="reference internal" href="#install-python-on-windows">Install Python on Windows</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#macos-computer">MacOS Computer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#macos-computer">MacOS Computer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fork-the-git-bootcamp-repository">Fork the Git BootCamp Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-git">Install Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-python-on-a-mac">Install Python on a Mac</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-install-of-python">Test the Install of Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -194,16 +202,24 @@
 </div>
 <div class="section" id="macos-computer">
 <h2>MacOS Computer<a class="headerlink" href="#macos-computer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fork-the-git-bootcamp-repository">
+<h3>Fork the Git BootCamp Repository<a class="headerlink" href="#fork-the-git-bootcamp-repository" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Sign up for github.</p></li>
 <li><p>Go to the <a class="reference external" href="https://github.com/NHERI-SimCenter/SimCenterBootcamp2020">SimCenterBookCamp</a> repository.</p></li>
 <li><p>In the very top right corner, where it has fork and a number beside it.</p></li>
 </ol>
+</div>
+<div class="section" id="install-git">
+<h3>Install Git<a class="headerlink" href="#install-git" title="Permalink to this headline">¶</a></h3>
 <p>There are a number of ways to install the source code management system <a class="reference external" href="https://git-scm.com/download/mac">**git**</a> on your computer. The simplest is to open a terminal application and type git. If the developer package has not already installed on your system, this wil ask you to install it. So say yes. When done test it using your <strong>fork</strong> of the github repo. To do this go to <strong>YOUR</strong> fork of the github repo, using the green pull down menu, gcopy the clone address. Open a terminal and in the terminal type</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">http</span><span class="p">:</span><span class="o">//....</span>
 </pre></div>
 </div>
-<p>The Mac comes with Python pre-installed, which is currently the outdated version 2.7. As of January 1st, 2020 no new bug reports, fixes, or changes will be made to Python 2, and Python 2 is officially no longer supported. SimCenter tools require Python 3. We recommend installing Python 3.7 from <a class="reference external" href="https://www.python.org/downloads/mac-osx">Python.org</a> using the
+</div>
+<div class="section" id="install-python-on-a-mac">
+<h3>Install Python on a Mac<a class="headerlink" href="#install-python-on-a-mac" title="Permalink to this headline">¶</a></h3>
+<p>The Mac comes with Python pre-installed, which is currently the outdated version 2.7. As of January 1st, 2020 no new bug reports, fixes, or changes will be made to Python 2, and Python 2 is officially no longer supported. SimCenter tools require Python 3. We recommend installing Python 3.7 from <a class="reference external" href="https://www.python.org/downloads/mac-osx">Python.org Mac Download</a> using the
 <strong>macOS 64-bit installer</strong>. The installer will place a python3 executable in your /usr/local/bin directory, whose location should be on your system PATH. Version 3.8 does not appear to do so anymore, see the note below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -211,9 +227,9 @@
 <li><p>We use the python.org installation over others, due to it’s simplicity of install.</p></li>
 <li><p>In the current installation of <strong>Python</strong> it leaves two script files in a folder when the installation ends. You need to execute both script files to get Python set up correctly so that it can be invoked from the terminal. To execute the files, double click on them. The two files, shown in the image below, are: <strong>Update Shell Profile.command.sh</strong> and <strong>Install CertificateCommand.sh</strong>.</p></li>
 </ol>
-<div class="align-center figure" id="id2">
+<div class="align-center figure" id="id1">
 <img alt="source/figures/pythonInstallShell.png" src="source/figures/pythonInstallShell.png" />
-<p class="caption"><span class="caption-text">Python: Folder Displayed at Conclusion of Install</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Python: Folder Displayed at Conclusion of Install</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <p>Once Python is installed, you need to extend it by installing the following packages: <strong>numpy</strong>, <strong>scipy</strong>, and <strong>pandas</strong>. To install these packages, start a terminal window and type the following instructions:</p>
@@ -253,6 +269,11 @@
 <ol class="arabic simple">
 <li><p>The –user coption is optional. It will install for you only. Leaving out this option may require issuing the pip3 commands preceeded by the <strong>sudo</strong> command.</p></li>
 </ol>
+</div>
+<div class="section" id="test-the-install-of-python">
+<h4>Test the Install of Python<a class="headerlink" href="#test-the-install-of-python" title="Permalink to this headline">¶</a></h4>
+<p>in a terminal cd to the folder. cd to the jupyter folder. type jupyter.</p>
+</div>
 </div>
 </div>
 </div>

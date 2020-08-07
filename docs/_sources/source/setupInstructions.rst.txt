@@ -48,14 +48,14 @@ MacOS Computer
 ==============
 
 Fork the Git BootCamp Repository
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 #. Sign up for github.
 #. Go to the `SimCenterBookCamp <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020>`_ repository.
 #. In the very top right corner, where it has fork and a number beside it.
 
 Install Git
-^^^^^^^^^^^
+-----------
 
 There are a number of ways to install the source code management system `**git** <https://git-scm.com/download/mac>`_ on your computer. The simplest is to open a terminal application and type git. If the developer package has not already installed on your system, this wil ask you to install it. So say yes. When done test it using your **fork** of the github repo. To do this go to **YOUR** fork of the github repo, using the green pull down menu, gcopy the clone address. Open a terminal and in the terminal type
 
@@ -64,9 +64,9 @@ There are a number of ways to install the source code management system `**git**
    git clone http://....
 
 Install Python on a Mac
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
-The Mac comes with Python pre-installed, which is currently the outdated version 2.7. As of January 1st, 2020 no new bug reports, fixes, or changes will be made to Python 2, and Python 2 is officially no longer supported. SimCenter tools require Python 3. We recommend installing Python 3.7 from `Python.org <https://www.python.org/downloads/mac-osx>`_ using the 
+The Mac comes with Python pre-installed, which is currently the outdated version 2.7. As of January 1st, 2020 no new bug reports, fixes, or changes will be made to Python 2, and Python 2 is officially no longer supported. SimCenter tools require Python 3. We recommend installing Python 3.7 from `Python.org Mac Download <https://www.python.org/downloads/mac-osx>`_ using the 
 **macOS 64-bit installer**. The installer will place a python3 executable in your /usr/local/bin directory, whose location should be on your system PATH. Version 3.8 does not appear to do so anymore, see the note below. 
 
 .. note:: 
@@ -120,5 +120,8 @@ Once Python is installed, you need to extend it by installing the following pack
   #. The --user coption is optional. It will install for you only. Leaving out this option may require issuing the pip3 commands preceeded by the **sudo** command.
 
 
-Test the Install
-^^^^^^^^^^^^^^^^
+Test the Install of Python
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+in a terminal cd to the folder. cd to the jupyter folder. type jupyter.
+
