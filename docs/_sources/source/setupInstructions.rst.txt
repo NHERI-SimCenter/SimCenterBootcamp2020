@@ -9,6 +9,34 @@ Windows Computer
 
 These instructions are for a Windows 10 computer. You need to install Python, ssh and git.
 
+.. note::
+
+   These instructions should work for other versions of windows. However you will need to test them. In addition you will need to install a working version of **ssh** on your system. This is preloaded on Windows 10 machines.
+
+Fork the SimCenter Code Repository
+----------------------------------
+
+#. Go to `github <https.github.com>`_ and sign in or sign up.
+#. Go to the `SimCenterBootcamp2020 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020>`_ repository.
+#. In the very top right corner, where it has fork and a number beside it, click the fork button. This will create a fork of the Bootcamp repo in your own account. 
+
+Install Git
+-----------
+
+Install git from the `git download page <https://git-scm.com/downloads>`_. Once installed, open up powershell and **clone** your copy of the bootcamp repo by typing the following in powershell terminal:
+
+.. code-block:: python
+   
+   git clone https://github.com/fmckenna/SimCenterBootcamp2020.git
+
+.. warning::
+
+   replace fmckenna with your github login name
+
+.. note::
+
+   To start a powershell window you use the search option and type PowerShell. Start the PowerShell application when it pops up.
+
 Install Python on Windows
 -------------------------
 
@@ -20,9 +48,9 @@ If you have not yet installed Python 3.7, we recommend installing Python 3.7 fro
    Allow the installer to change your system environment variables so that the directory containing the executable is on your path. This requires checking the small box asking for this when the installer starts. The box is located at bottom of installer application window.
 
 .. warning::
-   The latest version of Python is 3.8.3 At time of writing Python 3.8.3 was no working with the current **numpy** package.
+   The latest version of Python is 3.8.5 At time of writing Python 3.8.5 was not working with the current **numpy** package.
 
-Once Python is installed, you need to extend it by installing the following packages: **numpy**, **scipy**, **tables**, **hdf5** and **pandas**. To install these packages, start a `terminal window as an Admin user <https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/>`_ and in that window type the following instructions:
+Once Python is installed, you need to extend it by installing a number of packages. To install these packages, start a `terminal window as an Admin user <https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/>`_ and in that window type the following instructions:
 
 .. code-block:: python
 
@@ -41,18 +69,35 @@ Once Python is installed, you need to extend it by installing the following pack
    pip install geopandas 
    pip install census 
    pip install us
+   pip install notebook
 
+.. note::
+
+   This step can also be done inside the PowerShell that you had previously opened. This is demonstrated in the video.
+
+Test the Install of Python
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In powerwhell cd to the SimCenterBootcamp2020 folder and type the following.
+
+.. code-block:: python
+
+   cd code
+   cd jupyter
+   jupyter-notebook
+
+This should open the browser running jupyter-notebook. Select any of the .ipynb files and it should open the notebook.
 
 
 MacOS Computer
 ==============
 
-Fork the Git BootCamp Repository
---------------------------------
+Fork the SimCenter Code Repository
+----------------------------------
 
-#. Sign up for github.
-#. Go to the `SimCenterBookCamp <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020>`_ repository.
-#. In the very top right corner, where it has fork and a number beside it.
+#. Go to `github <https.github.com>`_ and sign in or sign up.
+#. Go to the `SimCenterBootcamp2020 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020>`_ repository.
+#. In the very top right corner, where it has fork and a number beside it, click the fork button. This will create a fork of the Bootcamp repo in your own account. 
 
 Install Git
 -----------
@@ -61,7 +106,11 @@ There are a number of ways to install the source code management system `**git**
 
 .. code-block:: python
    
-   git clone http://....
+   git clone https://github.com/fmckenna/SimCenterBootcamp2020.git
+
+.. warning::
+
+   replace fmckenna with your github login name
 
 Install Python on a Mac
 -----------------------
@@ -79,7 +128,7 @@ The Mac comes with Python pre-installed, which is currently the outdated version
 
       Python: Folder Displayed at Conclusion of Install
 
-Once Python is installed, you need to extend it by installing the following packages: **numpy**, **scipy**, and **pandas**. To install these packages, start a terminal window and type the following instructions:
+Once Python is installed, you need to extend it by installing a number of packages. To install these packages, start a terminal window and type the following:
 
 .. code-block:: python
 
@@ -101,7 +150,10 @@ Once Python is installed, you need to extend it by installing the following pack
    pip3 install --user notebook
 
 .. note:: 
+
    #. To start a terminal window you can use the spotlight app (magnifying glass at the top right corner of the desktop). Start the spotlight app and type in terminal. The terminal application should appear as the top hit. Click on it to start it.
+
+   #. The --user option was required in my install dues to permisssions I gave myself as a user. If you use the user option, you will be required to edit your PATH env later.
 
    #. If you forget to invoke the **UpdateShellProfile.command.sh" script at the end of the install --user, you can always edit the correct shell file later to update the **PATH** variable to point to the python application.
 
@@ -117,11 +169,20 @@ Once Python is installed, you need to extend it by installing the following pack
 
   If the results is **/bin/bash** you will need to edit the **.bashrc** file or the **bash_profile** file. If the results is **/bin/zsh** you will need to edit the **.zshrc** or **.zprofile**. Typically the **.bash_profile** or the **.zprofile** file is the one to edit as these typically by design will invoke the **.bashrc** or **.zshrc** file. If in doubt, look for these files in your home directory and see which of these other installlers have modified.
 
-  #. The --user coption is optional. It will install for you only. Leaving out this option may require issuing the pip3 commands preceeded by the **sudo** command.
-
 
 Test the Install of Python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-in a terminal cd to the folder. cd to the jupyter folder. type jupyter.
+In a terminal cd to the SimCenterBootcamp2020 folder and type the following.
 
+.. code-block:: python
+
+   cd code
+   cd jupyter
+   jupyter-notebook
+
+This should open the browser running jupyter-notebook. Select any of the .ipynb files and it should open the notebook.
+
+.. note::
+   
+   If it cannot find the jupyter-notebook application, you will need to edit your env PATH variable. This is done by editing the .bashrc or .zprofile file mentioned above. See the video for a demonstartion.

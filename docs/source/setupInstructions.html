@@ -85,14 +85,19 @@
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setup Instructions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#windows-computer">Windows Computer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#install-python-on-windows">Install Python on Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fork-the-simcenter-code-repository">Fork the SimCenter Code Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-git">Install Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-python-on-windows">Install Python on Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-install-of-python">Test the Install of Python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#macos-computer">MacOS Computer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fork-the-git-bootcamp-repository">Fork the Git BootCamp Repository</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#install-git">Install Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Fork the SimCenter Code Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Install Git</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#install-python-on-a-mac">Install Python on a Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#test-the-install-of-python">Test the Install of Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Test the Install of Python</a></li>
 </ul>
 </li>
 </ul>
@@ -168,6 +173,33 @@
 <div class="section" id="windows-computer">
 <h2>Windows Computer<a class="headerlink" href="#windows-computer" title="Permalink to this headline">¶</a></h2>
 <p>These instructions are for a Windows 10 computer. You need to install Python, ssh and git.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These instructions should work for other versions of windows. However you will need to test them. In addition you will need to install a working version of <strong>ssh</strong> on your system. This is preloaded on Windows 10 machines.</p>
+</div>
+<div class="section" id="fork-the-simcenter-code-repository">
+<h3>Fork the SimCenter Code Repository<a class="headerlink" href="#fork-the-simcenter-code-repository" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https.github.com">github</a> and sign in or sign up.</p></li>
+<li><p>Go to the <a class="reference external" href="https://github.com/NHERI-SimCenter/SimCenterBootcamp2020">SimCenterBootcamp2020</a> repository.</p></li>
+<li><p>In the very top right corner, where it has fork and a number beside it, click the fork button. This will create a fork of the Bootcamp repo in your own account.</p></li>
+</ol>
+</div>
+<div class="section" id="install-git">
+<h3>Install Git<a class="headerlink" href="#install-git" title="Permalink to this headline">¶</a></h3>
+<p>Install git from the <a class="reference external" href="https://git-scm.com/downloads">git download page</a>. Once installed, open up powershell and <strong>clone</strong> your copy of the bootcamp repo by typing the following in powershell terminal:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">fmckenna</span><span class="o">/</span><span class="n">SimCenterBootcamp2020</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>replace fmckenna with your github login name</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To start a powershell window you use the search option and type PowerShell. Start the PowerShell application when it pops up.</p>
+</div>
+</div>
 <div class="section" id="install-python-on-windows">
 <h3>Install Python on Windows<a class="headerlink" href="#install-python-on-windows" title="Permalink to this headline">¶</a></h3>
 <p>If you have not yet installed Python 3.7, we recommend installing Python 3.7 from <a class="reference external" href="https://www.python.org/downloads/windows">Python.org</a>. We recommend installing using the
@@ -178,9 +210,9 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The latest version of Python is 3.8.3 At time of writing Python 3.8.3 was no working with the current <strong>numpy</strong> package.</p>
+<p>The latest version of Python is 3.8.5 At time of writing Python 3.8.5 was not working with the current <strong>numpy</strong> package.</p>
 </div>
-<p>Once Python is installed, you need to extend it by installing the following packages: <strong>numpy</strong>, <strong>scipy</strong>, <strong>tables</strong>, <strong>hdf5</strong> and <strong>pandas</strong>. To install these packages, start a <a class="reference external" href="https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/">terminal window as an Admin user</a> and in that window type the following instructions:</p>
+<p>Once Python is installed, you need to extend it by installing a number of packages. To install these packages, start a <a class="reference external" href="https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/">terminal window as an Admin user</a> and in that window type the following instructions:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">scipy</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">matplotlib</span>
@@ -196,25 +228,44 @@
 <span class="n">pip</span> <span class="n">install</span> <span class="n">geopandas</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">census</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">us</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">notebook</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This step can also be done inside the PowerShell that you had previously opened. This is demonstrated in the video.</p>
+</div>
+<div class="section" id="test-the-install-of-python">
+<h4>Test the Install of Python<a class="headerlink" href="#test-the-install-of-python" title="Permalink to this headline">¶</a></h4>
+<p>In powerwhell cd to the SimCenterBootcamp2020 folder and type the following.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">code</span>
+<span class="n">cd</span> <span class="n">jupyter</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">notebook</span>
+</pre></div>
+</div>
+<p>This should open the browser running jupyter-notebook. Select any of the .ipynb files and it should open the notebook.</p>
 </div>
 </div>
 </div>
 <div class="section" id="macos-computer">
 <h2>MacOS Computer<a class="headerlink" href="#macos-computer" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="fork-the-git-bootcamp-repository">
-<h3>Fork the Git BootCamp Repository<a class="headerlink" href="#fork-the-git-bootcamp-repository" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Fork the SimCenter Code Repository<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Sign up for github.</p></li>
-<li><p>Go to the <a class="reference external" href="https://github.com/NHERI-SimCenter/SimCenterBootcamp2020">SimCenterBookCamp</a> repository.</p></li>
-<li><p>In the very top right corner, where it has fork and a number beside it.</p></li>
+<li><p>Go to <a class="reference external" href="https.github.com">github</a> and sign in or sign up.</p></li>
+<li><p>Go to the <a class="reference external" href="https://github.com/NHERI-SimCenter/SimCenterBootcamp2020">SimCenterBootcamp2020</a> repository.</p></li>
+<li><p>In the very top right corner, where it has fork and a number beside it, click the fork button. This will create a fork of the Bootcamp repo in your own account.</p></li>
 </ol>
 </div>
-<div class="section" id="install-git">
-<h3>Install Git<a class="headerlink" href="#install-git" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Install Git<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>There are a number of ways to install the source code management system <a class="reference external" href="https://git-scm.com/download/mac">**git**</a> on your computer. The simplest is to open a terminal application and type git. If the developer package has not already installed on your system, this wil ask you to install it. So say yes. When done test it using your <strong>fork</strong> of the github repo. To do this go to <strong>YOUR</strong> fork of the github repo, using the green pull down menu, gcopy the clone address. Open a terminal and in the terminal type</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">http</span><span class="p">:</span><span class="o">//....</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">fmckenna</span><span class="o">/</span><span class="n">SimCenterBootcamp2020</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>replace fmckenna with your github login name</p>
 </div>
 </div>
 <div class="section" id="install-python-on-a-mac">
@@ -227,12 +278,12 @@
 <li><p>We use the python.org installation over others, due to it’s simplicity of install.</p></li>
 <li><p>In the current installation of <strong>Python</strong> it leaves two script files in a folder when the installation ends. You need to execute both script files to get Python set up correctly so that it can be invoked from the terminal. To execute the files, double click on them. The two files, shown in the image below, are: <strong>Update Shell Profile.command.sh</strong> and <strong>Install CertificateCommand.sh</strong>.</p></li>
 </ol>
-<div class="align-center figure" id="id1">
-<img alt="source/figures/pythonInstallShell.png" src="source/figures/pythonInstallShell.png" />
-<p class="caption"><span class="caption-text">Python: Folder Displayed at Conclusion of Install</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="align-center figure" id="id6">
+<img alt="../_images/pythonInstallShell.png" src="../_images/pythonInstallShell.png" />
+<p class="caption"><span class="caption-text">Python: Folder Displayed at Conclusion of Install</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<p>Once Python is installed, you need to extend it by installing the following packages: <strong>numpy</strong>, <strong>scipy</strong>, and <strong>pandas</strong>. To install these packages, start a terminal window and type the following instructions:</p>
+<p>Once Python is installed, you need to extend it by installing a number of packages. To install these packages, start a terminal window and type the following:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">numpy</span>
 <span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">scipy</span>
 <span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">matplotlib</span>
@@ -256,6 +307,7 @@
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>To start a terminal window you can use the spotlight app (magnifying glass at the top right corner of the desktop). Start the spotlight app and type in terminal. The terminal application should appear as the top hit. Click on it to start it.</p></li>
+<li><p>The –user option was required in my install dues to permisssions I gave myself as a user. If you use the user option, you will be required to edit your PATH env later.</p></li>
 <li><p>If you forget to invoke the <strong>UpdateShellProfile.command.sh” script at the end of the install –user, you can always edit the correct shell file later to update the **PATH</strong> variable to point to the python application.</p></li>
 <li><p>On Linux systems, the shell is the program that takes commands from the keyboard that you enter in the terminal window and passes them to the operating system to perform by invoking applications and passing data between applications. In the good old days, it was the only interface available to the user, i.e. there was no such thing as Finder! There are a number of shell programs that can be install –usered and made available to you. The most popular is the <strong>bash</strong> shell, the up and coming one is the <strong>Z</strong> shell. Power MacOS users will write shell scripts to do many many useful things. By default the applications that the shell program will invoke are limited to applications in a few specific directories that are defined in the users <strong>PATH</strong>. Users can modify this path by editing files that the shell program will read from everytime the program is started.</p></li>
 </ol>
@@ -266,13 +318,20 @@
 </pre></div>
 </div>
 <p>If the results is <strong>/bin/bash</strong> you will need to edit the <strong>.bashrc</strong> file or the <strong>bash_profile</strong> file. If the results is <strong>/bin/zsh</strong> you will need to edit the <strong>.zshrc</strong> or <strong>.zprofile</strong>. Typically the <strong>.bash_profile</strong> or the <strong>.zprofile</strong> file is the one to edit as these typically by design will invoke the <strong>.bashrc</strong> or <strong>.zshrc</strong> file. If in doubt, look for these files in your home directory and see which of these other installlers have modified.</p>
-<ol class="arabic simple">
-<li><p>The –user coption is optional. It will install for you only. Leaving out this option may require issuing the pip3 commands preceeded by the <strong>sudo</strong> command.</p></li>
-</ol>
 </div>
-<div class="section" id="test-the-install-of-python">
-<h4>Test the Install of Python<a class="headerlink" href="#test-the-install-of-python" title="Permalink to this headline">¶</a></h4>
-<p>in a terminal cd to the folder. cd to the jupyter folder. type jupyter.</p>
+<div class="section" id="id5">
+<h4>Test the Install of Python<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>In a terminal cd to the SimCenterBootcamp2020 folder and type the following.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">code</span>
+<span class="n">cd</span> <span class="n">jupyter</span>
+<span class="n">jupyter</span><span class="o">-</span><span class="n">notebook</span>
+</pre></div>
+</div>
+<p>This should open the browser running jupyter-notebook. Select any of the .ipynb files and it should open the notebook.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If it cannot find the jupyter-notebook application, you will need to edit your env PATH variable. This is done by editing the .bashrc or .zprofile file mentioned above. See the video for a demonstartion.</p>
+</div>
 </div>
 </div>
 </div>
