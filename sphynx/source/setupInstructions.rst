@@ -1,4 +1,4 @@
-.. _lblDownloadOther:
+.. _lblSetup:
 
 ******************
 Setup Instructions
