@@ -21,6 +21,10 @@ project = 'Programming Bootcamp 2020'
 copyright = '2020, Peter Mackenzie-Helnwein, Frank McKenna'
 author = 'Peter Mackenzie-Helnwein, Frank McKenna'
 
+rst_prolog = """
+.. |messageBoard| replace:: `Message Board`_
+.. _Message Board: https://simcenter-messageboard.designsafe-ci.org/smf/index.php?board=19.0
+"""
 
 # -- General configuration ---------------------------------------------------
 
