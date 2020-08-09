@@ -19,16 +19,41 @@ Computer Hardware
 
 Most programmable computers (desktop, servers, phones, programmable calculators, ...) when you take apart all have similar components:
 
-#. Motherboard (the chasis of the computer) the thing to which everything is connected.
 #. Central Processing Unit (CPU) where data is manipulated.
 #. Memory for storing data:
    #. Hard Drive (disk or SSD) for the permanent storage of the data
    #. Random Access Memory (RAM) for temporary storage of data (data being lost when power goes off)
 #. Input Devices (keyboard, monitor, network)
 #. Output Devices (Monitor, Speakers)
-#. Power supply
+#. Motherboard (the chasis of the computer) the thing to which everything is connected and the Powersupply to provide power to the connected devices.
 
-This architecture is ancient in computer terms, as it was something described by `John Von Neumann in 1945 in his description of the EDVAC system <http://qss.stanford.edu/~godfrey/vonNeumann/vnedvac.pdf>`_.
+These fundamental components have existed in most programable computers for the last 70years. The architecture for this was something described by `John Von Neumann in 1945 in his description of the EDVAC system <http://qss.stanford.edu/~godfrey/vonNeumann/vnedvac.pdf>`_.
+
+   .. figure:: figures/vonNewmann1.png
+      :align: center
+      :figclass: align-center
+
+      vonNewmann Computer Architecture
+
+John in his architectural description further broke the **CPU** into parts:
+
+#. The Control Unit (CU): The control unit decodes what each instruction means, and can then control how the other components operate. So when the control unit receives an instruction, which is just a binary number, it will then signal what the ALU and memory is supposed to do. It might be that the instruction is to add two numbers together, or it might be that the instruction is to store a number in RAM.
+
+#. The Arithmetic Unit (ALU): The ALU performs a variety of operations. It can add and add binary numbers, increment bits, and compare binary numbers to see if they are the same. Modern ALU also contain circuits to perform operations on floating point numbers (add, subtraction, multiplication, division), something that would have to have been performed in code in older computers or using a connected devuce called a floating point unit.
+
+#. Registers: Registers are parts of the CPU that store data. In this sense they are like memory, the difference is that the memory cells are composed of logic gates for fast access to the contents. There are a number of different types of registers for different purposes:
+   
+   #. Instruction Register: Stores address of current instruction
+   #. Program Counter: Stores address in RAM of next instruction
+   #. Memory Address: Stores RAM location of data
+   #. Memory Data: Stores the data obtained from RAM   
+   #. Accumulator: For storing results of ALU opeartions
+
+.. figure:: figures/vonNewmann2.png
+   :align: center
+   :figclass: align-center
+
+   More Detailed vonNewmann Architecture
 
 The **programs** that the computer runs to manipulate the data are a sequence of unambiguous instructions that are meant to be followed in sequence by the CPU. The program, or list of instructions to be followed, is stored in the main memory. As the program executes each instruction is brought into the CPU (fetched), deciphered, and executed. The CPU does this repeatedly until the program finishes. To do this the CPU must be able to store the current instruction, store a counter to hold the count of the current instruction (so that location of next instruction can be fetched), contain elements for storing data on the CPU itself (registers: small memory units capable of each holding a single number), and provide units for performing arithmetic operations. The first CPU's where the size of rooms and made up of componnets such as vacuum tubes and swicthes. Modern CPU's (sometimes called microprocessors) are tiny containing millions of of tiny switches called transistors, which are wired together in such a way that an output from one switch can turn another switch on or off. As a computer computes, these switches turn each other on or off in a pattern determined both by the way they are wired together and the current instruction executing.
 
