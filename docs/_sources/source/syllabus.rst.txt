@@ -17,9 +17,8 @@ Week 1
 
 * Day 1
 
-  * Welcome Message
-  * SimCenter & NHERI & DesignSafe
-  * What is a computer? Programming philosophy 
+  * `Welcome Message and SimCenter Intro <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/BootCampIntro.pdf>`_
+  * `What is a computer? Programming philosophy <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/WhatIsComputer.pdf>`_
   * Python Basics
   * Data types
   * Loops
