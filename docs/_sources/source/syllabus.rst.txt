@@ -7,8 +7,8 @@ of the community building benefits through discussion sessions and social time.
 
 The bootcamp is organized as a series of live video conferencing (ZOOM), prerecorded video
 lectures, hands-on exercises with online review options, and homework assignments.  The
-ideal flow of lessons and activities is provided in the "By Day" listing below.  A "By
-Topic" organization is provided for later review.
+ideal flow of lessons and activities is provided in the "By Day" listing below.
+A "By Topic" organization will be provided for later review.
 
 
 
@@ -17,9 +17,9 @@ Week 1
 
 * Day 1
 
-  * Welcome Message (fmk)
+  * Welcome Message
   * SimCenter & NHERI & DesignSafe
-  * What is a computer? Programming philosophy (???)
+  * What is a computer? Programming philosophy 
   * Python Basics
   * Data types
   * Loops
@@ -44,8 +44,8 @@ Week 1
 * Day 3
 
   * Homework #2 review
-  * Intro to Object Oriented Programming (OOP)  (fmk)
-  * Python OOP  (pmh)
+  * Intro to Object Oriented Programming (OOP)
+  * Python OOP 
   * Classes
   * Inheritance
   * Numeric data types: operator overload
@@ -118,4 +118,10 @@ Week 2
   * Run Over Material
   * Overview of SimCenter Tools & Their Coding
    
+
+
+Additional Resources
+=========
+
+* [Video lectures for the Python part of the workshop](https://www.youtube.com/playlist?list=PLrxffd5i7yCE2DndZ5QSsAGCcZ_DXsla2)
 
