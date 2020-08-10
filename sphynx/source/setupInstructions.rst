@@ -12,8 +12,7 @@ The following videos demonstrate these installation instructions on brand new Wi
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Windows Computer
