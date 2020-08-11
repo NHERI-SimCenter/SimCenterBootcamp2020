@@ -98,13 +98,13 @@ Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, an
 
    <Control> r blah
 
-13. Find and replace text from current cursor location.
+13. Find and replace text from current cursor location. It will prompt for confirmation at each occurance. Accept with a **y**, reject with a **n**.
 
 .. code::
 
    <Escape> % 
 
-14. Find and replace text from current cursor location. (avoiding lucky 13!)
+14. Find and replace all occurances of text from current cursor location to end of file.
 
 .. code::
 
