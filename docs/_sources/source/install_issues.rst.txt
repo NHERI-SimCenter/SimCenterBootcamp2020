@@ -14,7 +14,7 @@ Windows
 
 .. note::
 
-   proposed solution (untested; please provide feedback if you try)
+   proposed solution (incomplete)
    --------
 
    It appears that the gdal package is the source of the problem. We recommend downloading the
@@ -25,13 +25,9 @@ Windows
 
    Install those packages using
 
-   * **with anaconda installation**
-
-   conda install gdal*.whl fiona*.whl
-
-   * **python.org installation**
-
    sudo pip install gdal*.whl fiona*.whl
+
+
 
 
    
