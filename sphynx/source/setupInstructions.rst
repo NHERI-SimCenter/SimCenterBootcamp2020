@@ -197,3 +197,8 @@ This should open the browser running jupyter-notebook. Select any of the .ipynb 
 .. note::
    
    If it cannot find the jupyter-notebook application, you will need to edit your env PATH variable. This is done by editing the .bashrc or .zprofile file mentioned above. See the video for a demonstartion.
+
+
+.. include:: install_issues.rst
+
+
