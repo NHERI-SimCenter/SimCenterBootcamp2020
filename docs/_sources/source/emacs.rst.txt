@@ -24,91 +24,105 @@ The following are how to start emacs from the terminal:
 
 Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, and sideways keys to move the cursor around the characters of the file. There are a number of options available to you through use of either the **<Control>** key or the **<Escape>** key that perform certain common file editor operations. Emacs has over 10,000 built in commands! Only a dozen or so commands are needed for most editing purposes. The following is a list of my most used commands. This short list are more than sufficient for most editing purposes.
 
-1. Quit application (will prompt to save files):
+     #. Quit application (will prompt to save files):
 
-.. code::
+     	.. code::
 
-   <Control> x <Control> c
+   	   <Control> x <Control> c
 
-2. Save current file:
+     #. Save current file:
 
-.. code::
+     	.. code::
 
-   <Control> x <Control> s
-
-3. Delete from current cursor to end of line (copies to clipboard). Will append to clipboard if lines follow one another.
-
-.. code::
-
-   <Control> k
-
-4. Delete from current cursor to end of line and delete next n-1 lines. note n is a number.
-
-.. code::
-
-   <Escape> n <Control> k
-
-5. Paste clipboard to current cursor location
-
-.. code::
-
-   <Control> y
-
-6. Undo last command
-
-.. code::
-
-   <Control> x u
-
-7. Move cursor to start of line
-
-.. code::
-
-   <Control> a
-
-8. Move cursor to end of line
-
-.. code::
-
-   <Control> e
+	   <Control> x <Control> s
 
 
-9. Move cursor to start of file
+     	.. note::
 
-.. code::
-
-   <Escape> <
-
-10. Move cursor to end of file
-
-.. code::
-
-   <Escape> >
-
-11. Search for text **blah** in file forwards from current cursor
-
-.. code::
-
-   <Control> s blah
+     	   For basic editing you probbaly only need these 2 commands.
 
 
-12. Search for text **blah** in file backwards from current cursor
+     #.  Open a file:
 
-.. code::
+     	 .. code::
 
-   <Control> r blah
+	    <Control> x <Control> f
 
-13. Find and replace text from current cursor location. It will prompt for confirmation at each occurance. Accept with a **y**, reject with a **n**.
 
-.. code::
+     #. Delete from current cursor to end of line (copies to clipboard). Will append to clipboard if lines follow one another.
 
-   <Escape> % 
+     	.. code::
 
-14. Find and replace all occurances of text from current cursor location to end of file.
+   	   <Control> k
+ 
+     #. Delete from current cursor to end of line and delete next n-1 lines. note n is a number.
 
-.. code::
+     	.. code::
 
-   <Escape> x replace-string <RET>
+   	   <Escape> n <Control> k
+
+ 
+     #. Paste clipboard to current cursor location
+
+     	.. code::
+
+   	   <Control> y
+
+     #. Undo last command
+
+     	.. code::
+
+   	   <Control> x u
+
+     #. Move cursor to start of line
+
+     	.. code::
+
+   	   <Control> a
+
+     #. Move cursor to end of line
+
+     	.. code::
+
+     	   <Control> e
+
+
+
+     #. Move cursor to start of file
+
+     	.. code::
+
+   	   <Escape> <
+
+     #. Move cursor to end of file
+
+     	.. code::
+
+   	   <Escape> >
+
+     #. Search for text **blah** in file forwards from current cursor
+
+     	.. code::
+
+   	   <Control> s blah
+
+     #. Search for text **blah** in file backwards from current cursor
+
+     	.. code::
+
+   	   <Control> r blah
+
+     #. Find and replace text from current cursor location. It will prompt for confirmation at each occurance. Accept with a **y**, reject with a **n**.
+
+     	.. code::
+
+   	   <Escape> % 
+
+     #. Find and replace all occurances of text from current cursor location to end of file.
+
+     	.. code::
+
+   	   <Escape> x replace-string <RET>
 
 There are of course more commands available (over 10,000!). But those are some basic ones and enough to get you merrily editing files!
 
