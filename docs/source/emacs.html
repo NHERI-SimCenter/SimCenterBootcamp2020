@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Questions, Issues" href="help.html" />
-    <link rel="prev" title="Additional Resources" href="resources.html" /> 
+    <link rel="next" title="Git" href="git.html" />
+    <link rel="prev" title="TACC" href="TACC.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,7 +86,9 @@
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setupInstructions.html">Setup Instructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TACC.html">TACC</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Emacs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="help.html">Questions, Issues</a></li>
 </ul>
 
@@ -171,90 +173,89 @@
 </div>
 </div></blockquote>
 <p>Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, and sideways keys to move the cursor around the characters of the file. There are a number of options available to you through use of either the <strong>&lt;Control&gt;</strong> key or the <strong>&lt;Escape&gt;</strong> key that perform certain common file editor operations. Emacs has over 10,000 built in commands! Only a dozen or so commands are needed for most editing purposes. The following is a list of my most used commands. This short list are more than sufficient for most editing purposes.</p>
-<ol class="arabic simple">
-<li><p>Quit application (will prompt to save files):</p></li>
-</ol>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Quit application (will prompt to save files):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">c</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><p>Save current file:</p></li>
-</ol>
+</li>
+<li><p>Save current file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">s</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>Delete from current cursor to end of line (copies to clipboard). Will append to clipboard if lines follow one another.</p></li>
-</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For basic editing you probbaly only need these 2 commands.</p>
+</div>
+</li>
+<li><p>Open a file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">f</span>
+</pre></div>
+</div>
+</li>
+<li><p>Delete from current cursor to end of line (copies to clipboard). Will append to clipboard if lines follow one another.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">k</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="4">
-<li><p>Delete from current cursor to end of line and delete next n-1 lines. note n is a number.</p></li>
-</ol>
+</li>
+<li><p>Delete from current cursor to end of line and delete next n-1 lines. note n is a number.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Escape</span><span class="o">&gt;</span> <span class="n">n</span> <span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">k</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="5">
-<li><p>Paste clipboard to current cursor location</p></li>
-</ol>
+</li>
+<li><p>Paste clipboard to current cursor location</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">y</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="6">
-<li><p>Undo last command</p></li>
-</ol>
+</li>
+<li><p>Undo last command</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="n">u</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="7">
-<li><p>Move cursor to start of line</p></li>
-</ol>
+</li>
+<li><p>Move cursor to start of line</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">a</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="8">
-<li><p>Move cursor to end of line</p></li>
-</ol>
+</li>
+<li><p>Move cursor to end of line</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">e</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="9">
-<li><p>Move cursor to start of file</p></li>
-</ol>
+</li>
+<li><p>Move cursor to start of file</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Escape</span><span class="o">&gt;</span> <span class="o">&lt;</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="10">
-<li><p>Move cursor to end of file</p></li>
-</ol>
+</li>
+<li><p>Move cursor to end of file</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Escape</span><span class="o">&gt;</span> <span class="o">&gt;</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="11">
-<li><p>Search for text <strong>blah</strong> in file forwards from current cursor</p></li>
-</ol>
+</li>
+<li><p>Search for text <strong>blah</strong> in file forwards from current cursor</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">s</span> <span class="n">blah</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="12">
-<li><p>Search for text <strong>blah</strong> in file backwards from current cursor</p></li>
-</ol>
+</li>
+<li><p>Search for text <strong>blah</strong> in file backwards from current cursor</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">r</span> <span class="n">blah</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="13">
-<li><p>Find and replace text from current cursor location. It will prompt for confirmation at each occurance. Accept with a <strong>y</strong>, reject with a <strong>n</strong>.</p></li>
-</ol>
+</li>
+<li><p>Find and replace text from current cursor location. It will prompt for confirmation at each occurance. Accept with a <strong>y</strong>, reject with a <strong>n</strong>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Escape</span><span class="o">&gt;</span> <span class="o">%</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="14">
-<li><p>Find and replace all occurances of text from current cursor location to end of file.</p></li>
-</ol>
+</li>
+<li><p>Find and replace all occurances of text from current cursor location to end of file.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Escape</span><span class="o">&gt;</span> <span class="n">x</span> <span class="n">replace</span><span class="o">-</span><span class="n">string</span> <span class="o">&lt;</span><span class="n">RET</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+</li>
+</ol>
+</div></blockquote>
 <p>There are of course more commands available (over 10,000!). But those are some basic ones and enough to get you merrily editing files!</p>
 </div>
 
@@ -266,10 +267,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="help.html" class="btn btn-neutral float-right" title="Questions, Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="git.html" class="btn btn-neutral float-right" title="Git" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="resources.html" class="btn btn-neutral float-left" title="Additional Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="TACC.html" class="btn btn-neutral float-left" title="TACC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
