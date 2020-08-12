@@ -38,5 +38,8 @@ Windows
 MacOS
 ------
 
-No problems reported so far.
+1. "no CRS class" when import geopandas
+
+.. note::
+    Not a question, but knowledge-sharing: The issue of importing geopandas with the error of “no CRS class” in MacOS, the solution is to install the pyproj version 2.# since CRS is introduced version 2 in Pyproj. Do the following pip install pyproj==2.6.1
 
