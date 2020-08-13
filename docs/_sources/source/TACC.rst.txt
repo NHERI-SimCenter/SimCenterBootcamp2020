@@ -4,7 +4,7 @@
 TACC
 ****
 
-DesignSafe-ci is closely integerated within `TACC <https://www.tacc.utexas.edu/>`_. TACC designs and deploys the world's most powerful advanced computing technologies and innovative software solutions to enable researchers to answer complex questions like those you are researching and many more. For this workshop, and thanks to DesignSafe-ci, TACC are making available to you access to one of the fastest supercomputers in the world. To make use of these resources you need to be a **good citizen** while utilizing them.
+DesignSafe-ci is closely integerated within `TACC <https://www.tacc.utexas.edu/>`_. TACC designs and deploys the world's most powerful advanced computing technologies and innovative software solutions to enable researchers to answer complex questions like those you are researching and many more. For this workshop, and thanks to DesignSafe-ci, TACC are making available to you access to one of the fastest supercomputers in the world. To make use of these resources you need to be a `good citizen <https://frontera-portal.tacc.utexas.edu/user-guide/citizenship/>`_ while utilizing them.
 
 We will be using the **Frontera** system and they provide a comprehinsive set of usage notes. Here is a snapshot.
 
@@ -52,6 +52,7 @@ To copy file a.c from your $HOME directory at TACC to your local system you can 
 
    #. Typically directories are copied by zipping up the dir into .zip or .tar.gz files and then copied. Try not to use the **-r** option= on directories.
    #. Also you can also use **rsync** and **globus-online** to transfer files, **globus-online** should be used when transferring large files to the login nodes.
+   #. `TACC suggestions <https://frontera-portal.tacc.utexas.edu/user-guide/files/>`_.
 
 
 Basic Linux Commands
@@ -127,14 +128,15 @@ We present 3 scenarios for compiling and running a **C** program.
 	nid00181$ exit
 	login1$
 
-   #. To compile a parallel MPI program contained in a file myCode.c in the directory $HOME/test and run an application built on 16 in an idev environment with access to 16 cores, use the following:
+   #. To compile a parallel MPI program contained in a file myCode.c in the directory $HOME/test and run an application built on 16 in an idev environment with access to 16 cores, use the following to compile the code on a login node, start idev environment with 16 cores, and then launch the application with 16 and then repeat with 4 cores:
 
       .. code::
 
         login1$ cd test   
 	login1$ mpicc myCode.c -o myCode
 	login1$ idev -n 16
-	nid00181$ mpirun -n 16 ./myCode
+	nid00181$ ibrun ./myCode
+	nid00181$ ibrun -n 4 ./myCode
 	nid00181$ exit
 	login1$
 
