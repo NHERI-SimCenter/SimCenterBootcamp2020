@@ -56,10 +56,12 @@ Week 1
   * Homework #3 review
   * `Git <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Git.pdf>`_
   * Short remarks on
+
       * Python modules
       * Organizing your code in files
       * system call/subprocess
       * Exercise: bringing python to the command line
+
   * Python Web Scrabbing 
   * Assign Homework #4
   * TACC - logging in/linux basics (cd, ls, mkdir, ...)
