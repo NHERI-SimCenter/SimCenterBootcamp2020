@@ -6,7 +6,9 @@ TACC
 
 DesignSafe-ci is closely integerated within `TACC <https://www.tacc.utexas.edu/>`_. TACC designs and deploys the world's most powerful advanced computing technologies and innovative software solutions to enable researchers to answer complex questions like those you are researching and many more. For this workshop, and thanks to DesignSafe-ci, TACC are making available to you access to one of the fastest supercomputers in the world. To make use of these resources you need to be a `good citizen <https://frontera-portal.tacc.utexas.edu/user-guide/citizenship/>`_ while utilizing them.
 
-We will be using the **Frontera** system and they provide a comprehinsive set of usage notes. Here is a snapshot.
+We will be using the `**Frontera** <https://www.tacc.utexas.edu/systems/frontera>`_ system and they provide a comprehinsive set of `usage notes <https://frontera-portal.tacc.utexas.edu/user-guide/>`_ . The following is a brief overview of it with Linux commands for this workshop. 
+
+
 
 Accessing the system
 --------------------
@@ -15,7 +17,11 @@ To access the system you will be using **ssh**. To login in start a terminal or 
 
 .. code::
 
-       ssh yourName@stampede2.tacc.utexas.edu
+       ssh yourName@frontera.tacc.utexas.edu
+
+.. warning::
+
+   When trying to log into TACC with ssh (possibly only on a Windows computer) you cannot also be logged in to TACC through your web browser. **Log off** in your browser and **kill** the browser tab.
 
 .. note::
 
@@ -24,8 +30,11 @@ To access the system you will be using **ssh**. To login in start a terminal or 
 .. note::
 
    #. When logged in at TACC you have 3 directories similar to your **home** directory on your local machine:
+
       #. $HOME: 25GB of backed up data
+
       #. $WORK: 1TB of data, not backed up but not purged
+
       #. $SCRATCH: no quota, not backed up and subject to purge of file older than 10 days.
 
    #. Each node also has a **/tmp** folder. If you plan on doing a lot of file i/o when your application is running, in your sbatch script or when using idev copy files to this directory and get your application to open them from here. The files are removed when the job is done, so be sure and copy any needed files here back to one of other directories.
@@ -40,13 +49,13 @@ To copy files a.c from your system to your $HOME directory at TACC ypou can use 
 
 .. code::
 
-       scp a.c yourName@stampede2.tacc.utexas.edu:~/
+       scp a.c yourName@frontera.tacc.utexas.edu:~/
 
 To copy file a.c from your $HOME directory at TACC to your local system you can again use scp. In the terminal window in the directory in which you want a.c to be copied to type:
 
 .. code::
 
-       scp yourName@stampede2.tacc.utexas.edu:~/a.c ./
+       scp yourName@frontera.tacc.utexas.edu:~/a.c ./
 
 .. note::
 
@@ -77,6 +86,12 @@ The TACC machines are running a variant of the Linux operating system. As such y
        .. code::
        
 	ls -sal
+
+    #. make a new directory
+
+       .. code::
+       
+	mkdir dirName
 
     #. change directories with cd to a dir named dirName that is in current dir
        .. code::
@@ -122,7 +137,7 @@ We present 3 scenarios for compiling and running a **C** program.
       .. code::
 
         login1$ cd test   
-	login1$ gcc myCode.c -o myCode
+	login1$ icc myCode.c -o myCode.exe
 	login1$ idev -n 1
 	nid00181$ ./myCode
 	nid00181$ exit
@@ -133,7 +148,7 @@ We present 3 scenarios for compiling and running a **C** program.
       .. code::
 
         login1$ cd test   
-	login1$ mpicc myCode.c -o myCode
+	login1$ mpicc myCode.c -o myCode.exe
 	login1$ idev -n 16
 	nid00181$ ibrun ./myCode
 	nid00181$ ibrun -n 4 ./myCode
@@ -145,7 +160,7 @@ We present 3 scenarios for compiling and running a **C** program.
       .. code:: 
 
         login1$ cd test   
-	login1$ gcc -openmp myCode.c -o myCode
+	login1$ icc -myCode.c -o myCode.exe
 	login1$ idev -n 16
 	nid00181$ ./myCode
 	nid00181$ EXPORT OMP_NUM_THREADS=4
@@ -156,8 +171,61 @@ We present 3 scenarios for compiling and running a **C** program.
 	
 .. note::
 
-   **idev** is used for small interactive jobs and for testing while you are building a larger application. While testing it is a pain to start idev and exit if you are constantly building and then running the application. I suggest opening two terminal windows, doing the compilation in one and starting the **idev** session in the other.
+   **idev** is used for small interactive jobs and for testing while you are building a larger application. While testing it is a pain to start idev and exit if you are constantly building and then running the application. I suggest opening two terminal windows and starting **idev** in one. This allows you to compile in the other terminal and then quickly test it in the terminal in which you have started **idev**.
 
 
 
+Alternative Access via Browser
+------------------------------
+
+As an alternative to using **ssh** from the terminal there is another way to get access to a linux shell on Frontera. The solution involves acessing the `vis posrtal <https://vis.tacc.utexas.edu/#>`_ through the web browser.
+
+When you do follow these steps:
+
+   #. Go to web page and enter login info top right and press *Login*
+
+      .. figure:: figures/taccVis1.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Log in through vis portal
+
+   #. Make sure Frontera is selected, it should auto pick up your Allocation. Now press the button lower middle that says *set VNC passowrd*.
+
+      .. figure:: figures/taccVis2.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Set Frontera and then select Set VNC Password
+
+   #. Enter a new password (twice) and press button *set VNC Password*.
+
+      .. figure:: figures/taccVis3.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Enter VNC Password
+
+   #. Press Start Job button bottom left
+
+      .. figure:: figures/taccVis2.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Now Press *Start Job*
+
+   #. Enter VNC password in box at the top
+
+      .. figure:: figures/taccVis4.png
+      	 :align: center
+      	 :figclass: align-center
+
+
+   #. You are there! Start typing in the xterminal window. If you type **xterm &** here, it will bring up an terminal window with a white background and black text.
+
+      .. figure:: figures/taccVis5.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 You Did It! 
 

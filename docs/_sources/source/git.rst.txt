@@ -65,6 +65,13 @@ There are three options for creating a repo.
       	 This is similar to the first option. The difference is that you point the local repo to the remote repo and then push the current files. So if you start with option A, and decide to switch to option B later you can!
 
 
+	 On some systems, before you commit you are required to enter your login and email address with the remote service. Some other systems, will just provide a prompt when you issue the command. The commands that you may need to invoke before you can commit are the following:
+
+	 .. code::
+
+	    git config --global user.email "email@example.com"
+	    git config --global user.name "Mona Lisa"
+
       #. Finally for option C, you are part of a collaborative project, or just want to start at the state of some other open source project you find on one of the hosting sites you first **FORK** a copy of the repo into your own area. You do this in the browser. Once forked, a repo will exist in your own area which you can clone. This will bring all repo files to your computer.
 
       	 .. code::
@@ -96,6 +103,15 @@ There are three options for creating a repo.
    	     > origin    https://github.com/YOUR_USERNAME/REPO.git (push)
    	     > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (fetch)
    	     > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (push)
+
+	 .. note::
+
+	    if you make a mistake with the upstream repo for any reason, you can remove it and add again
+
+	     .. code::
+
+	     	git remote rm upstream
+		git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
 
 
 Using Your Local Repo
@@ -265,9 +281,27 @@ When working in a collaborative project, your interaction with git is as shown i
    
 	Messages differ depending on your local commits
 
-#. Now merge any conlicts with **add** and **commit** commands. Hopefully there are none!
+#. Now merge any conlicts with **add** and **commit** commands. Hopefully there are When dealing with **conflicts** you have a number of options: 
 
-#. When you have made the final **push**, you can now through, the web browser, make a pull request from your remote fork to the original upstream repo.
+   #. You can open and edit each file that has a conflict.
+
+   #. You can tell git to use your version of the code to resolve the conflict.
+
+      .. code::
+
+       	 git checkout --ours PATH/FILE 
+
+   #. You can tell git to use THEIR (UPSTREAMS) version of the code to resolve the conflict.
+
+      .. code::
+
+	 git checkout --theirs PATH/FILE
+
+   .. note::
+
+      The latter two options, while quick and easy, are typically not what you wabt. They can be dangerous as you are loosing either your changes or changes others have made. It is thus useful to look at the conflicts individually just to ensure that you are resolving the conflict correctly.
+
+#.  Now that you have made the final **push**, you can now through, the web browser, make a pull request from your remote fork to the original upstream repo.
 
 .. warning::
 

@@ -39,7 +39,9 @@ Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, an
 
      	.. note::
 
-     	   For basic editing you probbaly only need these 2 commands.
+     	   #. For basic editing you probbaly only need these 2 commands.
+
+	   #. For commands that have two similar special keys, i.e. <Control> a <Control> b, you can hold the <Control> key down with one finger and hit **a b** with another finger.
 
 
      #.  Open a file:

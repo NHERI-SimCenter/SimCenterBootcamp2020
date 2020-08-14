@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,30 +12,28 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Emacs" href="emacs.html" />
@@ -52,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
           
 
           
@@ -75,7 +74,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -93,6 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#transferring-files-between-your-system-and-tacc">Transferring files between your system and TACC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#basic-linux-commands">Basic Linux Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-and-running-an-application">Building and Running an Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alternative-access-via-browser">Alternative Access via Browser</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
@@ -103,7 +102,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -142,7 +140,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>TACC</li>
     
@@ -166,12 +164,16 @@
   <div class="section" id="tacc">
 <span id="lbltacc"></span><h1>TACC<a class="headerlink" href="#tacc" title="Permalink to this headline">¶</a></h1>
 <p>DesignSafe-ci is closely integerated within <a class="reference external" href="https://www.tacc.utexas.edu/">TACC</a>. TACC designs and deploys the world’s most powerful advanced computing technologies and innovative software solutions to enable researchers to answer complex questions like those you are researching and many more. For this workshop, and thanks to DesignSafe-ci, TACC are making available to you access to one of the fastest supercomputers in the world. To make use of these resources you need to be a <a class="reference external" href="https://frontera-portal.tacc.utexas.edu/user-guide/citizenship/">good citizen</a> while utilizing them.</p>
-<p>We will be using the <strong>Frontera</strong> system and they provide a comprehinsive set of usage notes. Here is a snapshot.</p>
+<p>We will be using the <a class="reference external" href="https://www.tacc.utexas.edu/systems/frontera">**Frontera**</a> system and they provide a comprehinsive set of <a class="reference external" href="https://frontera-portal.tacc.utexas.edu/user-guide/">usage notes</a> . The following is a brief overview of it with Linux commands for this workshop.</p>
 <div class="section" id="accessing-the-system">
 <h2>Accessing the system<a class="headerlink" href="#accessing-the-system" title="Permalink to this headline">¶</a></h2>
 <p>To access the system you will be using <strong>ssh</strong>. To login in start a terminal or powershell application and type the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">yourName</span><span class="nd">@stampede2</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">yourName</span><span class="nd">@frontera</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When trying to log into TACC with ssh (possibly only on a Windows computer) you cannot also be logged in to TACC through your web browser. <strong>Log off</strong> in your browser and <strong>kill</strong> the browser tab.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -182,10 +184,13 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ol class="arabic simple">
-<li><p>When logged in at TACC you have 3 directories similar to your <strong>home</strong> directory on your local machine:
-#. $HOME: 25GB of backed up data
-#. $WORK: 1TB of data, not backed up but not purged
-#. $SCRATCH: no quota, not backed up and subject to purge of file older than 10 days.</p></li>
+<li><p>When logged in at TACC you have 3 directories similar to your <strong>home</strong> directory on your local machine:</p>
+<ol class="arabic simple">
+<li><p>$HOME: 25GB of backed up data</p></li>
+<li><p>$WORK: 1TB of data, not backed up but not purged</p></li>
+<li><p>$SCRATCH: no quota, not backed up and subject to purge of file older than 10 days.</p></li>
+</ol>
+</li>
 <li><p>Each node also has a <strong>/tmp</strong> folder. If you plan on doing a lot of file i/o when your application is running, in your sbatch script or when using idev copy files to this directory and get your application to open them from here. The files are removed when the job is done, so be sure and copy any needed files here back to one of other directories.</p></li>
 <li><p>TACC  has special cd commands to change to these directories, <strong>cdh</strong>, <strong>cdw</strong>, <strong>cds</strong>.</p></li>
 </ol>
@@ -194,11 +199,11 @@
 <div class="section" id="transferring-files-between-your-system-and-tacc">
 <h2>Transferring files between your system and TACC<a class="headerlink" href="#transferring-files-between-your-system-and-tacc" title="Permalink to this headline">¶</a></h2>
 <p>To copy files a.c from your system to your $HOME directory at TACC ypou can use scp. In the terminal window in the directory containing a.c type the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">a</span><span class="o">.</span><span class="n">c</span> <span class="n">yourName</span><span class="nd">@stampede2</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span><span class="p">:</span><span class="o">~/</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">a</span><span class="o">.</span><span class="n">c</span> <span class="n">yourName</span><span class="nd">@frontera</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span><span class="p">:</span><span class="o">~/</span>
 </pre></div>
 </div>
 <p>To copy file a.c from your $HOME directory at TACC to your local system you can again use scp. In the terminal window in the directory in which you want a.c to be copied to type:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">yourName</span><span class="nd">@stampede2</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span><span class="p">:</span><span class="o">~/</span><span class="n">a</span><span class="o">.</span><span class="n">c</span> <span class="o">./</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scp</span> <span class="n">yourName</span><span class="nd">@frontera</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span><span class="p">:</span><span class="o">~/</span><span class="n">a</span><span class="o">.</span><span class="n">c</span> <span class="o">./</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -227,6 +232,11 @@
 </li>
 <li><p>To list all files and show type and sizes, issue the following command in the terminal window:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">-</span><span class="n">sal</span>
+</pre></div>
+</div>
+</li>
+<li><p>make a new directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">dirName</span>
 </pre></div>
 </div>
 </li>
@@ -269,7 +279,7 @@
 <div><ol class="arabic">
 <li><p>To compile a sequential program contained in a file myCode.c in the directory $HOME/test and run an application built in an <strong>idev</strong> environment type the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>login1$ cd test
-login1$ gcc myCode.c -o myCode
+login1$ icc myCode.c -o myCode.exe
 login1$ idev -n 1
 nid00181$ ./myCode
 nid00181$ exit
@@ -279,7 +289,7 @@ login1$
 </li>
 <li><p>To compile a parallel MPI program contained in a file myCode.c in the directory $HOME/test and run an application built on 16 in an idev environment with access to 16 cores, use the following to compile the code on a login node, start idev environment with 16 cores, and then launch the application with 16 and then repeat with 4 cores:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>login1$ cd test
-login1$ mpicc myCode.c -o myCode
+login1$ mpicc myCode.c -o myCode.exe
 login1$ idev -n 16
 nid00181$ ibrun ./myCode
 nid00181$ ibrun -n 4 ./myCode
@@ -290,7 +300,7 @@ login1$
 </li>
 <li><p>To compile a parallel OpenMP program contained in a file myCode.c in the directory $HOME/test and run an application built on 16 in an idev environment with access to 16 cores (and then repeat with 4 cores), use the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>login1$ cd test
-login1$ gcc -openmp myCode.c -o myCode
+login1$ icc -myCode.c -o myCode.exe
 login1$ idev -n 16
 nid00181$ ./myCode
 nid00181$ EXPORT OMP_NUM_THREADS=4
@@ -304,8 +314,52 @@ login1$
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>idev</strong> is used for small interactive jobs and for testing while you are building a larger application. While testing it is a pain to start idev and exit if you are constantly building and then running the application. I suggest opening two terminal windows, doing the compilation in one and starting the <strong>idev</strong> session in the other.</p>
+<p><strong>idev</strong> is used for small interactive jobs and for testing while you are building a larger application. While testing it is a pain to start idev and exit if you are constantly building and then running the application. I suggest opening two terminal windows and starting <strong>idev</strong> in one. This allows you to compile in the other terminal and then quickly test it in the terminal in which you have started <strong>idev</strong>.</p>
 </div>
+</div>
+<div class="section" id="alternative-access-via-browser">
+<h2>Alternative Access via Browser<a class="headerlink" href="#alternative-access-via-browser" title="Permalink to this headline">¶</a></h2>
+<p>As an alternative to using <strong>ssh</strong> from the terminal there is another way to get access to a linux shell on Frontera. The solution involves acessing the <a class="reference external" href="https://vis.tacc.utexas.edu/#">vis posrtal</a> through the web browser.</p>
+<p>When you do follow these steps:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Go to web page and enter login info top right and press <em>Login</em></p>
+<div class="align-center figure" id="id2">
+<img alt="../_images/taccVis1.png" src="../_images/taccVis1.png" />
+<p class="caption"><span class="caption-text">Log in through vis portal</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Make sure Frontera is selected, it should auto pick up your Allocation. Now press the button lower middle that says <em>set VNC passowrd</em>.</p>
+<div class="align-center figure" id="id3">
+<img alt="../_images/taccVis2.png" src="../_images/taccVis2.png" />
+<p class="caption"><span class="caption-text">Set Frontera and then select Set VNC Password</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Enter a new password (twice) and press button <em>set VNC Password</em>.</p>
+<div class="align-center figure" id="id4">
+<img alt="../_images/taccVis3.png" src="../_images/taccVis3.png" />
+<p class="caption"><span class="caption-text">Enter VNC Password</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Press Start Job button bottom left</p>
+<div class="align-center figure" id="id5">
+<img alt="../_images/taccVis2.png" src="../_images/taccVis2.png" />
+<p class="caption"><span class="caption-text">Now Press <em>Start Job</em></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Enter VNC password in box at the top</p>
+<div class="align-center figure">
+<img alt="../_images/taccVis4.png" src="../_images/taccVis4.png" />
+</div>
+</li>
+<li><p>You are there! Start typing in the xterminal window. If you type <strong>xterm &amp;</strong> here, it will bring up an terminal window with a white background and black text.</p>
+<div class="align-center figure" id="id6">
+<img alt="../_images/taccVis5.png" src="../_images/taccVis5.png" />
+<p class="caption"><span class="caption-text">You Did It!</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div></blockquote>
 </div>
 </div>
 
@@ -329,19 +383,11 @@ login1$
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -352,6 +398,7 @@ login1$
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

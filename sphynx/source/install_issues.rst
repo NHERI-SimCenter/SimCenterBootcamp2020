@@ -1,5 +1,5 @@
 Known installation issues
-=======
+=========================
 
 Windows
 -------
