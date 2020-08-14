@@ -19,6 +19,10 @@ To access the system you will be using **ssh**. To login in start a terminal or 
 
        ssh yourName@frontera.tacc.utexas.edu
 
+.. warning::
+
+   When trying to log into TACC with ssh (possibly only on a Windows computer) you cannot also be logged in to TACC through your web browser. **Log off** in your browser and **kill** the browser tab.
+
 .. note::
 
    #. When you login like this you are logging in to one of their login nodes. Login nodes are meant for copying and editing files, and **compiling** applications. Applications should not be run on a compute node per TACC policy. To launch an application you use either **idev** or **sbatch**. For this workshop we will just use **idev**. When running a typical applications that run for long periods and require many nodes you must instead use **sbatch**.
@@ -171,4 +175,57 @@ We present 3 scenarios for compiling and running a **C** program.
 
 
 
+Alternative Access via Browser
+------------------------------
+
+As an alternative to using **ssh** from the terminal there is another way to get access to a linux shell on Frontera. The solution involves acessing the `vis posrtal <https://vis.tacc.utexas.edu/#>`_ through the web browser.
+
+When you do follow these steps:
+
+   #. Go to web page and enter login info top right and press *Login*
+
+      .. figure:: figures/taccVis1.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Log in through vis portal
+
+   #. Make sure Frontera is selected, it should auto pick up your Allocation. Now press the button lower middle that says *set VNC passowrd*.
+
+      .. figure:: figures/taccVis2.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Set Frontera and then select Set VNC Password
+
+   #. Enter a new password (twice) and press button *set VNC Password*.
+
+      .. figure:: figures/taccVis3.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Enter VNC Password
+
+   #. Press Start Job button bottom left
+
+      .. figure:: figures/taccVis2.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 Now Press *Start Job*
+
+   #. Enter VNC password in box at the top
+
+      .. figure:: figures/taccVis4.png
+      	 :align: center
+      	 :figclass: align-center
+
+
+   #. You are there! Start typing in the xterminal window. If you type **xterm &** here, it will bring up an terminal window with a white background and black text.
+
+      .. figure:: figures/taccVis5.png
+      	 :align: center
+      	 :figclass: align-center
+
+      	 You Did It! 
 

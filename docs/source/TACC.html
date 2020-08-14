@@ -91,6 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#transferring-files-between-your-system-and-tacc">Transferring files between your system and TACC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#basic-linux-commands">Basic Linux Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-and-running-an-application">Building and Running an Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alternative-access-via-browser">Alternative Access via Browser</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
@@ -169,6 +170,10 @@
 <p>To access the system you will be using <strong>ssh</strong>. To login in start a terminal or powershell application and type the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">yourName</span><span class="nd">@frontera</span><span class="o">.</span><span class="n">tacc</span><span class="o">.</span><span class="n">utexas</span><span class="o">.</span><span class="n">edu</span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When trying to log into TACC with ssh (possibly only on a Windows computer) you cannot also be logged in to TACC through your web browser. <strong>Log off</strong> in your browser and <strong>kill</strong> the browser tab.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -311,6 +316,50 @@ login1$
 <p class="admonition-title">Note</p>
 <p><strong>idev</strong> is used for small interactive jobs and for testing while you are building a larger application. While testing it is a pain to start idev and exit if you are constantly building and then running the application. I suggest opening two terminal windows and starting <strong>idev</strong> in one. This allows you to compile in the other terminal and then quickly test it in the terminal in which you have started <strong>idev</strong>.</p>
 </div>
+</div>
+<div class="section" id="alternative-access-via-browser">
+<h2>Alternative Access via Browser<a class="headerlink" href="#alternative-access-via-browser" title="Permalink to this headline">¶</a></h2>
+<p>As an alternative to using <strong>ssh</strong> from the terminal there is another way to get access to a linux shell on Frontera. The solution involves acessing the <a class="reference external" href="https://vis.tacc.utexas.edu/#">vis posrtal</a> through the web browser.</p>
+<p>When you do follow these steps:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Go to web page and enter login info top right and press <em>Login</em></p>
+<div class="align-center figure" id="id2">
+<img alt="../_images/taccVis1.png" src="../_images/taccVis1.png" />
+<p class="caption"><span class="caption-text">Log in through vis portal</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Make sure Frontera is selected, it should auto pick up your Allocation. Now press the button lower middle that says <em>set VNC passowrd</em>.</p>
+<div class="align-center figure" id="id3">
+<img alt="../_images/taccVis2.png" src="../_images/taccVis2.png" />
+<p class="caption"><span class="caption-text">Set Frontera and then select Set VNC Password</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Enter a new password (twice) and press button <em>set VNC Password</em>.</p>
+<div class="align-center figure" id="id4">
+<img alt="../_images/taccVis3.png" src="../_images/taccVis3.png" />
+<p class="caption"><span class="caption-text">Enter VNC Password</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Press Start Job button bottom left</p>
+<div class="align-center figure" id="id5">
+<img alt="../_images/taccVis2.png" src="../_images/taccVis2.png" />
+<p class="caption"><span class="caption-text">Now Press <em>Start Job</em></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Enter VNC password in box at the top</p>
+<div class="align-center figure">
+<img alt="../_images/taccVis4.png" src="../_images/taccVis4.png" />
+</div>
+</li>
+<li><p>You are there! Start typing in the xterminal window. If you type <strong>xterm &amp;</strong> here, it will bring up an terminal window with a white background and black text.</p>
+<div class="align-center figure" id="id6">
+<img alt="../_images/taccVis5.png" src="../_images/taccVis5.png" />
+<p class="caption"><span class="caption-text">You Did It!</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div></blockquote>
 </div>
 </div>
 
