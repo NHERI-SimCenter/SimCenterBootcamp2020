@@ -269,6 +269,7 @@ TSWLatexianTemp*
 latexmkrc
 
 
+*.exe
 a.out
 *.o
 *.s

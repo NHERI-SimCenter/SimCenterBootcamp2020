@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,30 +12,28 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Questions, Issues" href="help.html" />
@@ -52,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
           
 
           
@@ -75,7 +74,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -103,7 +101,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -142,7 +139,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>Git</li>
     
@@ -214,6 +211,11 @@
 </pre></div>
 </div>
 <p>This is similar to the first option. The difference is that you point the local repo to the remote repo and then push the current files. So if you start with option A, and decide to switch to option B later you can!</p>
+<p>On some systems, before you commit you are required to enter your login and email address with the remote service. Some other systems, will just provide a prompt when you issue the command. The commands that you may need to invoke before you can commit are the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;email@example.com&quot;</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;Mona Lisa&quot;</span>
+</pre></div>
+</div>
 </li>
 <li><p>Finally for option C, you are part of a collaborative project, or just want to start at the state of some other open source project you find on one of the hosting sites you first <strong>FORK</strong> a copy of the repo into your own area. You do this in the browser. Once forked, a repo will exist in your own area which you can clone. This will bring all repo files to your computer.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">YOUR_USERNAME</span><span class="o">/</span><span class="n">REPO</span><span class="o">.</span><span class="n">git</span>
@@ -223,6 +225,7 @@
 </ol>
 <p>That operation has made a local copy of the repo. If this is a collaboaritive project you need to tell the local configuration about the original repo. For command demonsstration purposes, we will again use github.com, the remote owner of the original forks repo was ORIGINAL_OWNER and the repo was named REPO.git</p>
 <blockquote>
+<div><blockquote>
 <div><ol class="upperroman simple">
 <li><p>If you issue the command git -v you should see the url of <strong>your</strong> remote repo, i.e. typing the following in the terminal should show the results shown:</p></li>
 </ol>
@@ -246,6 +249,17 @@
 <span class="o">&gt;</span> <span class="n">upstream</span>  <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ORIGINAL_OWNER</span><span class="o">/</span><span class="n">REPO</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
 <span class="o">&gt;</span> <span class="n">upstream</span>  <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ORIGINAL_OWNER</span><span class="o">/</span><span class="n">REPO</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
 </pre></div>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>if you make a mistake with the upstream repo for any reason, you can remove it and add again</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">rm</span> <span class="n">upstream</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ORIGINAL_OWNER</span><span class="o">/</span><span class="n">REPO</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div></blockquote>
 </div>
 </div></blockquote>
 </div></blockquote>
@@ -386,8 +400,26 @@
 <p>Messages differ depending on your local commits</p>
 </div>
 </li>
-<li><p>Now merge any conlicts with <strong>add</strong> and <strong>commit</strong> commands. Hopefully there are none!</p></li>
-<li><p>When you have made the final <strong>push</strong>, you can now through, the web browser, make a pull request from your remote fork to the original upstream repo.</p></li>
+<li><p>Now merge any conlicts with <strong>add</strong> and <strong>commit</strong> commands. Hopefully there are When dealing with <strong>conflicts</strong> you have a number of options:</p>
+<ol class="arabic">
+<li><p>You can open and edit each file that has a conflict.</p></li>
+<li><p>You can tell git to use your version of the code to resolve the conflict.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">ours</span> <span class="n">PATH</span><span class="o">/</span><span class="n">FILE</span>
+</pre></div>
+</div>
+</li>
+<li><p>You can tell git to use THEIR (UPSTREAMS) version of the code to resolve the conflict.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">theirs</span> <span class="n">PATH</span><span class="o">/</span><span class="n">FILE</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The latter two options, while quick and easy, are typically not what you wabt. They can be dangerous as you are loosing either your changes or changes others have made. It is thus useful to look at the conflicts individually just to ensure that you are resolving the conflict correctly.</p>
+</div>
+</li>
+<li><p>Now that you have made the final <strong>push</strong>, you can now through, the web browser, make a pull request from your remote fork to the original upstream repo.</p></li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -416,19 +448,11 @@
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -439,6 +463,7 @@
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
