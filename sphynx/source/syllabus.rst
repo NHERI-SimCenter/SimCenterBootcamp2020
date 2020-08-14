@@ -67,7 +67,7 @@ Week 1
   * TACC - logging in/linux basics (cd, ls, mkdir, ...)
 
 
-* Day 5: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntoToC.pdf>`_
+* Day 5: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
 
   * Homework #4 review
 
