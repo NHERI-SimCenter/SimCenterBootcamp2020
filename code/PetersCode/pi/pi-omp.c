@@ -7,7 +7,6 @@
  * set default values   *
  * ******************** */
 #define N  851558400
-//#define N  (2*3*4*5*6*7*8)
 #define NUM_THREADS 8
 
 //#define CHATTY 1
@@ -43,6 +42,7 @@ int main(int argc, char **argv) {
 
     double pi=0.0;
 
+// #pragma omp parallel private(i,x,s)
 #pragma omp parallel
 {
     int ID=omp_get_thread_num();
@@ -54,7 +54,8 @@ int main(int argc, char **argv) {
     double x = (double)ID / num_threads;
     x += 0.5*dx;
 
-    for (int i=0; i<n; i++,x+=dx) {
+    for (int i=0; i<n; i++) {
+        x = (0.5 + ID*n + i)*dx;
 	s += 4./(1.+x*x);
     }
     if (CHATTY) printf("... (%d): %20.16f\n",ID,s);

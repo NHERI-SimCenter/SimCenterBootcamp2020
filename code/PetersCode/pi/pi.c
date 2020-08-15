@@ -30,7 +30,8 @@ int main(int argc, char **argv) {
     double dx = 1./n;
     double x = 0.5*dx;
 
-    for (int i=0; i<n; i++,x+=dx) {
+    for (int i=0; i<n; i++) {
+        x = (0.5 + i)*dx;
 	pi += 4./(1.+x*x);
     }
 
