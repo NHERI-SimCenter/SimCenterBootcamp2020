@@ -24,6 +24,12 @@ Git
 
       #. sourceforge
 
+.. note::
+
+   You can watch the lecture recordings from Thursday, August 13, 2020 on `YouTube
+   <https://youtu.be/9bJfG1C2Z3M>`_ .
+
+
 Creating a Repo
 ---------------
 
