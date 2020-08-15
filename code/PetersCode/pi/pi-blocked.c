@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
-#include "omp.h"
 
 /* ******************** *
  * set default values   *
  * ******************** */
-#define N  851558400
-//#define N  (2*3*4*5*6*7*8)
+//#define N  851558400
+#define N  (2*4*6*8)
 #define NUM_THREADS 8
 
 //#define CHATTY 1
@@ -30,40 +29,39 @@ int main(int argc, char **argv) {
 	num_threads = atoi(argv[1]);
     }
     if (num_threads < 1) num_threads = 1;
-    if (num_threads > 8) num_threads = 8;
+    //if (num_threads > 8) num_threads = 8;
 
     int n=N/num_threads;
 
-    // configure parallel arrays and workflow
-
-    omp_set_dynamic(0);
-    omp_set_num_threads(num_threads);
-
     double dx = 1./(double)n/(double)num_threads;
 
-    double pi=0.0;
+    double *sum = (double *)malloc(num_threads*sizeof(double));
 
-#pragma omp parallel
-{
-    int ID=omp_get_thread_num();
+    for ( int ID=0; ID<num_threads;ID++) {
 
-    if (CHATTY) printf("starting thread %d\n",ID);
+	if (CHATTY) printf("starting thread %d\n",ID);
 
-    double s = 0.;
+	double s = 0.;
 
-    double x = (double)ID / num_threads;
-    x += 0.5*dx;
+	double x = (double)ID / num_threads;
+	x += 0.5*dx;
 
-    for (int i=0; i<n; i++,x+=dx) {
-	s += 4./(1.+x*x);
+	for (int i=0; i<n; i++,x+=dx) {
+	    s += 4./(1.+x*x);
+	}
+	
+	if (CHATTY) printf("... (%d): %20.16f\n",ID,s);
+
+	sum[ID] = s;
     }
-    if (CHATTY) printf("... (%d): %20.16f\n",ID,s);
 
-#pragma omp atomic
-    pi += s;
-}
-
+    double pi=0.0;
+    for ( int ID=0; ID<num_threads;ID++) {
+    	pi += sum[ID];
+    }
     pi *= dx ;
+
+    free(sum); sum=0;
 
     // check end time
 
