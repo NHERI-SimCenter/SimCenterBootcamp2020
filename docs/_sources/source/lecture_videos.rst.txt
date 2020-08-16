@@ -191,18 +191,24 @@ Chapter 10: Web scrabbing
 Programming in C
 ============
 
-* Writing and compiling your first program in C
+Introduction to programming in C
+---------
 
 .. raw:: html
 
-   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/67tcA-4HwUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
+Memory management: pointers. malloc, sizeof, free
+---------
 
 .. raw:: html
 
-   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/pInAqfNHd1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
+
+Parallel programming
+---------
 
 
 .. raw:: html
