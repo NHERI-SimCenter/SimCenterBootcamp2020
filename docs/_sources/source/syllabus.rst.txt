@@ -81,18 +81,15 @@ Week 1
 Week 2
 ------
 
-* Day 6 - C: Memory Management & C: MPI
+* Day 6 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
 
-  * C Memory Management
-  * C Functions
-  * Parallel Programming
-  * C: Message passing & OpenMPI
-  * Exercise
+  * Parallel Computers  
+  * MessagePassing & MPI
+  * Shared Memory & OpenMP
 
+* Day 7 - C: Datatypes & C++
 
-* Day 7 - C: OpenMP and C++
-
-  * C: Shared Memory & OpenMP
+  * C Datatypes
   * Exercise
   * C++
   * Exercise
