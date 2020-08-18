@@ -7,6 +7,8 @@ int main(int argc, char **argv) {
   Vector a(4);
   Vector b(4);
 
+  std::cerr << "a: "; a.print();
+
   //
   // set a = 1, b = 20+i
   //
