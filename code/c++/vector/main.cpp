@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "Vector.h"
 #include "Matrix.h"
 
@@ -27,7 +28,9 @@ int main(int argc, char **argv) {
   std::cout << "b: "; b.print();
 
   // error check
-  //  b(4) = 24;
+  b(4) = 24;
+
+  std::cout << "b: "; b.print();
 
   //
   // new vector c = a + b, print c and norm of c
