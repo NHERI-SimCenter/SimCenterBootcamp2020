@@ -6,11 +6,11 @@
 /* ******************** *
  * set default values   *
  * ******************** */
-#define N  851558400
+#define N  1000000000
 #define NUM_THREADS 8
 
-//#define CHATTY 1
-#define CHATTY 0
+#define CHATTY 1
+// #define CHATTY 0
 
 
 int main(int argc, char **argv) {
@@ -31,14 +31,12 @@ int main(int argc, char **argv) {
     if (num_threads < 1) num_threads = 1;
     if (num_threads > 8) num_threads = 8;
 
-    int n=N/num_threads;
-
     // configure parallel arrays and workflow
 
-    omp_set_dynamic(0);
+    //omp_set_dynamic(0);
     omp_set_num_threads(num_threads);
 
-    double dx = 1./(double)n/(double)num_threads;
+    double dx = 1./(double) N;
 
     double pi=0.0;
 
@@ -47,18 +45,15 @@ int main(int argc, char **argv) {
 {
     int ID=omp_get_thread_num();
 
-    if (CHATTY) printf("starting thread %d\n",ID);
+    if (CHATTY) printf("starting thread %d ...\n",ID);
 
     double s = 0.;
 
-    double x = (double)ID / num_threads;
-    x += 0.5*dx;
-
-    for (int i=0; i<n; i++) {
-        x = (0.5 + ID*n + i)*dx;
+    for (int i=ID; i<N; i+=num_threads) {
+        double x = (0.5 + i)*dx;
 	s += 4./(1.+x*x);
     }
-    if (CHATTY) printf("... (%d): %20.16f\n",ID,s);
+    if (CHATTY) printf("... (%d): %20.16f\n",ID,s*dx*num_threads);
 
 #pragma omp atomic
     pi += s;
