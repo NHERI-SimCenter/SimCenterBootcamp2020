@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "Vector.h"
 
 Vector::Vector(int sz)
@@ -29,7 +30,7 @@ Vector::zero(void)
 double 
 Vector::norm(void) const
 {
-  return 0;
+  return sqrt( this->dot(*this) );
 }
 
 double 

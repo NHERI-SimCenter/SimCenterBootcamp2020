@@ -110,6 +110,12 @@ The TACC machines are running a variant of the Linux operating system. As such y
        
 	rm file.c
 
+    #. To remove an **empty** directory named dir1 from current directory type:
+
+       .. code::
+       
+	rmdir dir1
+
     #. To remove a directory named dir1 (and all it's contents) from current directory type:
 
        .. code::
@@ -128,7 +134,6 @@ Building and Running an Application
         login1$ 
 
 To run jobs at **TACC** you can use **sbatch** or **idev**. **sbatch** is used to submit long running jobs. **idev** short interactive jobs, which is useful for testing and running the small applications done for this workshop.
-
 
 We present 3 scenarios for compiling and running a **C** program.
 

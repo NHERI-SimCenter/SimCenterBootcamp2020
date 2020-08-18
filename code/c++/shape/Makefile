@@ -1,5 +1,6 @@
 
-COMPILER = icc
+# COMPILER = icc
+COMPILER = clang
 FLAGS = -D_DEBUG
 
 all:

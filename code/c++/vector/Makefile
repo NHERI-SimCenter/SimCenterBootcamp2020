@@ -1,5 +1,5 @@
 
-COMPILER = icc
+COMPILER = g++
 FLAGS = -D_DEBUG
 
 all:
