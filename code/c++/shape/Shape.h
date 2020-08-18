@@ -13,4 +13,4 @@ class Shape {
 
 #endif // _SHAPE
 
-  
+

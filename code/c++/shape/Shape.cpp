@@ -1,10 +1,12 @@
-#include <Shape.h>
+#include "Shape.h"
 
 Shape::Shape() {
 
 }
 
 Shape::~Shape() {
+  std::cout << "Shape Destructor\n";
+  std::cout << "Shape Destructor\n";
   std::cout << "Shape Destructor\n";
 }
 
