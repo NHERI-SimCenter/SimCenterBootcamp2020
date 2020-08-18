@@ -210,16 +210,33 @@ Memory management: pointers. malloc, sizeof, free
 Parallel programming
 ---------
 
-..
-    .. raw:: html
+* Parallel programming in C using MPI
 
-       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/28YeoITLVE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
-..
-    .. raw:: html
+* Parallel programming in C using MPI - Exercise review
 
-       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xyba7JT0Ekc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+* Parallel programming in C using openMP
+
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2Ov9jqN52Q8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+* Parallel programming in C using openMP - Exercise review
+
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/YbVV44D4wrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
 
 
 
