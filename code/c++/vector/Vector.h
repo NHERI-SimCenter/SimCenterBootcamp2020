@@ -4,10 +4,11 @@
 class Vector 
 {
  public:
-  Vector(int size);
+  Vector(int size); 
   ~Vector();
 
   // some methods
+  int Size(void) const;
   void zero(void);
   double norm(void) const;
   double dot(const Vector &other) const;
