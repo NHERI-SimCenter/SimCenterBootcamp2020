@@ -11,11 +11,11 @@ Welcome to Programming Bootcamp 2020's documentation!
    :caption: Contents:
 
    source/syllabus
-   source/lecture_videos
    source/setupInstructions
-   source/resources
+   source/lecture_videos
    source/TACC
    source/emacs
    source/git
    source/help
+   source/resources
 
