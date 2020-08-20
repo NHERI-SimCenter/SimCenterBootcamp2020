@@ -1,0 +1,927 @@
+overall_building_condition,max_mph,age_yrs,number_of_stories,roof_shape,roof_cover,wall_cladding,structural_framing_system
+0,80,14.0,1.0,Complex,Tile (clay),Stucco,Wood-frame
+1,80,29.0,2.0,Gable,Tile (clay),Stucco,Wood-frame
+0,85,27.0,2.0,Complex,Tile (clay),Stucco,Wood-frame
+1,85,24.0,1.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,85,30.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,33.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,80,34.0,2.0,Complex,Asphalt shingles (laminated),Stucco,Wood-frame
+0,80,34.0,2.0,Complex,Asphalt shingles (laminated),Stucco,Wood-frame
+0,85,6.0,2.0,Hip,Tile (clay),Stucco,Wood-frame
+1,85,33.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,85,31.0,2.0,Gable,Tile (clay),Stucco,Wood-frame
+0,90,4.0,2.0,Complex,Tile (clay),Stucco,Wood-frame
+0,90,26.0,2.0,Hip,Tile (clay),Stucco,Wood-frame
+0,90,26.0,2.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,95,5.0,2.0,Gable/Hip,Standing Seam Metal,Fiber cement,Wood-frame
+1,80,12.0,2.0,Hip,Standing Seam Metal,Fiber cement,Wood-frame
+1,80,18.0,2.0,Other,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,44.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,80,15.0,1.0,Hip,Standing Seam Metal,Fiber cement,Wood-frame
+1,80,39.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,36.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,39.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,33.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,80,49.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,33.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,18.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,12.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,22.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,54.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,95,22.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,16.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,16.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,23.0,2.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,18.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,13.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,21.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,80,39.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,65,10.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,17.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,65,8.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,65,35.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,65,39.0,2.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,80,7.0,2.0,Hip,Standing Seam Metal,Fiber cement,Wood-frame
+1,65,35.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,65,13.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,65,42.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,70,41.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,65,35.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,70,34.0,1.0,Complex,Standing Seam Metal,Wood Siding,Reinforced concrete
+1,65,16.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,65,18.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,85,44.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,10.0,3.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+1,5,19.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,5,40.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,41.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,24.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,24.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,24.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,24.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,26.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,25.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,24.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,24.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,25.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,27.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,25.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,5,25.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,55,57.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,53.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,55,53.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,53.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,53.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,53.0,2.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,56.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,55,56.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,20,11.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,25,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,50,22.0,1.0,Gable/Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,60,41.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,20.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,65,33.0,1.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,65,19.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,5.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,5.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,4.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,70,3.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,41.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,4.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,55,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,70,3.0,1.0,Gable/Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+0,55,11.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,55,5.0,2.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,70,22.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,70,27.0,1.0,Gable,Asphalt shingles (laminated),Stucco,Wood-frame
+0,55,3.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,4.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,70,27.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,4.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,4.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,10.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,12.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,70,23.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,12.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,70,23.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,15.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,15.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,55,15.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,55,14.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,14.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,55,14.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,20.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,20.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,20.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,16.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,55,14.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,55,14.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,18.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,21.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,19.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,14.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,20.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,19.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,21.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,21.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,55,17.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,55,18.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,55,18.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,60,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,55,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,18.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,55,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,18.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,60,17.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,19.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,60,18.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,60,18.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,19.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,60,17.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,60,11.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,60,13.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,60,13.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,60,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,60,13.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,60,6.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,6.0,2.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,2.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,2.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,2.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,4.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,3.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,2.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,5.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,3.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,60,3.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,80,47.0,2.0,Gable,Slate,Wood Siding,Wood-frame
+1,80,45.0,1.5,Gable,Standing Seam Metal,Brick Veneer,Wood-frame
+0,80,52.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,41.0,1.0,Gable,Asphalt shingles (3-tab),EIFS,Wood-frame
+2,80,43.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,80,54.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,50.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,50.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,36.0,1.0,Hip,Asphalt shingles (3-tab),EIFS,Wood-frame
+1,80,44.0,1.0,Gable,Asphalt shingles (3-tab),EIFS,Wood-frame
+0,80,50.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,52.0,2.0,Gable,Asphalt shingles (laminated),Fiber cement,Wood-frame
+1,80,43.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,45.0,2.0,Complex,Tile (clay),Stucco,Wood-frame
+1,80,45.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,18.0,2.0,Complex,Standing Seam Metal,Stucco,Wood-frame
+2,80,37.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,85,2.0,3.0,Gable,Standing Seam Metal,Fiber cement,Wood-frame
+2,80,59.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,80,35.0,2.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,80,79.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,80,79.0,1.0,Gable,Asphalt shingles (laminated),Fiber cement,Wood-frame
+2,80,79.0,1.0,Gable,Asphalt shingles (laminated),Fiber cement,Wood-frame
+1,80,79.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,80,79.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,10.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,13.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,13.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,80,5.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,52.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,85,50.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,85,51.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,85,50.0,1.0,Hip,Standing Seam Metal,Brick Veneer,Wood-frame
+1,85,51.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,85,51.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,50,18.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,50,19.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,45,15.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,50,15.0,1.0,Gable/Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,100,6.0,2.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+0,100,11.0,2.0,Complex,Standing Seam Metal,Stucco,Concrete
+1,100,43.0,2.0,Complex,Tile (concrete),Stucco,Wood-frame
+1,100,43.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,23.0,2.0,Gable/Hip,Tile (clay),Stucco,Wood-frame
+0,50,34.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,50,39.0,1.0,Gable,Tile (clay),Brick Veneer,Wood-frame
+0,50,32.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,50,37.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,100,10.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,45,46.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,50,32.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,45,34.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,45,9.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,45,13.0,1.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,85,50.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,100,34.0,12.0,Other,Tile (concrete),Stucco,Masonry
+1,95,41.0,2.0,Hip,Metal shingle,Wood Siding,Wood-frame
+2,95,41.0,2.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,50,13.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,50,33.0,2.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,50,13.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+2,110,42.0,1.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,95,37.0,2.0,Gable/Hip,Tile (concrete),Stucco,Wood-frame
+0,50,33.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,95,38.0,2.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,50,37.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,100,24.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,51.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,50,15.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,95,36.0,2.0,Complex,Slate,Wood Siding,Wood-frame
+1,95,43.0,2.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,43.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,50,37.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,95,37.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,50,38.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,41.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,48.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,46.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+1,95,42.0,1.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+1,95,45.0,1.0,Gable,Asphalt shingles (laminated),Stucco,Wood-frame
+1,105,21.0,2.0,Hip,Tile (clay),Stucco,Masonry
+0,50,38.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,105,38.0,2.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,22.0,2.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,95,44.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,50,9.0,2.0,Complex,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,105,41.0,2.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,110,36.0,2.0,Complex,Tile (concrete),Stucco,Wood-frame
+0,85,50.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,85,48.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,95,44.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,110,41.0,2.0,Hip,Metal shingle,EIFS,Wood-frame
+1,105,21.0,2.0,Gable/Hip,Tile (clay),Stucco,Wood-frame
+0,50,30.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,95,21.0,1.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+0,50,37.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,105,42.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,110,43.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,110,37.0,2.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,52.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,85,45.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,85,52.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,100,46.0,1.0,Gable/Hip,Standing Seam Metal,Stucco,Wood-frame
+2,95,42.0,2.0,Hip,Metal shingle,Wood Siding,Wood-frame
+2,95,45.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,52.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,100,43.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,85,47.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,85,47.0,2.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,95,31.0,1.0,Gable,Tile (concrete),Stucco,Wood-frame
+1,95,22.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,95,45.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,52.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,70,46.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+2,100,49.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,100,49.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,50.0,2.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,85,52.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,100,41.0,2.0,Gable/Hip,Standing Seam Metal,Wood Siding,Wood-frame
+1,95,47.0,1.0,Gable,Metal shingle,Wood Siding,Wood-frame
+2,100,50.0,1.0,Gable,Standing Seam Metal,Vinyl Siding,Wood-frame
+1,95,45.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,46.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,100,36.0,1.0,Hip,Tile (concrete),Vinyl Siding,Wood-frame
+2,100,41.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,100,50.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+1,100,50.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,70,52.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,70,52.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,45,46.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,105,19.0,2.0,Complex,Standing Seam Metal,Wood Siding,Wood-frame
+0,50,52.0,1.0,Gable,Standing Seam Metal,Brick Veneer,Wood-frame
+2,105,43.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,40,45.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,30,52.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,30,52.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,100,48.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,100,47.0,2.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,100,52.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,100,33.0,2.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,14.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,105,46.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,38.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,110,40.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,15.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,100,33.0,2.0,Gable/Hip,Metal shingle,Fiber cement,Wood-frame
+1,5,14.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,5,15.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,5,16.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,16.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,16.0,3.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,110,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,16.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,15.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,16.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,16.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,5,16.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,110,56.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,100,10.0,2.0,Gable,Asphalt shingles (3-tab),Fiber cement,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,100,2.0,2.0,Complex,Standing Seam Metal,Stucco,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,105,35.0,1.0,Other,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,33.0,2.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,5,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,14.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Brick
+1,5,13.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,13.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Masonry
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Masonry
+1,5,12.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,5,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,110,46.0,2.0,Flat,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,10.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,110,40.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,39.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,110,40.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,110,48.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,32.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+2,110,45.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,56.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,110,55.0,1.0,Flat,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,5,22.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,110,47.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,34.0,1.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,47.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,110,49.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,110,49.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,18.0,1.0,Hip,Standing Seam Metal,Vinyl Siding,"Wood-frame,Structural steel"
+1,10,3.0,1.0,Other,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,15,2.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,75,2.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,100,36.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,100,17.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,100,48.0,1.0,Gable,Asphalt shingles (laminated),EIFS,Wood-frame
+1,100,15.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,100,16.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,105,8.0,3.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,105,22.0,2.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,105,39.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,105,2.0,1.0,Gable,Standing Seam Metal,Sheet metal,Structural steel
+2,105,23.0,1.0,Gable,Standing Seam Metal,Vinyl Siding,Wood-frame
+1,105,23.0,1.0,Gable,Asphalt shingles (3-tab),EIFS,Wood-frame
+1,105,17.0,2.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,100,37.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,22.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,105,41.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,105,18.0,1.0,Complex,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,105,32.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,50,12.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,105,38.0,2.0,Other,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,20,12.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,40,7.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,34.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,25,12.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,45,6.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,25,12.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,105,66.0,1.0,Gable,Asphalt shingles (laminated),Stucco,Wood-frame
+1,60,11.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,25,8.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,40,8.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,7.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,5,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,5,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,7.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,7.0,1.5,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,10,12.0,1.0,Other,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+0,15,6.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,100,57.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,10,8.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,100,30.0,2.0,Gable,Asphalt shingles (3-tab),Fiber cement,Wood-frame
+2,105,34.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,100,36.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,85,10.0,1.0,Gable/Hip,Standing Seam Metal,Vinyl Siding,Wood-frame
+1,85,7.0,2.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,6.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,7.0,2.0,Hip,Standing Seam Metal,Fiber cement,Wood-frame
+2,105,42.0,2.0,Complex,Standing Seam Metal,Wood Siding,Wood-frame
+2,105,25.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,5.0,2.0,Gable/Hip,Asphalt shingles (laminated),Fiber cement,Wood-frame
+1,105,2.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,105,31.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,105,45.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,5,14.0,1.0,Gable/Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+1,95,12.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,19.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,40.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,26.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,14.0,2.0,Hip,Asphalt shingles (laminated),Stucco,Wood-frame
+2,95,40.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,49.0,1.0,Gable,Standing Seam Metal,Vinyl Siding,Wood-frame
+2,95,46.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,34.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,14.0,1.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,14.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,32.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,90,3.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,49.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,19.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,36.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,85,16.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,90,42.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,51.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+1,90,41.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,95,47.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,90,17.0,2.0,Complex,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,85,8.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,45.0,1.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+2,90,41.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,47.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,51.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,90,47.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,54.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,90,39.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,90,35.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,40.0,1.0,Gable/Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,43.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,43.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,47.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,36.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,18.0,1.0,Gable,Standing Seam Metal,Sheet metal,Structural steel
+2,95,35.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,24.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,90,38.0,1.0,Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,41.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,90,43.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,24.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+1,90,34.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,90,43.0,1.0,Gable/Hip,Asphalt shingles (laminated),EIFS,Wood-frame
+1,95,32.0,1.0,Gable/Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,38.0,1.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,95,18.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,51.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,41.0,2.0,Other,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,85,14.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,5.0,1.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+2,90,46.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,15.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,5.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,85,36.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,85,51.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,5.0,1.0,Gable,Standing Seam Metal,Vinyl Siding,Wood-frame
+2,85,59.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,45.0,1.0,Hip,Asphalt shingles (laminated),EIFS,Wood-frame
+1,85,52.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,51.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,90,11.0,2.0,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,85,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,12.0,1.0,Gable/Hip,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+2,85,41.0,1.0,Complex,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,90,38.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,85,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,9.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,90,50.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,37.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+2,95,42.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,42.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,95,50.0,1.0,Gable,Standing Seam Metal,Stucco,Masonry
+1,85,9.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,95,14.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,75,49.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,75,63.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,75,56.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,75,60.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,75,69.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,75,59.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,75,60.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,75,49.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,75,62.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,75,56.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,75,61.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,75,56.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,75,64.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,75,61.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,75,56.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,75,56.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,75,20.0,2.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,75,35.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,75,35.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,75,12.0,2.0,Hip,Asphalt shingles (laminated),Brick Veneer,Masonry
+0,75,33.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,75,35.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,75,15.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,75,59.0,1.0,Hip,Standing Seam Metal,Wood Siding,Wood-frame
+0,75,58.0,1.0,Gable,Standing Seam Metal,Fiber cement,Wood-frame
+1,75,25.0,1.0,Hip,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,75,5.0,1.0,Flat,Standing Seam Metal,Vinyl Siding,Wood-frame
+1,80,63.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,75,59.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,75,58.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+1,75,45.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,70,8.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,70,22.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,70,7.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,70,58.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,55,15.0,2.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,80,69.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,80,72.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,80,56.0,1.0,Gable,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,80,39.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,80,59.0,1.0,Gable,Standing Seam Metal,Wood Siding,Wood-frame
+0,80,49.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,80,49.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+1,80,43.0,1.0,Gable,Asphalt shingles (laminated),Brick Veneer,Wood-frame
+0,80,41.0,1.0,Gable,Standing Seam Metal,Brick Veneer,Wood-frame
+1,80,20.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,80,41.0,1.0,Hip,Asphalt shingles (laminated),Wood Siding,Wood-frame
+0,80,44.0,1.5,Gable,Asphalt shingles (laminated),Vinyl Siding,Wood-frame
+1,85,57.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,85,82.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+2,80,14.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,105,33.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,41.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,100,40.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+1,80,72.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,22.0,2.0,Complex,Metal shingle,Hardie Board Siding,Wood-frame
+1,90,58.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,63.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,67.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,37.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,95,40.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,46.0,1.0,Gable,Panels-Wood,Wood Siding,Wood-frame
+2,105,35.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,46.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,26.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,8.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,43.0,1.0,Complex,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+2,95,45.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,8.0,2.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+0,85,13.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,95,39.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,95,45.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,50.0,1.0,Flat,Metal shingle,Wood Siding,Wood-frame
+2,95,52.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,40.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,42.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,31.0,2.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+0,95,38.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+1,105,46.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,27.0,2.0,Hip,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,105,10.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,62.0,1.0,Gable,Metal shingle,Brick Veneer,Wood-frame
+2,105,14.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,41.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,35.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,49.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,17.0,1.0,Complex,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,3.0,2.0,Complex,Continuous Surface,Wood Siding,Wood-frame
+0,110,11.0,1.0,Complex,Metal shingle,Stucco,Wood-frame
+1,100,40.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,42.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,34.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,57.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,39.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,10.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,1.0,2.0,Complex,Metal shingle,Hardie Board Siding,Wood-frame
+2,105,32.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,41.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,34.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,85,50.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,49.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,43.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,34.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,105,42.0,2.0,Flat,Continuous Surface,Wood Siding,Wood-frame
+1,85,80.0,1.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,85,77.0,1.0,Complex,Metal shingle,Wood Siding,Wood-frame
+0,80,20.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,105,30.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,8.0,1.0,Hip,Slate,Stucco,Wood-frame
+0,85,45.0,1.0,Gable,Continuous Surface,Sheet metal,CF Steel
+2,95,51.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,95,5.0,2.0,Complex,Metal shingle,Wood Siding,Wood-frame
+2,80,72.0,1.0,Flat,Metal shingle,Sheet metal,CF Steel
+2,105,33.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,38.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,44.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,57.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,0.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,33.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,47.0,1.0,Flat,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,25.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,105,27.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,37.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,10.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,38.0,2.0,Complex,Asphalt shingles (3-tab),Aluminum Siding,Wood-frame
+1,85,15.0,2.0,Complex,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,100,41.0,1.0,Complex,Asphalt shingles (3-tab),Aluminum Siding,Wood-frame
+0,105,9.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,1.0,2.0,Hip,Metal shingle,Wood Siding,Wood-frame
+0,95,40.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,30.0,2.0,Complex,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,85,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,41.0,2.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,85,44.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,48.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,41.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,110,37.0,2.0,Hip,Continuous Surface,Wood Siding,Wood-frame
+0,100,1.0,2.0,Complex,Metal shingle,Stucco,Wood-frame
+2,105,39.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,39.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,30.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,39.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,53.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,60,12.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,105,32.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+0,95,40.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,37.0,2.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,105,37.0,2.0,Hip,Metal shingle,Stucco,Wood-frame
+1,100,32.0,1.0,Gable,Metal shingle,Curtain Wall,Wood-frame
+2,105,42.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,44.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,14.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,37.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,53.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,46.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,37.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,100,14.0,1.0,Flat,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,70,72.0,1.0,Gable,Metal shingle,Wood Siding,Wood-frame
+1,105,22.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,70,65.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,105,23.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,85,55.0,1.0,Complex,Asphalt shingles (3-tab),Brick Veneer,Masonry
+1,105,46.0,2.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,100,46.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,7.0,1.0,Hip,Metal shingle,Vinyl Siding,Wood-frame
+1,105,28.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,110,41.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,20.0,2.0,Complex,Metal shingle,Stucco,Wood-frame
+0,85,51.0,1.0,Gable,Metal shingle,Wood Siding,Wood-frame
+2,95,41.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,105,31.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,105,24.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,38.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,90,38.0,1.0,Gable,Tile (clay),Brick Veneer,Wood-frame
+1,105,43.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,36.0,2.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,95,22.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,70,50.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,95,45.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,100,43.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,18.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,49.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,142.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,20.0,2.0,Flat,Continuous Surface,Brick Veneer,Reinforced concrete
+0,85,11.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,40.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,17.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,79.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,23.0,2.0,Flat,Continuous Surface,Stucco,Wood-frame
+1,105,3.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,47.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,13.0,2.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,95,24.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,80,6.0,2.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,100,36.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,85,37.0,2.0,Complex,Metal shingle,Wood Siding,Wood-frame
+1,80,5.0,1.0,Gable,Metal shingle,Stucco,Wood-frame
+1,85,20.0,2.0,Complex,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,80,62.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,32.0,2.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,105,47.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,0.0,1.0,Gable/Hip,Metal shingle,Wood Siding,Wood-frame
+0,95,33.0,2.0,Gable,Metal shingle,Stucco,Wood-frame
+1,90,0.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,30.0,1.0,Gable,Continuous Surface,Hardie Board Siding,Wood-frame
+1,100,14.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,32.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,95,34.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,33.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,16.0,1.0,Complex,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,85,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,34.0,2.0,Gable,Tile (concrete),Stucco,Wood-frame
+1,105,55.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,31.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,37.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,90,41.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,90,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,15.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,105,48.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,13.0,2.0,Complex,Metal shingle,Wood Siding,Wood-frame
+0,95,0.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,70,20.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,80,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,1.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+2,105,35.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,100,44.0,2.0,Hip,Metal shingle,Stucco,Wood-frame
+2,95,39.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,100,7.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,43.0,2.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,105,50.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,37.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,85,37.0,1.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,105,34.0,1.0,Gable,Metal shingle,Vinyl Siding,Wood-frame
+0,80,20.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,48.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,33.0,2.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,95,40.0,1.0,Hip,Tile (concrete),Stucco,Wood-frame
+2,95,41.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,43.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+0,95,38.0,2.0,Hip,Tile (concrete),Wood Siding,Wood-frame
+1,105,34.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,49.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,12.0,1.0,Hip,Metal shingle,Wood Siding,Wood-frame
+1,105,44.0,2.0,Gable,Metal shingle,Vinyl Siding,Wood-frame
+2,105,34.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,72.0,1.0,Hip,Shingles-Wood,Wood Siding,Wood-frame
+1,95,7.0,2.0,Complex,Metal shingle,Hardie Board Siding,Wood-frame
+2,85,50.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,43.0,1.0,Flat,Continuous Surface,Hardie Board Siding,Wood-frame
+2,105,40.0,1.0,Gable/Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,32.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,38.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,38.0,2.0,Gambrel,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,72.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,49.0,3.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,100,34.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,105,13.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,110,41.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,27.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,100,43.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,100,13.0,2.0,Complex,Tile (clay),Stucco,Wood-frame
+0,100,41.0,2.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,105,10.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,12.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,27.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,7.0,2.0,Complex,Continuous Surface,Brick Veneer,Wood-frame
+0,95,39.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,105,43.0,2.0,Gable,Metal shingle,Vinyl Siding,Wood-frame
+1,85,6.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,21.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,110,11.0,2.0,Complex,Metal shingle,Stucco,Wood-frame
+2,100,13.0,1.0,Gable,Metal shingle,Wood Siding,Wood-frame
+1,100,67.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,19.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+0,110,38.0,2.0,Hip,Continuous Surface,Wood Siding,Wood-frame
+1,85,18.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,85,20.0,1.0,Gable,Metal shingle,Vinyl Siding,Wood-frame
+1,105,45.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,16.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,9.0,2.0,Gable/Hip,Metal shingle,Wood Siding,Wood-frame
+1,95,47.0,1.0,Gable,Continuous Surface,Hardie Board Siding,Wood-frame
+1,95,46.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,60.0,1.0,Gable,Metal shingle,Brick Veneer,Wood-frame
+2,85,39.0,2.0,Gambrel,Shingles-Wood,Wood Siding,Wood-frame
+2,85,57.0,2.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,90,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,39.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,85,19.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+0,85,11.0,1.0,Gable,Metal shingle,Wood Siding,Wood-frame
+1,95,42.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,38.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,45.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,36.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,85,47.0,1.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,105,42.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,56.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,110,48.0,2.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,32.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,95,37.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,16.0,3.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,2.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,110,39.0,2.0,Hip,Slate,Stucco,Structural steel
+2,105,41.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,43.0,1.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,90,13.0,1.0,Hip,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,85,32.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,40.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,35.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,32.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,80,72.0,1.0,Hip,Metal shingle,Wood Siding,Wood-frame
+1,95,15.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,95,42.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,80,37.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+2,95,41.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,90,32.0,2.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,95,44.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Structural steel
+0,85,68.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+1,95,20.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,90,38.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,90,13.0,1.0,Gable,Metal shingle,Stucco,Wood-frame
+0,95,5.0,1.0,Gambrel,Continuous Surface,Hardie Board Siding,Wood-frame
+2,95,39.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,32.0,2.0,Hip,Tile (concrete),Stucco,Wood-frame
+1,85,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,16.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,29.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,4.0,2.0,Complex,Metal shingle,Stucco,Wood-frame
+0,85,7.0,2.0,Gable/Hip,Metal shingle,Wood Siding,Wood-frame
+2,105,19.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,105,52.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,32.0,1.0,Gable,Asphalt shingles (3-tab),Stucco,Masonry
+0,95,4.0,2.0,Hip,Continuous Surface,Wood Siding,Wood-frame
+0,80,77.0,1.0,Complex,Asphalt shingles (3-tab),Stucco,Wood-frame
+0,105,33.0,2.0,Gambrel,Metal shingle,Stucco,Wood-frame
+1,95,55.0,1.0,Gable,Metal shingle,Brick Veneer,Wood-frame
+1,100,12.0,2.0,Complex,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,90,36.0,2.0,Complex,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,105,48.0,1.0,Gable,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,90,28.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,38.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+1,85,33.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+0,105,37.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+0,105,10.0,2.0,Complex,Metal shingle,Wood Siding,Wood-frame
+1,100,34.0,2.0,Complex,Tile (concrete),Stucco,Wood-frame
+1,85,9.0,1.0,Hip,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,95,34.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+2,105,50.0,1.0,Gable,Shingles-Wood,Wood Siding,Wood-frame
+0,110,48.0,2.0,Flat,Continuous Surface,Wood Siding,Wood-frame
+0,80,12.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,105,21.0,1.0,Gable,Continuous Surface,Sheet metal,Wood-frame
+1,90,20.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,43.0,1.0,Hip,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,85,18.0,1.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+2,5,40.0,1.0,Flat,Metal shingle,Sheet metal,Structural steel
+0,110,5.0,2.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+1,100,31.0,1.0,Hip,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+2,85,72.0,1.0,Gable,Continuous Surface,Wood Siding,Wood-frame
+0,100,34.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,33.0,3.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,42.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,54.0,1.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,11.0,2.0,Gable,Metal shingle,Wood Siding,Wood-frame
+2,40,46.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,41.0,2.0,Hip,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+0,105,55.0,2.0,Gable,Tile (clay),Stucco,Masonry
+1,95,2.0,2.0,Complex,Metal shingle,Wood Siding,Wood-frame
+1,105,32.0,1.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+1,95,14.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,95,35.0,2.0,Gable,Asphalt shingles (3-tab),Brick Veneer,Wood-frame
+0,85,31.0,4.0,Complex,Metal shingle,Stucco,Concrete
+2,105,36.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,95,14.0,2.0,Gable,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+0,100,10.0,2.0,Complex,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,37.0,1.0,Flat,Continuous Surface,Vinyl Siding,Wood-frame
+0,110,12.0,2.0,Hip,Metal shingle,Stucco,Wood-frame
+1,95,52.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,29.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+2,85,6.0,1.0,Hip,Asphalt shingles (3-tab),Hardie Board Siding,Wood-frame
+1,95,40.0,1.0,Gambrel,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,90,38.0,1.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
+1,105,22.0,2.0,Gable,Asphalt shingles (3-tab),Vinyl Siding,Wood-frame
+0,100,16.0,1.0,Hip,Asphalt shingles (3-tab),Stucco,Wood-frame
+2,105,50.0,2.0,Gable,Asphalt shingles (3-tab),Wood Siding,Wood-frame
