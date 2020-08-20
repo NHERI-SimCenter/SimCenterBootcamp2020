@@ -94,6 +94,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#basic-linux-commands">Basic Linux Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-and-running-an-application">Building and Running an Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#alternative-access-via-browser">Alternative Access via Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-for-the-tapis-and-creating-an-app-session">Setup for the  TAPIS and Creating an App session</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
@@ -369,6 +370,33 @@ login1$
 </li>
 </ol>
 </div></blockquote>
+</div>
+<div class="section" id="setup-for-the-tapis-and-creating-an-app-session">
+<h2>Setup for the  TAPIS and Creating an App session<a class="headerlink" href="#setup-for-the-tapis-and-creating-an-app-session" title="Permalink to this headline">¶</a></h2>
+<p>Later in week 2, we will be using the Tapis restful API to interact with TACC. By end of the session you will be able to do more with designsafe than any civil engineer not working for designsafe as we will be using the file systems, building apps and launching them on frontera using tapis from our desktop terminals.</p>
+<p>before the session i need you to install tapis-cli on your systems. it is code developed in python that makes calling tapis from the command line.</p>
+<p>it is installed through pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span>
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span>
+</pre></div>
+</div>
+<p>depending on your OS and python install.</p>
+<p>After installing please run the following in a terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">auth</span> <span class="n">init</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>For tenant name enter designsafe</p></li>
+<li><p>For username your tacc login</p></li>
+<li><p>For password your tacc password.</p></li>
+</ul>
+<p>For rest of prompts just hit enter (Container Registry, git server )</p>
+</div>
 </div>
 </div>
 
