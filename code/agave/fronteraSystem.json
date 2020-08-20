@@ -34,7 +34,7 @@
     "default": false,
     "public": false,
     "maxSystemJobsPerUser": 250,
-    "id": "designsafe.demo.exec.frontera.${USERNAME}",
+    "id": "demo.exec.frontera.${USERNAME}",
     "workDir": "",
     "site": "tacc.utexas.edu",
     "environment": "",
