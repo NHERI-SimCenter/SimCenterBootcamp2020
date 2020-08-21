@@ -72,4 +72,4 @@ Resources
 3. Our favorite tutorials
 
     * Qt5 quick start tutorial (C++): http://zetcode.com/gui/qt5/
-    * pyqt5 quick start tutorial (python++): http://zetcode.com/gui/pyqt5/ 
+    * pyqt5 quick start tutorial (python): http://zetcode.com/gui/pyqt5/ 
