@@ -16,6 +16,7 @@ Welcome to Programming Bootcamp 2020's documentation!
    source/TACC
    source/emacs
    source/git
+   source/GUI
    source/help
    source/resources
 
