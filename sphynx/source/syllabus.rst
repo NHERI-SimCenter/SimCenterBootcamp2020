@@ -119,7 +119,7 @@ Week 2
 * Day 10
 
 
-  * Building Graphic User Interfaces (GUI) using Qt5
+  * `Building Graphic User Interfaces (GUI) using Qt5 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/NHERI-SimCenter-GUI-Qt.pdf>`_
   * Overview of SimCenter Tools & Their Coding
   * Closing Remarks
    
