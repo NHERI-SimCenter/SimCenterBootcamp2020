@@ -175,8 +175,36 @@ Chapter 6: Modules and subprocess
    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FPjApvGtvgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
+
+Python Applications
+===============
+
+
 Chapter 7: Machine learning (AI)
 -------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JuWQmyGzEG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/K4nQCupatD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/u8At5mqwyKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/mgk47La_qyc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
 
 Chapter 10: Web scrabbing
 -------
@@ -287,20 +315,32 @@ Exercise: Vector class
        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/UJ8szTkfeNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
-SimCenter Tools
+Application Programming
 ===========
 
+GUI Programming with Qt5
+--------------------
 
-..
-    .. raw:: html
+.. raw:: html
 
-       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QR94VsXgTmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
-..
-    .. raw:: html
 
-       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+SimCenter Tools
+-----------
+
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eOduZATiw6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+Closing Remarks and Discussion
+========================
+
+.. raw:: html
+
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/fHh9JyuwhTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
 ..

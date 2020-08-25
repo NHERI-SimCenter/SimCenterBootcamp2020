@@ -83,19 +83,22 @@ Week 2
 
 * Day 6 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
 
+
   * Parallel Computers  
   * MessagePassing & MPI
   * Shared Memory & OpenMP
 
 * Day 7 - `C: Datatypes & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Abstraction.pdf>`_
 
+  
   * C Datatypes
   * Exercise
   * C++
   * Exercise
 
 
-* Day 8 - 'Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearining.pdf>`_
+* Day 8 - `Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearining.pdf>`_
+
 
   * Basics of Machine Learning
   * Popular Algorithms
@@ -103,6 +106,7 @@ Week 2
 
 
 * Day 9 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave.pdf>`_
+
 
   * Review: Exercise
   * Intro to DesignSafe & Tapis
@@ -114,7 +118,9 @@ Week 2
 
 * Day 10
 
-  * Run Over Material
+
+  * `Building Graphic User Interfaces (GUI) using Qt5 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/NHERI-SimCenter-GUI-Qt.pdf>`_
   * Overview of SimCenter Tools & Their Coding
+  * Closing Remarks
    
 

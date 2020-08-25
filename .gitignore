@@ -278,15 +278,13 @@ a.out
 *.pyc
 _build
 presentations/Python Quickstart Tutorial/MyExcelFile.xlsx
-
 presentations/~$SimCenter Bootcamp Python.pptx
-
 presentations/Videos
 
 *.swp
 
 code/PetersCode/pi/pi-omp
-
 code/PetersCode/pi/pi
-
 code/PetersCode/pi/pi-loop
+
+

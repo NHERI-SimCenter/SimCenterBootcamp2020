@@ -234,3 +234,41 @@ When you do follow these steps:
 
       	 You Did It! 
 
+
+Setup for the  TAPIS and Creating an App session
+-------------
+
+Later in week 2, we will be using the Tapis restful API to interact with TACC. By end of the session you will be able to do more with designsafe than any civil engineer not working for designsafe as we will be using the file systems, building apps and launching them on frontera using tapis from our desktop terminals.
+
+Before the session we need you to install tapis-cli on your systems.
+It is code developed in python that allows us to interact with TACC by calling tapis from the command line.
+
+It is installed through pip:
+
+.. code::
+
+    pip install tapis-cli
+
+OR 
+
+.. code::
+
+    pip3 install tapis-cli
+
+depending on your OS and python install.
+
+After installing please run the following in a terminal:
+
+.. code::
+
+    tapis auth init
+
+
+.. note::
+
+    * For tenant name enter designsafe
+    * For username your tacc login
+    * For password your tacc password.
+
+    For rest of prompts just hit enter (Container Registry, git server )   
+
