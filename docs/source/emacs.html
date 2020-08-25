@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,30 +12,28 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Git" href="git.html" />
@@ -52,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
           
 
           
@@ -75,7 +74,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -99,7 +97,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -138,7 +135,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>Emacs</li>
     
@@ -194,6 +191,7 @@
 <ol class="arabic simple">
 <li><p>For basic editing you probbaly only need these 2 commands.</p></li>
 <li><p>For commands that have two similar special keys, i.e. &lt;Control&gt; a &lt;Control&gt; b, you can hold the &lt;Control&gt; key down with one finger and hit <strong>a b</strong> with another finger.</p></li>
+<li><p>&lt;Control&gt; means the control key on your keyboard, don’t type &lt;Control&gt;. Same goes for &lt;Esc&gt; or &lt;Escape&gt;</p></li>
 </ol>
 </div>
 </li>
@@ -262,6 +260,23 @@
 </pre></div>
 </div>
 </li>
+<li><p>To split the terminal window into multiple <strong>screens</strong> so that multiple files can be viewed at the same time use one of the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="mi">3</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>The <strong>2</strong> splits the current screen into two horizontal screens, the <strong>3</strong> into two vertical screens. As you will discover, you can have many screens viewable in the one terminal windows ddepending on how many splits you make. The last <strong>1</strong> option will result in only one, the current screen, being showed in the terminal window.</p>
+</li>
+<li><p>To move from one split screen to the next use the &lt;Control&gt; lowercase o option, i.e.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Control</span><span class="o">&gt;</span> <span class="n">x</span> <span class="n">o</span>
+</pre></div>
+</div>
+</li>
 </ol>
 </div></blockquote>
 <p>There are of course more commands available (over 10,000!). But those are some basic ones and enough to get you merrily editing files!</p>
@@ -287,19 +302,11 @@
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -310,6 +317,7 @@
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

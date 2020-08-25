@@ -38,10 +38,12 @@ Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, an
 
 
      	.. note::
-
+	
      	   #. For basic editing you probbaly only need these 2 commands.
 
 	   #. For commands that have two similar special keys, i.e. <Control> a <Control> b, you can hold the <Control> key down with one finger and hit **a b** with another finger.
+
+	   #.  <Control> means the control key on your keyboard, don't type <Control>. Same goes for <Esc> or <Escape>
 
 
      #.  Open a file:
@@ -126,7 +128,32 @@ Once inside emacs, you are in a mode similar to INSERT in vi. You can use up, an
 
    	   <Escape> x replace-string <RET>
 
+     #. To split the terminal window into multiple **screens** so that multiple files can be viewed at the same time use one of the following:
+
+     	.. code::
+
+	   <Control> x 2
+
+     	.. code::
+
+	   <Control> x 3
+
+     	.. code::
+
+	   <Control> x 1
+
+	The **2** splits the current screen into two horizontal screens, the **3** into two vertical screens. As you will discover, you can have many screens viewable in the one terminal windows ddepending on how many splits you make. The last **1** option will result in only one, the current screen, being showed in the terminal window.
+
+     #. To move from one split screen to the next use the <Control> lowercase o option, i.e.:
+
+	.. code::
+
+	   <Control> x o
+
+
 There are of course more commands available (over 10,000!). But those are some basic ones and enough to get you merrily editing files!
+
+    
 
 
 

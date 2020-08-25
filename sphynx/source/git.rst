@@ -133,6 +133,24 @@ Once you have created the repo (whether for option A, B or C) there are some sta
 
    Working with Local Repo
 
+#. To look at the difference between your current files and the commiitted files in the repo:
+
+   .. code::
+   
+	git diff
+
+   You can be selective here, you can specify the files in the current folder
+
+   .. code::
+
+	git diff ./
+
+   or a list of files
+
+   .. code::
+   
+	git diff fileName1 fileName2 .. fileNameN
+
 #. To update the repo with the current state of the files:
 
    .. code::
@@ -232,7 +250,7 @@ Say you have an online repo and now you want to update the repo with all the cha
    
 	git push
 
-#. If for some reason you want to pull the code from your online repo and merge with your current code. Note this is more a collaborative operation. It actually does a git fetch and merge in a single operation. 
+#. If you want to pull the code from your online repo and merge with your current, common for situations were you are using multiple computers, you will use the **pull** command. It actually does a git fetch and merge in a single operation. 
 
    .. code::
 
