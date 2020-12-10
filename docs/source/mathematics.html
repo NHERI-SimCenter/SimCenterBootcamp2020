@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Questions, Issues &mdash; Programming Bootcamp 2020  documentation</title>
+  <title>Writing Equations in documentation &mdash; Programming Bootcamp 2020  documentation</title>
   
 
   
@@ -37,9 +37,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Additional Resources" href="resources.html" />
-    <link rel="prev" title="Graphical User Interface (GUI) Programming" href="GUI.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,7 +83,7 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setupInstructions.html">Setup Instructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture_videos.html">Lecture Videos</a></li>
@@ -93,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GUI.html">Graphical User Interface (GUI) Programming</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Questions, Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Questions, Issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Additional Resources</a></li>
 </ul>
 
@@ -141,13 +139,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Questions, Issues</li>
+      <li>Writing Equations in documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/source/help.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/source/mathematics.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -160,9 +158,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="questions-issues">
-<span id="lblhelp"></span><h1>Questions, Issues<a class="headerlink" href="#questions-issues" title="Permalink to this headline">¶</a></h1>
-<p>If you have questions related to setup, assignments, material presented please post them on the <a class="reference external" href="https://simcenter-messageboard.designsafe-ci.org/smf/index.php?board=19.0">Message Board</a>.</p>
+  <div class="section" id="writing-equations-in-documentation">
+<h1>Writing Equations in documentation<a class="headerlink" href="#writing-equations-in-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The preamble: defining macros, environments, etc.
+This only needs to be done once at the start of a document.  All remaining equations will know about
+those definitions.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">def</span>\<span class="n">RR</span><span class="p">{</span>\<span class="n">mathbb</span><span class="p">{</span><span class="n">R</span><span class="p">}}</span>
+\<span class="n">def</span>\<span class="n">bold</span><span class="c1">#1{{\bf #1}}</span>
+\<span class="n">def</span>\<span class="n">vectr</span><span class="c1">#1{{\bf #1}}</span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\def\RR{\mathbb{R}}
+\def\bold#1{{\bf #1}}
+\def\vectr#1{{\bf #1}}\]</div>
+<p>Using the new macros in an equation is as easy as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>\<span class="n">bf</span> <span class="n">v</span><span class="p">}</span> \<span class="ow">in</span> \<span class="n">RR</span><span class="o">^</span><span class="n">n</span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[{\bf v} \in \RR^n\]</div>
+<p>Just to demonstrate that the definitions remain working past first use, simply add another equation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">bold</span><span class="p">{</span><span class="n">K</span><span class="p">}</span>\<span class="n">cdot</span>\<span class="n">vectr</span><span class="p">{</span><span class="n">x</span><span class="p">}</span> <span class="o">=</span> \<span class="n">vectr</span><span class="p">{</span><span class="n">b</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\bold{K}\cdot\vectr{x} = \vectr{b}\]</div>
+<p>Now that was easy.</p>
 </div>
 
 
@@ -170,15 +192,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="resources.html" class="btn btn-neutral float-right" title="Additional Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="GUI.html" class="btn btn-neutral float-left" title="Graphical User Interface (GUI) Programming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

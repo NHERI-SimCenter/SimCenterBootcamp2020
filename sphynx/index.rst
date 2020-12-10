@@ -24,7 +24,7 @@ the actual meetings.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    source/syllabus
@@ -36,4 +36,5 @@ the actual meetings.
    source/GUI
    source/help
    source/resources
+   #source/mathematics
 
