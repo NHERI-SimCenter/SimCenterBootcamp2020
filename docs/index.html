@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,19 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -30,11 +36,6 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Syllabus" href="source/syllabus.html" /> 
@@ -51,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Programming Bootcamp 2020
+            <a href="#" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
           
 
           
@@ -74,6 +75,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -97,6 +99,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -135,7 +138,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
       <li>Welcome to the NHERI-SimCenter 2020 Programming Bootcamp</li>
     
@@ -180,19 +183,47 @@ repository on <a class="reference external" href="https://github.com">https://gi
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="source/setupInstructions.html">Setup Instructions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#windows-computer">Windows Computer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#macos-computer">MacOS Computer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#known-installation-issues">Known installation issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#windows-computer">Windows Computer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#fork-the-simcenter-code-repository">Fork the SimCenter Code Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#install-git">Install Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#install-python-on-windows">Install Python on Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#macos-computer">MacOS Computer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#id1">Fork the SimCenter Code Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#id4">Install Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#install-python-on-a-mac">Install Python on a Mac</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="source/setupInstructions.html#known-installation-issues">Known installation issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/setupInstructions.html#macos">MacOS</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="source/lecture_videos.html">Lecture Videos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#general-topics">General Topics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#python-quickstart-tutorial">Python Quickstart Tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#python-applications">Python Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#programming-in-c">Programming in C</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#id1">Programming in C++</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#application-programming">Application Programming</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos.html#closing-remarks-and-discussion">Closing Remarks and Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos_part0.html">General Topics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part0.html#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part0.html#git">Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part0.html#emacs-editor">Emacs Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos_part1.html">Python Quickstart Tutorial</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#outline">Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-1-basic-data-types-and-operations">Chapter 1: Basic data types and operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-2-matrix-data-types">Chapter 2: Matrix data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-3-plotting">Chapter 3: Plotting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-4-file-io">Chapter 4: File IO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-5-object-oriented-programming">Chapter 5: Object oriented programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-6-modules-and-subprocess">Chapter 6: Modules and subprocess</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="source/lecture_videos_part1.html#python-applications">Python Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-7-machine-learning-ai">Chapter 7: Machine learning (AI)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/lecture_videos_part1.html#chapter-10-web-scrabbing">Chapter 10: Web scrabbing</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="source/TACC.html">TACC</a><ul>
@@ -213,7 +244,11 @@ repository on <a class="reference external" href="https://github.com">https://gi
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="source/GUI.html">Graphical User Interface (GUI) Programming</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="source/GUI.html#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source/GUI.html#setup">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="source/GUI.html#python">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="source/GUI.html#c">C++</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="source/GUI.html#quick-demonstration">Quick Demonstration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="source/GUI.html#resources">Resources</a></li>
 </ul>
@@ -242,11 +277,19 @@ repository on <a class="reference external" href="https://github.com">https://gi
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -257,7 +300,6 @@ repository on <a class="reference external" href="https://github.com">https://gi
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
