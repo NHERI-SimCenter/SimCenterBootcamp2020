@@ -2,6 +2,11 @@
 Syllabus
 *********
 
+.. raw:: HTML
+
+	<p><font color=red> last updated: Dec 12, 2020 </font></p>
+
+
 Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering will be solely online. A drawback of an online offering is the lack of interaction among the participants. The SimCenter team is putting in all effort to recreate some
 of the community building benefits through discussion sessions and social time.
 
@@ -51,10 +56,18 @@ Week 1
   * Assign Homework #3
 
 
-* Day 4
+* Day 4 - `Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearining.pdf>`_
 
   * Homework #3 review
-  * `Git <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Git.pdf>`_
+  * Basics of Machine Learning
+  * Popular Algorithms
+  * Exercise
+  * Assign Homework #4
+
+
+* Day 5
+
+  * Homework #4 review
   * Short remarks on
 
       * Python modules
@@ -63,13 +76,16 @@ Week 1
       * Exercise: bringing python to the command line
 
   * Python Web Scrabbing 
-  * Assign Homework #4
+
+
+
+Week 2
+------
+
+* Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
+
   * TACC - logging in/linux basics (cd, ls, mkdir, ...)
-
-
-* Day 5: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
-
-  * Homework #4 review
+  * `Git <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Git.pdf>`_
 
   * Intro to C 
   * Compiling and debugging
@@ -78,35 +94,23 @@ Week 1
   * Assign Homework #5
 
 
-Week 2
-------
-
-* Day 6 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
+* Day 7 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
 
 
   * Parallel Computers  
   * MessagePassing & MPI
   * Shared Memory & OpenMP
 
-* Day 7 - `C: Datatypes & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Abstraction.pdf>`_
 
-  
+* Day 8 - `C: Datatypes & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Abstraction.pdf>`_
+
   * C Datatypes
   * Exercise
   * C++
   * Exercise
 
 
-* Day 8 - `Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearining.pdf>`_
-
-
-  * Basics of Machine Learning
-  * Popular Algorithms
-  * Exercise
-
-
 * Day 9 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave.pdf>`_
-
 
   * Review: Exercise
   * Intro to DesignSafe & Tapis
