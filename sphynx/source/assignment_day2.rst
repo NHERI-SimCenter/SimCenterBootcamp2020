@@ -1,12 +1,11 @@
 Assignments for Day 2
 ===============
 
-
 .. note::
 
-	Day 2 will focus on numeric data types for linear algebra (vectors and matrices), introduce
-	plotting features available in python, and show you how to read and write data from files on your
-	computer.
+	Day 2 will focus on :green:`numeric data types` for linear algebra (vectors and matrices), introduce
+	:green:`plotting` features available in python, and show you how to :green:`read and write data from
+	files` on your computer.
 
 	:red:`If you are already experienced using` :green:`numpy`, :green:`matplotlib` and doing :green:`file I/O`,
 	we still ask you to actively participate and help others learn quicker by facilitating small
@@ -37,4 +36,6 @@ Practice problems (after class)
 Self-study portion for day 3 (watch before tomorrow’s class)
 -----------
 
+1. Watch all videos that you've skipped so far.  This should take you :green:`0 to 4 hours`, depending on how busy you've been over the past few days.
 
+#. Watch `chapter 5 of our self-study videos <./lecture_videos_part1.html#chapter-5-object-oriented-programming>`__.  This should take :green:`~50 minutes`.

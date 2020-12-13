@@ -3,7 +3,9 @@ Assignments for Day 1
 
 .. note::
 
-	Day 1 is designed to bring those new to python up to basic coding skills.  :red:`If you've already done
+	Day 1 is designed to bring those new to python up to :green:`basic coding skills`.
+
+	:red:`If you've already done
 	coding in python`, most of the material will look very familiar to you.  We still ask you to actively participate and
 	help others learn quicker by facilitating small group discussions in which you can share your insight.
 
