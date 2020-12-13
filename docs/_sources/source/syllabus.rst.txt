@@ -13,7 +13,6 @@ of the community building benefits through discussion sessions and social time.
 The bootcamp is organized as a series of live video conferencing (ZOOM), prerecorded video
 lectures, hands-on exercises with online review options, and homework assignments.  The
 ideal flow of lessons and activities is provided in the "By Day" listing below.
-A "By Topic" organization will be provided for later review.
 
 
 
