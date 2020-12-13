@@ -17,7 +17,7 @@ A "By Topic" organization will be provided for later review.
 
 
 
-Week 1
+Part 1 - Dec 14-18, 2020
 ------
 
 * Day 1
@@ -79,7 +79,7 @@ Week 1
 
 
 
-Week 2
+Part 2 - Jan 4-8, 2021
 ------
 
 * Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_

@@ -31,8 +31,7 @@ the actual meetings.
    source/setupInstructions
    source/lecture_videos
    source/TACC
-   source/emacs
-   source/git
+   source/tools
    source/GUI
    source/help
    source/resources
