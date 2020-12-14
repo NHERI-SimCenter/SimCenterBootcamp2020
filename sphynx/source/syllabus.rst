@@ -4,7 +4,7 @@ Syllabus
 
 .. raw:: HTML
 
-	<p><font color=red> last updated: Dec 12, 2020 </font></p>
+	<p><font color=red> last updated: Dec 13, 2020 </font></p>
 
 
 Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering will be solely online. A drawback of an online offering is the lack of interaction among the participants. The SimCenter team is putting in all effort to recreate some
@@ -13,11 +13,10 @@ of the community building benefits through discussion sessions and social time.
 The bootcamp is organized as a series of live video conferencing (ZOOM), prerecorded video
 lectures, hands-on exercises with online review options, and homework assignments.  The
 ideal flow of lessons and activities is provided in the "By Day" listing below.
-A "By Topic" organization will be provided for later review.
 
 
 
-Week 1
+Part 1 - Dec 14-18, 2020
 ------
 
 * Day 1
@@ -79,7 +78,7 @@ Week 1
 
 
 
-Week 2
+Part 2 - Jan 4-8, 2021
 ------
 
 * Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
@@ -122,9 +121,13 @@ Week 2
 
 * Day 10
 
-
-  * `Building Graphic User Interfaces (GUI) using Qt5 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/NHERI-SimCenter-GUI-Qt.pdf>`_
   * Overview of SimCenter Tools & Their Coding
   * Closing Remarks
+
+..
+	  * `Building Graphic User Interfaces (GUI) using Qt5 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/NHERI-SimCenter-GUI-Qt.pdf>`_
+  
+
+
    
 

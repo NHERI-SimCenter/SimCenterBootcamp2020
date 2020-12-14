@@ -26,6 +26,10 @@ rst_prolog = """
 .. _Message Board: https://simcenter-messageboard.designsafe-ci.org/smf/index.php?board=19.0
 """
 
+rst_epilog = """
+.. include:: .special.rst
+"""
+
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -57,5 +61,6 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_css_files = [
-	'css/custom.css'
+	'css/custom.css',
+	'css/hacks.css'
 ]

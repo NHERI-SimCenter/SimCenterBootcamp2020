@@ -4,19 +4,16 @@
 Setup Instructions
 ******************
 
-The following videos demonstrate these installation instructions on brand new Windows 10 and MacOS Catalina systems.
+
+Windows Computer
+================
+
+The following video demonstrates these installation instructions on a brand new Windows 10 system.
 
 .. raw:: html
 
    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ywUDEEra0ns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-.. raw:: html
-
-   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-
-
-Windows Computer
-================
 
 These instructions are for a Windows 10 computer. You need to install Python, ssh and git.
 
@@ -102,6 +99,14 @@ This should open the browser running jupyter-notebook. Select any of the .ipynb 
 
 MacOS Computer
 ==============
+
+The following video demonstrates these installation instructions on a brand new MacOS Catalina system.
+Installation on MacOS Big Sur follows identical steps.
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
 
 Fork the SimCenter Code Repository
 ----------------------------------
