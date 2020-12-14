@@ -187,10 +187,10 @@
             
   <div class="section" id="setup-instructions">
 <span id="lblsetup"></span><h1>Setup Instructions<a class="headerlink" href="#setup-instructions" title="Permalink to this headline">¶</a></h1>
-<p>The following videos demonstrate these installation instructions on brand new Windows 10 and MacOS Catalina systems.</p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ywUDEEra0ns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><div class="section" id="windows-computer">
+<div class="section" id="windows-computer">
 <h2>Windows Computer<a class="headerlink" href="#windows-computer" title="Permalink to this headline">¶</a></h2>
-<p>These instructions are for a Windows 10 computer. You need to install Python, ssh and git.</p>
+<p>The following video demonstrates these installation instructions on a brand new Windows 10 system.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/ywUDEEra0ns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><p>These instructions are for a Windows 10 computer. You need to install Python, ssh and git.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>These instructions should work for other versions of windows. However you will need to test them. In addition you will need to install a working version of <strong>ssh</strong> on your system. This is preloaded on Windows 10 machines.</p>
@@ -267,7 +267,9 @@
 </div>
 <div class="section" id="macos-computer">
 <h2>MacOS Computer<a class="headerlink" href="#macos-computer" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
+<p>The following video demonstrates these installation instructions on a brand new MacOS Catalina system.
+Installation on MacOS Big Sur follows identical steps.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/XzGqKSwnCTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p><div class="section" id="id1">
 <h3>Fork the SimCenter Code Repository<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Go to <a class="reference external" href="https.github.com">github</a> and sign in or sign up.</p></li>
@@ -358,7 +360,7 @@
 <div class="section" id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Failure to install fiona package</p></li>
+<li><p><strong>Failure to install fiona package</strong></p></li>
 </ol>
 <div class="align-center figure" id="id7">
 <img alt="../_images/installIssue1.png" src="../_images/installIssue1.png" />
@@ -375,6 +377,34 @@
 <p>Install those packages using</p>
 <p>sudo pip install gdal*.whl fiona*.whl</p>
 </div>
+<ol class="arabic" start="2">
+<li><p><strong>Runtime error when importing numpy (or matplotlib)</strong></p>
+<p>The following error was reported by several students who are running Windows 10 and a brand new
+installation of python:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span> <span class="n">On</span> <span class="n">entry</span> <span class="n">to</span> <span class="n">DGEBAL</span> <span class="n">parameter</span> <span class="n">number</span>  <span class="mi">3</span> <span class="n">had</span> <span class="n">an</span> <span class="n">illegal</span> <span class="n">value</span>
+<span class="o">**</span> <span class="n">On</span> <span class="n">entry</span> <span class="n">to</span> <span class="n">DGEHRD</span>  <span class="n">parameter</span> <span class="n">number</span>  <span class="mi">2</span> <span class="n">had</span> <span class="n">an</span> <span class="n">illegal</span> <span class="n">value</span>
+<span class="o">**</span> <span class="n">On</span> <span class="n">entry</span> <span class="n">to</span> <span class="n">DORGHR</span> <span class="n">DORGQR</span> <span class="n">parameter</span> <span class="n">number</span>  <span class="mi">2</span> <span class="n">had</span> <span class="n">an</span> <span class="n">illegal</span> <span class="n">value</span>
+<span class="o">**</span> <span class="n">On</span> <span class="n">entry</span> <span class="n">to</span> <span class="n">DHSEQR</span> <span class="n">parameter</span> <span class="n">number</span>  <span class="mi">4</span> <span class="n">had</span> <span class="n">an</span> <span class="n">illegal</span> <span class="n">value</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<span class="n">File</span> <span class="s2">&quot;&lt;string&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="n">File</span> <span class="s2">&quot;C:\Users\Song\AppData\Roaming\Python\Python39\site-packages</span><span class="se">\n</span><span class="s2">umpy\__init__.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">305</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="n">_win_os_check</span><span class="p">()</span>
+<span class="n">File</span> <span class="s2">&quot;C:\Users\Song\AppData\Roaming\Python\Python39\site-packages</span><span class="se">\n</span><span class="s2">umpy\__init__.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">302</span><span class="p">,</span> <span class="ow">in</span> <span class="n">_win_os_check</span>
+<span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="kn">from</span> <span class="bp">None</span>
+<span class="ne">RuntimeError</span><span class="p">:</span> <span class="n">The</span> <span class="n">current</span> <span class="n">Numpy</span> <span class="n">installation</span> <span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">Song</span><span class="se">\\</span><span class="s1">AppData</span><span class="se">\\</span><span class="s1">Roaming</span><span class="se">\\</span><span class="s1">Python</span><span class="se">\\</span><span class="s1">Python39</span><span class="se">\\</span><span class="s1">site-packages</span><span class="se">\\</span><span class="s1">numpy</span><span class="se">\\</span><span class="s1">__init__.py&#39;</span><span class="p">)</span> <span class="n">fails</span> <span class="n">to</span> <span class="k">pass</span> <span class="n">a</span> <span class="n">sanity</span> <span class="n">check</span> <span class="n">due</span> <span class="n">to</span> <span class="n">a</span> <span class="n">bug</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">windows</span> <span class="n">runtime</span><span class="o">.</span> <span class="n">See</span> <span class="n">this</span> <span class="n">issue</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">tinyurl</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">y3dm3h86</span>
+</pre></div>
+</div>
+<p>This error is due to a bug in the latest version of <code class="docutils literal notranslate"><span class="pre">numpy</span></code> (1.19.4) on Windows 10.
+It can be fixed by downgrading to <code class="docutils literal notranslate"><span class="pre">numpy-1.19.3</span></code> as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">uninstall</span> <span class="n">numpy</span>
+</pre></div>
+</div>
+<p>followed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.19</span><span class="o">.</span><span class="mi">3</span>
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 <div class="section" id="macos">
 <h3>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h3>
