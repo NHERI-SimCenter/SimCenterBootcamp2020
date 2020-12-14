@@ -26,9 +26,14 @@ Self-study portion for day 1 (ahead of class)
 Live exercises (in class)
 --------
 
+* ``./LessonNotes/Lesson  01-Data Types.ipynb``
+* ``./LessonNotes/Lesson  02-Data Types and Loops.ipynb``
+
 
 Practice problems (after class)
 ---------
+
+* ``./HomeworkExercises/01.1 Exercise_Functions.ipynb``
 
 
 Self-study portion for day 2 (watch before tomorrow’s class)
