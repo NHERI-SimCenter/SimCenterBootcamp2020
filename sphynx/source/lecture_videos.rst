@@ -1,4 +1,4 @@
-Lecture Videos
+Self-Study Videos
 ****************
 
 .. toctree::

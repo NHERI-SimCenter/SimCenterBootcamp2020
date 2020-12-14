@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
 Welcome to the NHERI-SimCenter 2020 Programming Bootcamp
 =====================================================
 
@@ -30,10 +31,10 @@ the actual meetings.
    source/syllabus
    source/setupInstructions
    source/lecture_videos
+   source/assignments
    source/TACC
-   source/emacs
-   source/git
-   source/GUI
+   source/tools
+   #source/GUI
    source/help
    source/resources
    #source/mathematics
