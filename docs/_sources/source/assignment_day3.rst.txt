@@ -28,6 +28,10 @@ Live exercises (in class)
 Practice problems (after class)
 ---------
 
+* ``./HomeworkExercises/04.1 Exercise File handling.ipynb``
+* ``./HomeworkExercises/05.1 Exercise Classes.ipynb``
+* ``./HomeworkExercises/06.3 Exercise Inheritance.ipynb``
+
 
 Self-study portion for day 4 (watch before tomorrow's class)
 -----------

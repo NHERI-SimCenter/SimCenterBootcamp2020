@@ -32,6 +32,10 @@ Live exercises (in class)
 Practice problems (after class)
 ---------
 
+* ``./HomeworkExercises/02.1 Exercise numpy.ipynb``
+* ``./HomeworkExercises/02.3 Exercise on more matrix operations.ipynb``
+* ``./HomeworkExercises/03.1 Exercise Plotting.ipynb``
+
 
 Self-study portion for day 3 (watch before tomorrow’s class)
 -----------
