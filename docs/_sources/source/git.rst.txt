@@ -18,7 +18,13 @@ Git
    
 		git clone https://github.com/YOUR_NAME/SimCenterBootcamp2020.git
        
-    3. Create a pointer to the original SimCenter version by typing:
+    3. Change into the local `SimCenterBootcamp2020` folder
+
+    	.. code::
+
+		cd SimCenterBootcamp2020
+
+    4. Create a pointer to the original SimCenter version by typing:
 
       	 .. code::
    
@@ -26,7 +32,8 @@ Git
 
     REPEAT DAILY:
 
-    1. Save the changes you want to KEEP to your local repo and your forked copy:
+    1. Save the changes you want to KEEP to your local repo and your forked copy (execute inside the
+    `SimCenterBootcamp2020` folder):
 
       	 .. code::       
 
