@@ -52,7 +52,7 @@ Git
       	 .. code::       
 
 	       git fetch upstream       
-	       git merge upstream/master
+	       git merge upstream/master -m "daily update"
 	       
 .. note::
 
