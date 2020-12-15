@@ -41,7 +41,7 @@ Git
 	       git commit -m "SOME INSTRUCTIVE COMMENT" .
 	       git push
     
-    2. Throw away the rest! 
+    2. (OPTIONAL) Throw away the rest! 
 
       	 .. code::       
 
