@@ -45,7 +45,17 @@ Git
       	 .. code::       
 
 	       git fetch upstream       
-	       git merge upstream/master              
+	       git merge upstream/master
+	       
+.. note::
+
+   You can watch the lecture recordings from Thursday, August 13, 2020 on `YouTube
+   <https://youtu.be/9bJfG1C2Z3M>`_ .
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9bJfG1C2Z3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>   
+
 
 
 `Git <http://git.com>`_ is the most widely used version control system today.  Version control software is software that enables programmers to manage changes to software over time. It is great for individuals as it keeps track of every modification to the code made in a special kind of database. If a mistake is made, the individual can turn back the clock and compare earlier versions of the code to help fix the mistake. Version control software is indespensible for groups of programmers working on a shared software project for it aids programmers when the programmers are making changes to the same files (seemlessly intagrating changes from different programmers when these changes are in different parts of the files and notifying developers of 'conflicts' (situations when the different programmers have made changes to same parts of the same file). Version control software is an essential part of the every-day of the modern software team's professional practices. You can use **git** in a number of ways:
@@ -67,11 +77,6 @@ Git
       #. bitbucket
 
       #. sourceforge
-
-.. note::
-
-   You can watch the lecture recordings from Thursday, August 13, 2020 on `YouTube
-   <https://youtu.be/9bJfG1C2Z3M>`_ .
 
 
 Creating a Repo
