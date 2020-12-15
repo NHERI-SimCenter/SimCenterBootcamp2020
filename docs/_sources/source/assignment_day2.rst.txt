@@ -28,6 +28,11 @@ Self-study portion for day 2 (ahead of class)
 Live exercises (in class)
 --------
 
+* ``LessonNotes/Lesson  02-Data Types and Loops.ipynb``
+* ``LessonNotes/Lesson  03-Loops and matrix operations.ipynb``
+* ``LessonNotes/Lesson  04-some more numpy and plotting.ipynb``
+* ``LessonNotes/Lesson  05-File IO.ipynb``
+
 
 Practice problems (after class)
 ---------
