@@ -1,8 +1,52 @@
-.. _lblHelp:
+.. _lblGit:
 
 ***
 Git
 ***
+
+.. tip::
+
+   If you don't want to read what follows. Here is the minimal, all commands are issued from the powershell or terminal application.
+
+    DO ONCE
+    
+    1. Fork the SimCenterProgrammingBootcamp2020 repo in your browser.
+       
+    2. Clone a Copy of YOUR Fork to local computer. In PowerShell (Winddows) or in terminal (MacOS), cd to a directory you want to place the repo and then type:
+
+          .. code::
+   
+		git clone https://github.com/YOUR_NAME/SimCenterBootcamp2020.git
+       
+    3. Create a pointer to the original SimCenter version by typing:
+
+      	 .. code::
+   
+		git remote add upstream https://github.com/NHERI-SimCenter/SimCenterBootcamp2020.git
+
+    REPEAT DAILY:
+
+    1. Save the changes you want to KEEP to your local repo and your forked copy:
+
+      	 .. code::       
+
+	       git add filename1 filename2 ...
+	       git commit -m "SOME INSTRUCTIVE COMMENT" .
+	       git push
+    
+    2. Throw away the rest! 
+
+      	 .. code::       
+
+	       git reset --hard
+
+    3. Get the latest from SimCenter repo and merge changes into your own:
+
+      	 .. code::       
+
+	       git fetch upstream       
+	       git merge upstream/master              
+
 
 `Git <http://git.com>`_ is the most widely used version control system today.  Version control software is software that enables programmers to manage changes to software over time. It is great for individuals as it keeps track of every modification to the code made in a special kind of database. If a mistake is made, the individual can turn back the clock and compare earlier versions of the code to help fix the mistake. Version control software is indespensible for groups of programmers working on a shared software project for it aids programmers when the programmers are making changes to the same files (seemlessly intagrating changes from different programmers when these changes are in different parts of the files and notifying developers of 'conflicts' (situations when the different programmers have made changes to same parts of the same file). Version control software is an essential part of the every-day of the modern software team's professional practices. You can use **git** in a number of ways:
 
