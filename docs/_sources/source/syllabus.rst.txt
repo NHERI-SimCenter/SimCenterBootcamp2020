@@ -4,8 +4,7 @@ Syllabus
 
 .. raw:: HTML
 
-	<p><font color=red> last updated: Dec 13, 2020 </font></p>
-
+	<p><font color=red> last updated: Dec 14, 2020 </font></p>
 
 Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering will be solely online. A drawback of an online offering is the lack of interaction among the participants. The SimCenter team is putting in all effort to recreate some
 of the community building benefits through discussion sessions and social time.
@@ -82,10 +81,9 @@ Part 2 - Jan 4-8, 2021
 ------
 
 * Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
-
-  * TACC - logging in/linux basics (cd, ls, mkdir, ...)
-  * `Git <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Git.pdf>`_
-
+  
+  * `TACC - logging in/linux basics (cd, ls, mkdir, ...) <https://nheri-simcenter.github.io/SimCenterBootcamp2020/source/TACC.html>`_
+  * `Git <https://nheri-simcenter.github.io/SimCenterBootcamp2020/source/git.html>`_
   * Intro to C 
   * Compiling and debugging
   * Exercise: code, compile, debug
@@ -94,7 +92,6 @@ Part 2 - Jan 4-8, 2021
 
 
 * Day 7 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
-
 
   * Parallel Computers  
   * MessagePassing & MPI
