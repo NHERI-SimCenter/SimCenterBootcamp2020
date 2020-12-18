@@ -37,7 +37,7 @@ Git
          .. code::       
 
                git add filename1 filename2 ...
-               git commit -m "SOME INSTRUCTIVE COMMENT" .
+               git commit -m "SOME INSTRUCTIVE COMMENT" 
                git push
     
     2. (OPTIONAL) Throw away the rest! 
