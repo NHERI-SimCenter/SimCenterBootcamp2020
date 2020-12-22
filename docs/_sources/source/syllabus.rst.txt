@@ -54,7 +54,7 @@ Part 1 - Dec 14-18, 2020
   * Assign Homework #3
 
 
-* Day 4 - `Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearining.pdf>`_
+* Day 4 - `Machine Learning <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/MachineLearning.pdf>`_
 
   * Homework #3 review
   * Basics of Machine Learning
