@@ -15,8 +15,8 @@ ideal flow of lessons and activities is provided in the "By Day" listing below.
 
 
 
-Part 1 - Dec 14-18, 2020
-------
+Python - Dec 14-18, 2020
+------------------------
 
 * Day 1
 
@@ -77,36 +77,37 @@ Part 1 - Dec 14-18, 2020
 
 
 
-Part 2 - Jan 4-8, 2021
-------
+Introduction to C - Jan 4-8, 2021
+---------------------------------
 
 * Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
   
-  * `TACC - logging in/linux basics (cd, ls, mkdir, ...) <https://nheri-simcenter.github.io/SimCenterBootcamp2020/source/TACC.html>`_
-  * `Git <https://nheri-simcenter.github.io/SimCenterBootcamp2020/source/git.html>`_
-  * Intro to C 
-  * Compiling and debugging
-  * Exercise: code, compile, debug
-  * C 
-  * Assign Homework #5
+  * Computers and Computer Programs
+  * The C Computer Programming Language
+  * C: Variable Types and Variable Names
+  * C: Operations, Conditionals, and Loops
+  * C: Functions
 
-
-* Day 7 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
+* Day 7: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
+  
+  * C: More Pointers
+  * C: Memory Allocation
+  * C: User Defined Datatypes
+  * C: File I/O
+    
+* Day 8 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
 
   * Parallel Computers  
   * MessagePassing & MPI
   * Shared Memory & OpenMP
 
+* Day 9 - `C: Datatypes & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Abstraction.pdf>`_
 
-* Day 8 - `C: Datatypes & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Abstraction.pdf>`_
-
-  * C Datatypes
-  * Exercise
+  * Object Oriented Programming
   * C++
-  * Exercise
 
 
-* Day 9 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave.pdf>`_
+* Day 10 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave.pdf>`_
 
   * Review: Exercise
   * Intro to DesignSafe & Tapis
@@ -115,11 +116,6 @@ Part 2 - Jan 4-8, 2021
   * Building an Agave App
   * Exercise
 
-
-* Day 10
-
-  * Overview of SimCenter Tools & Their Coding
-  * Closing Remarks
 
 ..
 	  * `Building Graphic User Interfaces (GUI) using Qt5 <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/NHERI-SimCenter-GUI-Qt.pdf>`_

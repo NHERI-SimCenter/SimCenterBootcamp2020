@@ -33,7 +33,8 @@ the actual meetings.
    source/lecture_videos
    source/assignments
    source/TACC
-   source/tools
+   source/git
+   source/emacs
    #source/GUI
    source/help
    source/resources

@@ -1,5 +1,5 @@
-Assignments for Day 4
-===============
+Python: Assignments Day 4
+=========================
 
 
 Self-study portion for day 4 (ahead of class)
