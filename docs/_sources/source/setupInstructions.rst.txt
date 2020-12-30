@@ -35,11 +35,11 @@ Install git from the `git download page <https://git-scm.com/downloads>`_. Once 
 
 .. code-block:: python
    
-   git clone https://github.com/fmckenna/SimCenterBootcamp2020.git
+   git clone https://github.com/YOUR-GIT-LOGIN/SimCenterBootcamp2020.git
 
 .. warning::
 
-   replace fmckenna with your github login name
+   replace YOUR-GIT-LOGIN with your github login name
 
 .. note::
 
@@ -122,11 +122,11 @@ There are a number of ways to install the source code management system `**git**
 
 .. code-block:: python
    
-   git clone https://github.com/fmckenna/SimCenterBootcamp2020.git
+   git clone https://github.com/YOUR-GIT-LOGIN/SimCenterBootcamp2020.git
 
 .. warning::
 
-   replace fmckenna with your github login name
+   replace YOUR-GIT-LOGIN with your github login name
 
 Install Python on a Mac
 -----------------------

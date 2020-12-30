@@ -1,8 +1,8 @@
 .. _lblTACC:
 
-****
-TACC
-****
+*************
+TACC-Frontera
+*************
 
 DesignSafe-ci is closely integerated within `TACC <https://www.tacc.utexas.edu/>`_. TACC designs and deploys the world's most powerful advanced computing technologies and innovative software solutions to enable researchers to answer complex questions like those you are researching and many more. For this workshop, and thanks to DesignSafe-ci, TACC are making available to you access to one of the fastest supercomputers in the world. To make use of these resources you need to be a `good citizen <https://frontera-portal.tacc.utexas.edu/user-guide/citizenship/>`_ while utilizing them.
 
