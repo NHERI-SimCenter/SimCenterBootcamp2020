@@ -1,5 +1,5 @@
-Assignments for Day 3
-===============
+Python: Assignments Day 3
+=========================
 
 .. note::
 
