@@ -1,8 +1,68 @@
-.. _lblHelp:
+.. _lblGit:
 
 ***
 Git
 ***
+
+.. tip::
+
+   If you don't want to read what follows. Here is the minimal, all commands are issued from the powershell or terminal application.
+
+    DO ONCE
+    
+    1. Fork the SimCenterProgrammingBootcamp2020 repo in your browser.
+       
+    2. Clone a Copy of YOUR Fork to local computer. In PowerShell (Winddows) or in terminal (MacOS), cd to a directory you want to place the repo and then type:
+
+          .. code::
+   
+                git clone https://github.com/YOUR_NAME/SimCenterBootcamp2020.git
+       
+    3. Change into the local `SimCenterBootcamp2020` folder
+
+        .. code::
+
+                cd SimCenterBootcamp2020
+
+    4. Create a pointer to the original SimCenter version by typing:
+
+         .. code::
+   
+                git remote add upstream https://github.com/NHERI-SimCenter/SimCenterBootcamp2020.git
+
+    REPEAT DAILY:
+
+    1. Save the changes you want to KEEP to your local repo and your forked copy (execute inside the `SimCenterBootcamp2020` folder):
+
+         .. code::       
+
+               git add filename1 filename2 ...
+               git commit -m "SOME INSTRUCTIVE COMMENT" 
+               git push
+    
+    2. (OPTIONAL) Throw away the rest! 
+
+         .. code::       
+
+               git reset --hard
+
+    3. Get the latest from SimCenter repo and merge changes into your own:
+
+         .. code::       
+
+               git fetch upstream       
+               git merge upstream/master -m "daily update"
+               
+.. note::
+
+   You can watch the lecture recordings from Thursday, August 13, 2020 on `YouTube
+   <https://youtu.be/9bJfG1C2Z3M>`_ .
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9bJfG1C2Z3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>   
+
+
 
 `Git <http://git.com>`_ is the most widely used version control system today.  Version control software is software that enables programmers to manage changes to software over time. It is great for individuals as it keeps track of every modification to the code made in a special kind of database. If a mistake is made, the individual can turn back the clock and compare earlier versions of the code to help fix the mistake. Version control software is indespensible for groups of programmers working on a shared software project for it aids programmers when the programmers are making changes to the same files (seemlessly intagrating changes from different programmers when these changes are in different parts of the files and notifying developers of 'conflicts' (situations when the different programmers have made changes to same parts of the same file). Version control software is an essential part of the every-day of the modern software team's professional practices. You can use **git** in a number of ways:
 
@@ -24,11 +84,6 @@ Git
 
       #. sourceforge
 
-.. note::
-
-   You can watch the lecture recordings from Thursday, August 13, 2020 on `YouTube
-   <https://youtu.be/9bJfG1C2Z3M>`_ .
-
 
 Creating a Repo
 ---------------
@@ -43,81 +98,81 @@ There are three options for creating a repo.
 
       #. For option A above in which you just want a local repo on your machine, in the folder in which you want to create a repo type the following in a terminal window:
 
-      	 .. code::
+         .. code::
    
-		git init 
-		git add .
-		git commit -m "First commit"
+                git init 
+                git add .
+                git commit -m "First commit"
  
 
       #. For option B, if you have no existing code and want to start a new empty repo the best option is to go to the hosting site and create a repo there. Obtain the cloning address from the hosting site and then in a terminal window in directory you wish the repo folder to exist use the git clone command:
 
-      	 .. code::
+         .. code::
    
-		git clone https://github.com/YOUR_USERNAME/REPO.git
+                git clone https://github.com/YOUR_USERNAME/REPO.git
 
       #. For B again, but you have existing code in a folder and wish to create a repo go again to the hosting site and create a repo. Obtain the cloing url. Then in a terminal window go to the folder whose source code you are creating the repo for. Here type the following commands to create a local repo, add the current contents of the folder, point the repo to the hosted repo, and push the files to the remote repo:
 
-      	 .. code::
+         .. code::
    
-		git init 
-		git add .
-		git commit -m "First commit"
-		git remote add origin https://github.com/YOUR_USERNAME/REPO.git 
-		git push -u origin master
+                git init 
+                git add .
+                git commit -m "First commit"
+                git remote add origin https://github.com/YOUR_USERNAME/REPO.git 
+                git push -u origin master
 
-      	 .. note::
+         .. note::
 
-      	 This is similar to the first option. The difference is that you point the local repo to the remote repo and then push the current files. So if you start with option A, and decide to switch to option B later you can!
+         This is similar to the first option. The difference is that you point the local repo to the remote repo and then push the current files. So if you start with option A, and decide to switch to option B later you can!
 
 
-	 On some systems, before you commit you are required to enter your login and email address with the remote service. Some other systems, will just provide a prompt when you issue the command. The commands that you may need to invoke before you can commit are the following:
+         On some systems, before you commit you are required to enter your login and email address with the remote service. Some other systems, will just provide a prompt when you issue the command. The commands that you may need to invoke before you can commit are the following:
 
-	 .. code::
+         .. code::
 
-	    git config --global user.email "email@example.com"
-	    git config --global user.name "Mona Lisa"
+            git config --global user.email "email@example.com"
+            git config --global user.name "Mona Lisa"
 
       #. Finally for option C, you are part of a collaborative project, or just want to start at the state of some other open source project you find on one of the hosting sites you first **FORK** a copy of the repo into your own area. You do this in the browser. Once forked, a repo will exist in your own area which you can clone. This will bring all repo files to your computer.
 
-      	 .. code::
+         .. code::
    
-		git clone https://github.com/YOUR_USERNAME/REPO.git
+                git clone https://github.com/YOUR_USERNAME/REPO.git
 
       That operation has made a local copy of the repo. If this is a collaboaritive project you need to tell the local configuration about the original repo. For command demonsstration purposes, we will again use github.com, the remote owner of the original forks repo was ORIGINAL_OWNER and the repo was named REPO.git
 
           I. If you issue the command git -v you should see the url of **your** remote repo, i.e. typing the following in the terminal should show the results shown:
 
-	  .. code:: 
+          .. code:: 
 
-	     git remote -v
-	     > origin  https://github.com/YOUR_USERNAME/REPO.git (fetch)
+             git remote -v
+             > origin  https://github.com/YOUR_USERNAME/REPO.git (fetch)
              > origin  https://github.com/YOUR_USERNAME/REPO.git (push)
 
-	  II. Next step is to specify the remote upstream repo and give it a reference name. The most widely used name for this repo is **upstream**. In same terminal window type:
+          II. Next step is to specify the remote upstream repo and give it a reference name. The most widely used name for this repo is **upstream**. In same terminal window type:
 
-	  .. code::
+          .. code::
 
-   	     git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
+             git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
 
-	  III. Now if you type git remote -v again, you should see it as part of your remotes.
+          III. Now if you type git remote -v again, you should see it as part of your remotes.
 
-	  .. code::
+          .. code::
 
-	     git remote -v
-	     > origin    https://github.com/YOUR_USERNAME/REPO.git (fetch)
-   	     > origin    https://github.com/YOUR_USERNAME/REPO.git (push)
-   	     > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (fetch)
-   	     > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (push)
+             git remote -v
+             > origin    https://github.com/YOUR_USERNAME/REPO.git (fetch)
+             > origin    https://github.com/YOUR_USERNAME/REPO.git (push)
+             > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (fetch)
+             > upstream  https://github.com/ORIGINAL_OWNER/REPO.git (push)
 
-	 .. note::
+         .. note::
 
-	    if you make a mistake with the upstream repo for any reason, you can remove it and add again
+            if you make a mistake with the upstream repo for any reason, you can remove it and add again
 
-	     .. code::
+             .. code::
 
-	     	git remote rm upstream
-		git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
+                git remote rm upstream
+                git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
 
 
 Using Your Local Repo
@@ -137,37 +192,37 @@ Once you have created the repo (whether for option A, B or C) there are some sta
 
    .. code::
    
-	git diff
+        git diff
 
    You can be selective here, you can specify the files in the current folder
 
    .. code::
 
-	git diff ./
+        git diff ./
 
    or a list of files
 
    .. code::
    
-	git diff fileName1 fileName2 .. fileNameN
+        git diff fileName1 fileName2 .. fileNameN
 
 #. To update the repo with the current state of the files:
 
    .. code::
    
-	git add .
+        git add .
 
    You can be selective here, you can specify the files in the current folder
 
    .. code::
    
-	git add ./
+        git add ./
 
    or a list of files
 
    .. code::
    
-	git add fileName1 fileName2 .. fileNameN
+        git add fileName1 fileName2 .. fileNameN
 
    .. note::
 
@@ -177,26 +232,26 @@ Once you have created the repo (whether for option A, B or C) there are some sta
 
    .. code::
    
-	git commit -m "some message as to what commit is about"
+        git commit -m "some message as to what commit is about"
 
 
 #. To look at the commits you have made to the repo:
 
    .. code::
    
-	git log
+        git log
 
    To look at the last 10 commits you have made to the repo:
 
    .. code::
    
-	git log -n 10
+        git log -n 10
 
 #. If you are unhappy with changes made to a file and wish to revert back to the current file in the repo:
 
    .. code::
    
-	git checkout fileName
+        git checkout fileName
 
    If you are unhappy all changes made in current directory and wish to go back to one of previous commits, find that commit's hash and issue the following:
 
@@ -248,7 +303,7 @@ Say you have an online repo and now you want to update the repo with all the cha
 
    .. code::
    
-	git push
+        git push
 
 #. If you want to pull the code from your online repo and merge with your current, common for situations were you are using multiple computers, you will use the **pull** command. It actually does a git fetch and merge in a single operation. 
 
@@ -303,7 +358,7 @@ When working in a collaborative project, your interaction with git is as shown i
 
    .. note::
    
-	Messages differ depending on your local commits
+        Messages differ depending on your local commits
 
 #. Now merge any conlicts with **add** and **commit** commands. Hopefully there are When dealing with **conflicts** you have a number of options: 
 
@@ -313,13 +368,13 @@ When working in a collaborative project, your interaction with git is as shown i
 
       .. code::
 
-       	 git checkout --ours PATH/FILE 
+         git checkout --ours PATH/FILE 
 
    #. You can tell git to use THEIR (UPSTREAMS) version of the code to resolve the conflict.
 
       .. code::
 
-	 git checkout --theirs PATH/FILE
+         git checkout --theirs PATH/FILE
 
    .. note::
 
