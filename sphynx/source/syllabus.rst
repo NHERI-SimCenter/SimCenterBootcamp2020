@@ -80,7 +80,7 @@ Python - Dec 14-18, 2020
 Introduction to C - Jan 4-8, 2021
 ---------------------------------
 
-* Day 6: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
+* Day 6: `Basic C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/C-Day1.pdf>`_
   
   * Computers and Computer Programs
   * The C Computer Programming Language
@@ -88,9 +88,9 @@ Introduction to C - Jan 4-8, 2021
   * C: Operations, Conditionals, and Loops
   * C: Functions
 
-* Day 7: `Intro to C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/IntroToC.pdf>`_
+* Day 7: More Advanced C
   
-  * C: More Pointers
+  * C: Pointers Review
   * C: Memory Allocation
   * C: User Defined Datatypes
   * C: File I/O
