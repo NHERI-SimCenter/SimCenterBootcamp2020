@@ -11,4 +11,10 @@ Additional Resources
   `Compiler languages C/C++ part of the workshop
   <https://www.youtube.com/playlist?list=PLrxffd5i7yCHRkLhOMYN9beFjDpeCPmVc>`__
 
+* Harvard CS50 Course Material
+
+#. `C Intro <https://www.youtube.com/watch?v=e9Eds2Rc_x8>`_
+#. `C Arrays <https://www.youtube.com/watch?v=8PrOp9t0PyQ>`_
+#. `C Algorithms <https://www.youtube.com/watch?v=fykrlqbV9wM>`_
+#. `C MEMORY <https://www.youtube.com/watch?v=cF6YkH-8vFk>`_
 
