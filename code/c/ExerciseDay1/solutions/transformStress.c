@@ -1,0 +1,70 @@
+// program to transform stress:
+//
+// sigmaX' = sigmaX * cos^2(theta) + sigmaY * sin^2(theta) + 2 * tauXY Sin(theta)Cos(theta)
+// sigmaY' = sigmaX * sin^2(theta) + sigmaY * cos^2(theta) - 2 * tauXY Sin(theta)Cos(theta)
+// tauXY' = (sigmaX-sigmaY) * sin(theta)cos(theta) + tauXY(cos^2(theta) - sin^2(theta))
+//
+// write a program to take 4 inputs: sigmaX, sigmaY, tauXY, theta
+// output transformed stresses: sigmaX', sigmaY', tauXY'
+//
+// NOTE: perform the transformation inside a function that cannot be named main
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+void transformStress(float *stressIN, float theta, float *stressTransformed);
+
+int main(int argc, char **argv) {
+
+  if (argc != 5 && argc != 6) {
+    printf("Usage: appName sigX sigY tauXY theta <anything>\n");
+    exit(-1);
+  }
+
+  float vectorIN[3], vectorTransformed[3];
+  vectorIN[0] = atof(argv[1]);
+  vectorIN[1] = atof(argv[2]);
+  vectorIN[2] = atof(argv[3]);
+  float theta = atof(argv[4]);  
+
+
+  if (argc == 5) {
+
+    // if just provide 4 args, theta is angle we want transformation for
+    transformStress(vectorIN, theta, vectorTransformed);
+    printf("%f, %f, %f\n", vectorTransformed[0], vectorTransformed[1], vectorTransformed[2]);
+    
+  } else {
+
+    // print current
+    printf("%f, %f, %f, %f\n", 0.0, vectorIN[0], vectorIN[1], vectorIN[2]);    
+
+    // compute for all angles until we reach 360 (don't compute for 360)
+    float currentTheta = theta;
+    while (currentTheta < 360.) {
+      transformStress(vectorIN, currentTheta, vectorTransformed);
+      printf("%f, %f, %f, %f\n", currentTheta, vectorTransformed[0],
+	     vectorTransformed[1], vectorTransformed[2]);      
+      currentTheta += theta;
+    }
+  }
+  
+  return 0;
+}
+
+void transformStress(float *stressIN, float theta, float *stressTransformed) {
+
+  float sigX  = stressIN[0];
+  float sigY  = stressIN[1];
+  float tauXY = stressIN[2];    
+
+  // convert theta to radians & compute sin and cos of the angle
+  float thetaRadians = theta*180/3.14159;
+  float cosX = cos(thetaRadians);
+  float sinX = sin(thetaRadians);
+
+  stressTransformed[0] = sigX*cosX*cosX + sigY*sinX*sinX + 2*tauXY * sinX*cosX;
+  stressTransformed[1] = sigX*sinX*sinX + sigY*cosX*cosX - 2*tauXY * sinX*cosX;
+  stressTransformed[2] = (sigX-sigY)*sinX*cosX + tauXY * (cosX*cosX - sinX*sinX);
+}
