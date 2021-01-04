@@ -16,9 +16,9 @@ int main(int argc, char **argv) {
   int n = atoi(argv[1]);
   double maxVal = atof(argv[2]);
   
-  double *data1 = createMyVector(10);
-  double *data2 = createMyVector(10);
-  double *data3 = createMyVector(10);  
+  double *data1 = createMyVector(n);
+  double *data2 = createMyVector(n);
+  double *data3 = createMyVector(n);  
 
   // fill in vectors with random numbers
 
