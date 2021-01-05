@@ -26,13 +26,13 @@ int main(int argc, char **argv) {
 
 	FILE *f_ptr;
 
-	f_ptr = fopen("mohrcircle.dta","wb");
+	f_ptr = ...
 
 	// define a data structure for a single entry in the file
 
 	struct RESULT {
-		double angle;
-		STRESS thestress;
+		...
+		...
 	} result;
 
 	// set the initial stress state
@@ -53,23 +53,12 @@ int main(int argc, char **argv) {
 
 	    StressTransform(S0, &Sp, th);
 
-	    //
-	    // note:
-	    //
-	    // ... result is a structure. fwrite needs a reference to that structure
-	    // ... sizeof(result) returns the number of bytes occupied by the ONE copy of result
-	    // ... 1 is the number of blocks to write
-	    // ... f_ptr is a pointer to the FILE handle
-
-            result.angle = th;
-	    result.thestress = Sp;
-
-	    fwrite(&result, sizeof(result), 1, f_ptr);
+	    // THIS PRINT STATEMENT NEEDS TO BE REPLACED BY WRITING TO THE FILE
+	    printf("%12.6f, %12.6f, %12.6f, %12.6f\n", th, Sp.sigx, Sp.sigy, Sp.tau);
 
 	}
 
 	// done writing data -- close the file
-	fclose(f_ptr);
+	...
 }
-
 

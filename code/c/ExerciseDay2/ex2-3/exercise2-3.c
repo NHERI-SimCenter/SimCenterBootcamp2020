@@ -8,36 +8,23 @@
 int main(int argc, char **argv) {
 
 	// get dth from the first argument.  This is given in degrees!
+	...
+	// might be smart to set a default value, just in case the user
+	// forgets when calling this  program;)
 
-	double dth;
-
-	if (argc>1) {
-		dth = atof(argv[1]) ;
-	}
-	else {
-		dth = 22.5;
-	}
 
 	// set the initial stress state
 
 	STRESS S0;
+	STRESS Sp;
 
 	S0.sigx = 12.0;
 	S0.sigy = -5.5;
 	S0.tau  =  3.5;
 
-	// define  target container for transformed stress
-
-	STRESS Sp;
-
 	// loop to compute transformed states
 
-	for (double th=0.0; th <= 180.; th+=dth) {
-
-	    StressTransform(S0, &Sp, th);
-	    printf("%12.6f, %12.6f, %12.6f, %12.6f\n", th, Sp.sigx, Sp.sigy, Sp.tau);
-
-	}
+	StressTransform(S0, &Sp, 25.0);
+	printf("sigx' = %12.6f\nsigy' = %12.6f\ntau'  = %12.6f\n\n", Sp.sigx, Sp.sigy, Sp.tau);
 }
-
 
