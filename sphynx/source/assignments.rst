@@ -29,4 +29,5 @@ Each assignment typically includes one or more of the following.
     assignment_day4
     assignment_day5
     assignmentPreC
+    assignmentC2
 
