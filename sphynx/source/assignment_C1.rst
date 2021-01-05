@@ -21,8 +21,9 @@ We want you to write an application developed in  **C** to solve this equation.
 
 To start you off, we have provided a file **solveQuadratic.c** in **/code/c/ExerciseDay1/** which will read 3 numbers from the command line and print out a message to the screen. You are to modify it to print out the solution for **x**.
 
-.. code::
-
+.. code_block:: c
+  :linenos:
+     
    /* *********************************************************                    
    //                                                                              
    // program to solve quadratic equation                                          
@@ -62,7 +63,13 @@ To start you off, we have provided a file **solveQuadratic.c** in **/code/c/Exer
 
       gcc solveQuadratic.c -lm
       
-   
+The solution `solveQuadratic.c  <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/tree/master/code/c/ExerciseDay1/solutions/solveQuadratic.c>`_ can be found on github. The contents of that file is presented here:
+
+.. literalinclude:: ./solutions/c1/solveQuadratic.c
+  :language: c
+  :linenos:
+
+      
 Problem 2: Stress Transformations
 ---------------------------------
 
@@ -79,11 +86,17 @@ To transform stress to a rotated coordiate system one can use the formula shown 
    If you need something extra work, write to a file the results of this transformation from **0** through **360** degrees in increments you input from the command line.
 
       To send you data to a file named **results.out**, start the application as follows:   
-   .. code::
+
+      .. code::
 
       ./appName 1.0 100.0 0.01 1 > results.out
 
 
+      The solution `transformStress.c  <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/tree/master/code/c/ExerciseDay1/solutions/transformStress.c>`_ can be found on github. The contents of that file is presented here:
+
+.. literalinclude:: ./solutions/c1/transformStress.c
+  :language: c
+  :linenos:
    
 
 
@@ -99,5 +112,13 @@ The figure below shows an method to compute **pi** by numerical integration. We 
            Computation of pi numerically
 
 
+.. note::
 
+   Tou will be using your ssolution on Day 4 as part of the parallel exercisses.
+   
+	   
+      The solution `pi.c  <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/tree/master/code/c/ExerciseDay1/solutions/pi.c>`_ can be found on github. The contents of that file is presented here:
 
+.. literalinclude:: ./solutions/c1/pi.c
+  :language: c
+  :linenos:
