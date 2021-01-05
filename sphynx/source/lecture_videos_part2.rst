@@ -40,3 +40,37 @@ C Functions
 
    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ua2KOBhvxDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
+
+C Pointers Revisited
+--------------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Qplwm5K27UY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+C Arrays and Memory Management
+------------------------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/QESE-SwNx7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+C File I/O
+----------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/EWT3wU9yDCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+C Struts, Data Structures and Abstraction
+------------------------------------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_ewhjB45tTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+

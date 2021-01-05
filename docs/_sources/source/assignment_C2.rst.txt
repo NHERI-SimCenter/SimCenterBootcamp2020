@@ -7,6 +7,7 @@ Those problems are modeled after exercises in Python and, thus, allow you to lea
 compare when transitioning from python to C (and later C++).
 
 
+
 Problem 1: Reviewing the stress transformation problem
 ------------------------------
 Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation
@@ -225,8 +226,19 @@ of the data file. For the next steps, run your program with the following parame
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
 
 
-.. comment::
+Problem 4: Reading From a binary file
+_____________________________________
 
-	** FMK: your stuff follows here :)
+Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of nputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending files has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
 
+.. note::
+
+   No cmake or Makefile has been provided. You can compile the file with icc or whatever compiler you are using. The program takes a single input, the file to read. To compile and test the program, issue the following at the terminal prompt.
+
+   .. code::
+
+      icc file2.c -o file2
+      ./file2 small.txt
+      ./file2 big.txt
+ 
 
