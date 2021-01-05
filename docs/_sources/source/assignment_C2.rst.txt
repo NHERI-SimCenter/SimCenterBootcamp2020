@@ -7,8 +7,9 @@ Those problems are modeled after exercises in Python and, thus, allow you to lea
 compare when transitioning from python to C (and later C++).
 
 
+
 Problem 1: Reviewing the stress transformation problem
-------------------------------
+------------------------------------------------------
 Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation
 problem.  The main difference to Frank's solution is that this one places functions in separate files, as
 well as adds a header file that contains the definition of the function without its implementation.
@@ -51,7 +52,7 @@ type
 
 	make
 
-to recompile all portions necessary and link all parts to one executable.  That process remains exacty the
+to recompile all portions necessary and link all parts to one executable.  That process remains exactly the
 same regardless of the number of files in your project.  Give it a try and see how convenient this is
 especially for projects provided by somebody else.
 	
@@ -61,16 +62,16 @@ especially for projects provided by somebody else.
       
    
 Problem 2: Using structures
----------------------------------
+---------------------------
 
-The implementation of :code:`StressTransform()` was intentially done a bit clumsy, just the way a beginner might
+The implementation of :code:`StressTransform()` was intentionally done a bit clumsy, just the way a beginner might
 write it. Your task in this exercise is to create a structure 
 
 .. code::
 
 	struct {
 		double sigx;
-		double sig y;
+		double sigy;
 		double tau;
 	} stress ;
 
@@ -84,7 +85,7 @@ code.  The included :code:`CMakeList.txt` shall be used to compile your code.
    way to achieve that in an efficient manner is to use a :code:`typedef struct {...} STRESS ;`.
 
    In addition, inside the function that receives the pointer to a structure, assigning a new value to
-   enties in such a structure requires the syntax
+   entries in such a structure requires the syntax
 
    .. code::
 
@@ -105,11 +106,11 @@ code.  The included :code:`CMakeList.txt` shall be used to compile your code.
 
 
 Problem 3: Writing data for use by other programs: CSV
-_________________________________
+-----------------------------------------------------
 
 While C is very powerful for numeric computations, it can be impractical to generate graphs or fancy
 images using the computed values.  A more efficient way is to use C to do the analysis, write results to
-an easily readable file, and use specialized tools for the postprocessing.  One common and simple format
+an easily readable file, and use specialized tools for the post-processing.  One common and simple format
 is **CSV** (comma-separated-values), which van be read easily by MATLAB, python, or Excel.  
 
 **Your task**: modify the code given in **/code/c/ExerciseDay2/ex2-3** to
@@ -128,7 +129,7 @@ The format of the output shall be for one angle per line, organized as follows:
 	theta, sigma_x, sigma_y, tau_xy
 	...
 
-Output shall comence until an angle of :math:`180^\circ` has been reached or exceeded.
+Output shall commence until an angle of :math:`180^\circ` has been reached or exceeded.
 
 Once your code outputs the information, run it once more and save the results to a file names
 **list.csv** (make sure to add the spaces around the '>')
@@ -162,7 +163,7 @@ Once your code outputs the information, run it once more and save the results to
 
 
 Problem 4: Writing to a binary file
-_________________________________
+-----------------------------------
 
 
 Modify the code generated in the previous exercise to write a binary file names __mohrcircle.dta__ instead
@@ -225,8 +226,29 @@ of the data file. For the next steps, run your program with the following parame
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
 
 
-.. comment::
+Problem 5: Reading From a binary file and Memory Allocation
+-----------------------------------------------------------
 
-	** FMK: your stuff follows here :)
+Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of inputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending file **file3.c** has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
+
+The **file3.c** is as shown below. You need to put some code to replace comment at the line 41.
+
+.. literalinclude:: ./assignments/c2/file3.c
+  :language: c
+  :linenos:
+
+The **small.txt** file is as shown below.
+
+.. literalinclude:: ./assignments/c2/small.txt
+  :linenos:     
+
+.. note::
+   
+   No cmake or Makefile has been provided. You can compile the file with icc or whatever compiler you are using. The program takes a single input, the file to read. To compile and test the program, issue the following at the terminal prompt.
 
 
+   .. code::
+
+      icc file3.c -o file3
+      ./file2 small.txt
+      ./file2 big.txt   
