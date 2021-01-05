@@ -88,12 +88,12 @@ Introduction to C - Jan 4-8, 2021
   * C: Operations, Conditionals, and Loops
   * C: Functions
 
-* Day 7: More Advanced C
+* Day 7: `More Advanced C <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/C-Day2.pdf>`_
   
   * C: Pointers Review
   * C: Memory Allocation
-  * C: User Defined Datatypes
   * C: File I/O
+  * C: User Defined Datatypes
     
 * Day 8 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
 

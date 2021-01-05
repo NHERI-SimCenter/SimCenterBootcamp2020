@@ -40,7 +40,7 @@ The following is a list of items you need to perform. For those of you who follo
 
    .. code::
 
-      cd SimCentercBootcamp2020
+      cd SimCenterBootcamp2020
 
 #. Now we want you to issue the following command, which will add a pointer, called upstream, to the master SimCenterBootcamp2020 repo that you forked:
 
