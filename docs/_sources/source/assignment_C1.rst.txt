@@ -54,11 +54,19 @@ To start you off, we have provided a file **solveQuadratic.c** in **/code/c/Exer
       return 0;
    }
 
+.. note::
+
+   When compiling because you will be using functions from the **C** math library you will need to include the math library when you compile and link your code, i.e.
+
+   .. code::
+
+      gcc solveQuadratic.c -lm
+      
    
 Problem 2: Stress Transformations
 ---------------------------------
 
-To transform stress to a rotated coordiate system one can use the formula shown in the figure. We would ask you to write code that will take as iput **4** values  sigmaXX, sigmaYY, tauXY, and **theta** compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than **main**
+To transform stress to a rotated coordiate system one can use the formula shown in the figure. We would ask you to write code that will take as iput **4** values  sigmaXX, sigmaYY, tauXY, and **theta** compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than **main** and to compilicate things, but demonstrate you understand passing of arrays, pass the input and output stresses to this new function in fixed length arrays.
 
    .. figure:: figures/stress.png
            :align: center
