@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,32 +12,30 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="TACC-Frontera" href="TACC.html" />
@@ -54,7 +53,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
           
 
           
@@ -77,7 +76,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -119,7 +117,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -158,7 +155,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="assignments.html">Assignments</a> &raquo;</li>
         
@@ -219,17 +216,17 @@ type</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
-<p>to recompile all portions necessary and link all parts to one executable.  That process remains exacty the
+<p>to recompile all portions necessary and link all parts to one executable.  That process remains exactly the
 same regardless of the number of files in your project.  Give it a try and see how convenient this is
 especially for projects provided by somebody else.</p>
 </div>
 <div class="section" id="problem-2-using-structures">
 <h2>Problem 2: Using structures<a class="headerlink" href="#problem-2-using-structures" title="Permalink to this headline">¶</a></h2>
-<p>The implementation of <code class="code docutils literal notranslate"><span class="pre">StressTransform()</span></code> was intentially done a bit clumsy, just the way a beginner might
+<p>The implementation of <code class="code docutils literal notranslate"><span class="pre">StressTransform()</span></code> was intentionally done a bit clumsy, just the way a beginner might
 write it. Your task in this exercise is to create a structure</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">struct</span> <span class="p">{</span>
         <span class="n">double</span> <span class="n">sigx</span><span class="p">;</span>
-        <span class="n">double</span> <span class="n">sig</span> <span class="n">y</span><span class="p">;</span>
+        <span class="n">double</span> <span class="n">sigy</span><span class="p">;</span>
         <span class="n">double</span> <span class="n">tau</span><span class="p">;</span>
 <span class="p">}</span> <span class="n">stress</span> <span class="p">;</span>
 </pre></div>
@@ -242,7 +239,7 @@ code.  The included <code class="code docutils literal notranslate"><span class=
 <p>Your modified <code class="code docutils literal notranslate"><span class="pre">StressTransform(...)</span></code> will require a pointer to a <code class="code docutils literal notranslate"><span class="pre">STRESS</span></code> type object.  The
 way to achieve that in an efficient manner is to use a <code class="code docutils literal notranslate"><span class="pre">typedef</span> <span class="pre">struct</span> <span class="pre">{...}</span> <span class="pre">STRESS</span> <span class="pre">;</span></code>.</p>
 <p>In addition, inside the function that receives the pointer to a structure, assigning a new value to
-enties in such a structure requires the syntax</p>
+entries in such a structure requires the syntax</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">StressTransform</span><span class="p">(</span><span class="n">STRESS</span> <span class="n">stressIn</span><span class="p">,</span> <span class="n">STRESS</span> <span class="o">*</span><span class="n">stressOut</span><span class="p">,</span> <span class="o">....</span><span class="p">)</span> <span class="p">{</span>
   <span class="o">...</span>
   <span class="n">stressIn</span><span class="o">-&gt;</span><span class="n">sigx</span> <span class="o">=</span> <span class="o">...</span> <span class="p">;</span>
@@ -259,7 +256,7 @@ enties in such a structure requires the syntax</p>
 <h3>Problem 3: Writing data for use by other programs: CSV<a class="headerlink" href="#problem-3-writing-data-for-use-by-other-programs-csv" title="Permalink to this headline">¶</a></h3>
 <p>While C is very powerful for numeric computations, it can be impractical to generate graphs or fancy
 images using the computed values.  A more efficient way is to use C to do the analysis, write results to
-an easily readable file, and use specialized tools for the postprocessing.  One common and simple format
+an easily readable file, and use specialized tools for the post-processing.  One common and simple format
 is <strong>CSV</strong> (comma-separated-values), which van be read easily by MATLAB, python, or Excel.</p>
 <p><strong>Your task</strong>: modify the code given in <strong>/code/c/ExerciseDay2/ex2-3</strong> to</p>
 <p>1. Take one argument <span class="math notranslate nohighlight">\(\Delta\theta\)</span> in degrees after the name of the executable, defining the increment at
@@ -272,7 +269,7 @@ which transformed stress values shall be written:</p>
 <span class="o">...</span>
 </pre></div>
 </div>
-<p>Output shall comence until an angle of <span class="math notranslate nohighlight">\(180^\circ\)</span> has been reached or exceeded.</p>
+<p>Output shall commence until an angle of <span class="math notranslate nohighlight">\(180^\circ\)</span> has been reached or exceeded.</p>
 <p>Once your code outputs the information, run it once more and save the results to a file names
 <strong>list.csv</strong> (make sure to add the spaces around the ‘&gt;’)</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ Exercise2-3 5.0 &gt; list.csv
@@ -365,19 +362,11 @@ jump pages forward and backward, or move to any specific line.  Press <code clas
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -388,6 +377,7 @@ jump pages forward and backward, or move to any specific line.  Press <code clas
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
