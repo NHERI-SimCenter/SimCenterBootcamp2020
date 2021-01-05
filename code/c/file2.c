@@ -1,6 +1,7 @@
 
-// program to write n random values between 0 and maxVal to a file
-// the values are written in one line
+// program to write n lines, each line containing a csv list of int and two double
+
+// written: fmk
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,34 +9,25 @@
 
 int main(int argc, char **argv) {
 
-  //
-  // initialize random number generator
-  //
+  if (argc != 4) {
+    fprintf(stdout, "ERROR correct usage appName n maxVal outputFile \n");
+    return -1;
+  }
   
-  srand((unsigned int)time(0));  
-  rand(); // i like to call it once, even with time
-
-  //
-  // create a vector of random numbers
-  //
-
-  int n = 5;
-  float maxVal = 3;
-  double theVector[n];
-  for (int i=0; i<n; i++)
-    theVector[i]= ((float)rand()/(float)RAND_MAX) * maxVal;
-
-  //
-  // write them to a file
-  //
+  int n = atoi(argv[1]);
+  float maxVal = atof(argv[2]);
   
-  FILE *filePtr = fopen("file2.out","a");
+  FILE *filePtr = fopen(argv[3],"w");
+
+  srand(100);
+  //srand((unsigned int)time(0)); // the usual way to call srand
+  rand(); // i like to call it once
 
   for (int i=0; i<n; i++) {
-    fprintf(filePtr,"%8.4f ",theVector[i]);
+    float float1 = ((float)rand()/(float)RAND_MAX) * maxVal;
+    float float2 = ((float)rand()/(float)RAND_MAX) * maxVal;
+    fprintf(filePtr,"%d, %f, %f\n", i, float1, float2);
   }
-  fprintf(filePtr,"\n");
-  
-  fclose(filePtr);
-  
+
+  fclose(filePtr);  
 }
