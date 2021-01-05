@@ -2,7 +2,7 @@
 //
 // sigmaX' = sigmaX * cos^2(theta) + sigmaY * sin^2(theta) + 2 * tauXY Sin(theta)Cos(theta)
 // sigmaY' = sigmaX * sin^2(theta) + sigmaY * cos^2(theta) - 2 * tauXY Sin(theta)Cos(theta)
-// tauXY' = (sigmaX-sigmaY) * sin(theta)cos(theta) + tauXY(cos^2(theta) - sin^2(theta))
+// tauXY' = (sigmaY-sigmaX) * sin(theta)cos(theta) + tauXY(cos^2(theta) - sin^2(theta))
 //
 // write a program to take 4 inputs: sigmaX, sigmaY, tauXY, theta
 // output transformed stresses: sigmaX', sigmaY', tauXY'
@@ -60,11 +60,12 @@ void transformStress(float *stressIN, float theta, float *stressTransformed) {
   float tauXY = stressIN[2];    
 
   // convert theta to radians & compute sin and cos of the angle
-  float thetaRadians = theta*180/3.14159;
+  
+  float thetaRadians = theta*180.0/M_PI; // M_PI is PI as a double from the math.h file
   float cosX = cos(thetaRadians);
   float sinX = sin(thetaRadians);
 
   stressTransformed[0] = sigX*cosX*cosX + sigY*sinX*sinX + 2*tauXY * sinX*cosX;
   stressTransformed[1] = sigX*sinX*sinX + sigY*cosX*cosX - 2*tauXY * sinX*cosX;
-  stressTransformed[2] = (sigX-sigY)*sinX*cosX + tauXY * (cosX*cosX - sinX*sinX);
+  stressTransformed[2] = (sigY-sigX)*sinX*cosX + tauXY * (cosX*cosX - sinX*sinX);
 }
