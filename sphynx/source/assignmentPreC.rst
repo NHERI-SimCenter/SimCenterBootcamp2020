@@ -1,6 +1,10 @@
 C: Assignment to Test Setup
 ===========================
 
+.. warning::
+
+   The TACC allocation for the bootcamp expired the first of the year. We are awaiting a request to TACC to activate the account for this year. In the meantime we have added you to an allocation we have on the TACC Stampede2 system. Changes to the instructions posted previously are minimal and only effect the **ssh** command.
+
 .. note::
 
    The purpose of this exercise is to ensure that you are all ready to start programming at the start of the **C** part of the course. Because we will be spending time on parallel programming and showing how best to use **Tapis**, you will be using the `**Frontera** <https://www.tacc.utexas.edu/systems/frontera>`_ system and they provide a comprehinsive set of `usage notes <https://frontera-portal.tacc.utexas.edu/user-guide/>`_ . The following is a brief overview of it with Linux commands for this workshop.
@@ -24,7 +28,7 @@ The following is a list of items you need to perform. For those of you who follo
 
    .. code::
 
-      ssh YOUR_NAME@frontera.tacc.utexas.edu
+      ssh YOUR_NAME@stampede2.tacc.utexas.edu
 
 #. Now let us clone the repo that you just forked on github. To do so type the following:
 
@@ -36,7 +40,7 @@ The following is a list of items you need to perform. For those of you who follo
 
    .. code::
 
-      cd SimCentercBootcamp2020
+      cd SimCenterBootcamp2020
 
 #. Now we want you to issue the following command, which will add a pointer, called upstream, to the master SimCenterBootcamp2020 repo that you forked:
 

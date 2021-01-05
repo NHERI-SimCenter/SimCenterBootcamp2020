@@ -1,51 +1,36 @@
 
-// program to write n random values between 0 and maxVal out
-// output is sent to 2 files:
-//   1. file.out a binary file
-//   2. fileAscii.out an ascii file (i.e. readable by human)
-
+// program to read values from a file, each file a csv list of int and two double
 // written: fmk
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char **argv) {
 
-  //
-  // note: initializing with same seed
-  //
-  
-  srand(100);
-  //srand((unsigned int)time(0)); // the usual way to call srand
-  rand(); // i like to call it once
-
-  //
-  // create a vector of random numbers
-  //
-
-  int n = 10;
-  float maxVal = 3;
-  float theVector[n];
-  for (int i=0; i<n; i++)
-    theVector[i]= ((float)rand()/(float)RAND_MAX) * maxVal;
-
-  //
-  // write them to a file
-  //
-  
-  FILE *fileBinaryPtr = fopen("file3.out","wb");
-  FILE *fileAsciiPtr = fopen("file3Ascii.out","w");  
-
-  // write data in 1 call
-  fwrite(theVector, sizeof(float), n, fileBinaryPtr);  
-
-  for (int i=0; i<n; i++) {
-    fprintf(fileAsciiPtr,"%f ",theVector[i]);
+  if (argc != 2) {
+    fprintf(stdout, "ERROR correct usage appName inputFile\n");
+    return -1;
   }
-  fprintf(fileAsciiPtr,"\n");
   
-  fclose(fileBinaryPtr);
-  fclose(fileAsciiPtr);  
+  FILE *filePtr = fopen(argv[1],"r"); 
+
+  int i = 0;
+  float float1, float2;
+  int maxVectorSize = 100;
+  double *vector1 = (double *)malloc(maxVectorSize*sizeof(double));
+  double *vector2 = (double *)malloc(maxVectorSize*sizeof(double));  
+  int vectorSize = 0;
   
+  while (fscanf(filePtr,"%d, %f, %f\n", &i, &float1, &float2) != EOF) {
+    vector1[vectorSize] = float1;
+    vector2[vectorSize] = float2;
+    printf("%d, %f, %f\n",i, vector2[i], vector1[i]);
+    vectorSize++;
+
+    if (vectorSize == maxVectorSize) {
+      // some code needed here .. programming exercise
+    }
+  }
+
+  fclose(filePtr);  
 }

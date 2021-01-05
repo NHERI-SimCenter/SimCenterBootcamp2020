@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.6)
+
+project (Exercise2-2)
+
+include_directories(${PROJECT_SOURCE_DIR})
+add_executable(Exercise2-2 exercise2-2.c stresstransform.c)

@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TACC-Frontera" href="TACC.html" />
+    <link rel="next" title="C: Day 2 In Class Exercises" href="assignment_C2.html" />
     <link rel="prev" title="C: Assignment to Test Setup" href="assignmentPreC.html" /> 
 </head>
 
@@ -103,6 +103,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_C2.html">C: Day 2 In Class Exercises</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="TACC.html">TACC-Frontera</a></li>
@@ -221,10 +222,17 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When compiling because you will be using functions from the <strong>C</strong> math library you will need to include the math library when you compile and link your code, i.e.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gcc</span> <span class="n">solveQuadratic</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">lm</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="problem-2-stress-transformations">
 <h2>Problem 2: Stress Transformations<a class="headerlink" href="#problem-2-stress-transformations" title="Permalink to this headline">¶</a></h2>
-<p>To transform stress to a rotated coordiate system one can use the formula shown in the figure. We would ask you to write code that will take as iput <strong>4</strong> values  sigmaXX, sigmaYY, tauXY, and <strong>theta</strong> compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than <strong>main</strong></p>
+<p>To transform stress to a rotated coordiate system one can use the formula shown in the figure. We would ask you to write code that will take as iput <strong>4</strong> values  sigmaXX, sigmaYY, tauXY, and <strong>theta</strong> compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than <strong>main</strong> and to compilicate things, but demonstrate you understand passing of arrays, pass the input and output stresses to this new function in fixed length arrays.</p>
 <blockquote>
 <div><div class="align-center figure" id="id1">
 <img alt="../_images/stress.png" src="../_images/stress.png" />
@@ -262,7 +270,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="TACC.html" class="btn btn-neutral float-right" title="TACC-Frontera" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="assignment_C2.html" class="btn btn-neutral float-right" title="C: Day 2 In Class Exercises" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="assignmentPreC.html" class="btn btn-neutral float-left" title="C: Assignment to Test Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
