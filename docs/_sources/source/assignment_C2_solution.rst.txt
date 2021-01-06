@@ -31,7 +31,12 @@ Imagine doing this for many more files, usually tens to hundreds.  That would be
 inefficient and very error prone.  Software engineers developed several tools to simplify and automate the compile
 process.  One of those tools is **cmake**, a member of the **make** family of tools.  You find a
 configuration file names **CMakeList.txt** in the source folder. The configuration
-file is a plain text file, so you can and should check out how it is written.
+file is a plain text file, so you can and should check out how it is written:
+
+
+.. literalinclude:: ./solutions/c2/ex2-1/CMakeLists.txt
+  :language: cmake
+  :linenos:
 
 
 The compile process now becomes 
@@ -111,7 +116,25 @@ code.  The included :code:`CMakeList.txt` shall be used to compile your code.
 
    used for scalar-valued arguments.
 
-   
+A working solution is provided by the following set of files.
+
+* stresstransform.c
+
+.. literalinclude:: ./solutions/c2/ex2-2/stresstransform.c
+  :language: c
+  :linenos:
+
+* stresstransform.h
+
+.. literalinclude:: ./solutions/c2/ex2-2/stresstransform.h
+  :language: c
+  :linenos:
+
+* exercise2-2.c
+
+.. literalinclude:: ./solutions/c2/ex2-2/exercise2-2.c
+  :language: c
+  :linenos:
 
 
 Problem 3: Writing data for use by other programs: CSV
@@ -170,6 +193,29 @@ Once your code outputs the information, run it once more and save the results to
     Isn't that nice?
    
 
+A working solution is provided by the following set of files.
+
+*   *stresstransform.c* and *stresstransform.h* are identical to the ones created for **Problem 3**.
+
+* exercise2-3.c
+
+.. literalinclude:: ./solutions/c2/ex2-3/exercise2-3.c
+  :language: c
+  :linenos:
+
+which creates a result like this:
+
+.. literalinclude:: ./solutions/c2/ex2-3/list.csv
+  :language: csv
+  :linenos:
+
+The *plotter.py* script that displays the data as Mohr's circle is given here to show how simple it is to
+generate nice plots :red:`automagically`.
+
+.. literalinclude:: ./solutions/c2/ex2-3/plotter.py
+  :language: python
+  :linenos:
+
 
 Problem 4: Writing to a binary file
 _________________________________
@@ -218,6 +264,45 @@ of the data file. For the next steps, run your program with the following parame
 
     and check its feedback. (That script may not run on all platforms.)
     
+
+A working solution is provided by the following set of files.
+
+*   *stresstransform.c* and *stresstransform.h* are identical to the ones created for **Problem 3**.
+
+* exercise2-4.c
+
+.. literalinclude:: ./solutions/c2/ex2-4/exercise2-4.c
+  :language: c
+  :linenos:
+
+Executing the generated executable as
+
+.. code::
+
+	$ Exercise2-4 5.0
+
+
+creates a binary file *mohrcircle.dta* which has a size of (STRESS has 3 :green:`double` entires)
+
+	(37 blocks) of (1 :green:`double` + 1 :green:`STRESS`) * ( 8 bytes/:green:`double` ) = 1184 bytes 
+
+.. note::
+
+    If your system has *gcc* installed, you may run the validation script to check your solution.
+    Running it as
+
+    .. code::
+     
+        $ sh ./validate.sh
+
+    should generate the friendly answer:
+
+    .. code::
+    	
+	**
+	** Your code passed with flying colors!
+	**
+
 .. note::
 
     Binary files are not readable by traditional ASCII editors (text editors).  Doings so, usually shows
@@ -233,6 +318,13 @@ of the data file. For the next steps, run your program with the following parame
 
     where the :code:`| less` pipes the output in a pager utility that allows you to search the output,
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
+
+    You should get something like this output:
+
+    .. literalinclude:: ./solutions/c2/ex2-4/hexdump.txt
+      :language: c
+      :linenos:
+
 
 
 Problem 5: Reading From a binary file

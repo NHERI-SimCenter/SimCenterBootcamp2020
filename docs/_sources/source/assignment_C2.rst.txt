@@ -235,7 +235,7 @@ of the data file. For the next steps, run your program with the following parame
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
 
 
-Problem 4: Reading From a binary file
+Problem 5: Reading From a binary file
 _____________________________________
 
 Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of nputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending files has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
