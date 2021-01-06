@@ -9,7 +9,7 @@ compare when transitioning from python to C (and later C++).
 
 
 Problem 1: Reviewing the stress transformation problem
-------------------------------
+------------------------------------------------------
 Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation
 problem.  The main difference to Frank's solution is that this one places functions in separate files, as
 well as adds a header file that contains the definition of the function without its implementation.
@@ -62,7 +62,7 @@ especially for projects provided by somebody else.
       
    
 Problem 2: Using structures
----------------------------------
+---------------------------
 
 The implementation of :code:`StressTransform()` was intentionally done a bit clumsy, just the way a beginner might
 write it. Your task in this exercise is to create a structure 
@@ -106,7 +106,7 @@ code.  The included :code:`CMakeList.txt` shall be used to compile your code.
 
 
 Problem 3: Writing data for use by other programs: CSV
-_________________________________
+-----------------------------------------------------
 
 While C is very powerful for numeric computations, it can be impractical to generate graphs or fancy
 images using the computed values.  A more efficient way is to use C to do the analysis, write results to
@@ -163,7 +163,7 @@ Once your code outputs the information, run it once more and save the results to
 
 
 Problem 4: Writing to a binary file
-_________________________________
+-----------------------------------
 
 
 Modify the code generated in the previous exercise to write a binary file names __mohrcircle.dta__ instead
@@ -226,19 +226,29 @@ of the data file. For the next steps, run your program with the following parame
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
 
 
-Problem 4: Reading From a binary file
-_____________________________________
+Problem 5: Reading From a binary file and Memory Allocation
+-----------------------------------------------------------
 
-Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of nputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending files has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
+Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of inputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending file **file3.c** has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
+
+The **file3.c** is as shown below. You need to put some code to replace comment at the line 41.
+
+.. literalinclude:: ./assignments/c2/file3.c
+  :language: c
+  :linenos:
+
+The **small.txt** file is as shown below.
+
+.. literalinclude:: ./assignments/c2/small.txt
+  :linenos:     
 
 .. note::
-
+   
    No cmake or Makefile has been provided. You can compile the file with icc or whatever compiler you are using. The program takes a single input, the file to read. To compile and test the program, issue the following at the terminal prompt.
+
 
    .. code::
 
-      icc file2.c -o file2
+      icc file3.c -o file3
       ./file2 small.txt
-      ./file2 big.txt
- 
-
+      ./file2 big.txt   
