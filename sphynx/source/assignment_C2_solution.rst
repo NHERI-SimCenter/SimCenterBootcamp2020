@@ -217,6 +217,13 @@ generate nice plots :red:`automagically`.
   :linenos:
 
 
+.. figure:: ./solutions/c2/ex2-3/Figure_2-3.png
+           :align: center
+           :figclass: align-center
+
+           Mohr's circle created from *list.csv* and *plotter.py*
+
+
 Problem 4: Writing to a binary file
 _________________________________
 
