@@ -73,7 +73,7 @@ The solution `solveQuadratic.c  <https://github.com/NHERI-SimCenter/SimCenterBoo
 Problem 2: Stress Transformations
 ---------------------------------
 
-To transform stress to a rotated coordiate system one can use the formula shown in the figure. We would ask you to write code that will take as iput **4** values  sigmaXX, sigmaYY, tauXY, and **theta** compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than **main** and to compilicate things, but demonstrate you understand passing of arrays, pass the input and output stresses to this new function in fixed length arrays.
+To transform stress to a rotated coordinate system one can use the formula shown in the figure. We would ask you to write code that will take as input **4** values  sigmaXX, sigmaYY, tauXY, and **theta** compute the stress in the transformed coordinate system. We would ask you to perform that transformation computation in a function other than **main** and to complicate things, but demonstrate you understand passing of arrays, pass the input and output stresses to this new function in fixed length arrays.
 
    .. figure:: figures/stress.png
            :align: center
@@ -114,7 +114,7 @@ The figure below shows an method to compute **pi** by numerical integration. We 
 
 .. note::
 
-   Tou will be using your ssolution on Day 4 as part of the parallel exercisses.
+   You will be using your solution on Day 4 as part of the parallel exercises.
    
 	   
       The solution `pi.c  <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/tree/master/code/c/ExerciseDay1/solutions/pi.c>`_ can be found on github. The contents of that file is presented here:
