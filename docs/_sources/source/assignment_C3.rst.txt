@@ -6,8 +6,7 @@ Today we have two problems for you to tackle.
 Problem 1: Adding a ColoredShape
 --------------------------------
 
-Navigate to **/code/c++/ExerciseDay3/ex1/** to find the code for the C__ example presented in todays video. You are asked to create another shape of your choosing and add to the code base. A similar example was perfomed during the video.
-
+Navigate to **/code/c++/ExerciseDay3/ex1/** to find the code for the C++ example presented in todays video. You are asked to create another shape of your choosing and add to the code base. A similar example was perfomed during the video.
 
 .. hint::
 
@@ -36,7 +35,7 @@ Navigate to **/code/c++/ExerciseDay3/ex1/** to find the code for the C__ example
 
 .. note::
 
-   A CmakeLists.txt file has been provided. Add your file to it when created. The **cmake** command will check your system for compilers and other development tool and create a **Makefile** in each source folder. The **make** will build the executable(s). For subsequent builds, you only have to call **cmake** again if you change anything in the CMakeFilesList.txt file. Placing the compile files into a *build* folder makes cleanup easier: simply delete the entire *build* folder when done.  It can be regenerated easily using the procedure below.
+   A **CMakeLists.txt** file has been provided. Add your file to it when created. The **cmake** command will check your system for compilers and other development tool and create a **Makefile** in each source folder. The **make** will build the executable(s). For subsequent builds, you only have to call **cmake** again if you change anything in the CMakeFilesList.txt file. Placing the compile files into a *build* folder makes cleanup easier: simply delete the entire *build* folder when done.  It can be regenerated easily using the procedure below.
 
    The build process again is:
 
