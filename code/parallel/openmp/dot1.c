@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define DATA_SIZE 10000
+#define DATA_SIZE 100000000
 
 int main(int argc, const char **argv) {
   int nThreads = 0;
@@ -33,7 +33,7 @@ int main(int argc, const char **argv) {
   dot = sqrt(dot);
 
   tdata = omp_get_wtime() - tdata;
-  printf("dot %f in time %f \n", dot, tdata);
+  printf("dot %f in time %f %d\n", dot, tdata, nThreads);
   return 0;
 }
 
