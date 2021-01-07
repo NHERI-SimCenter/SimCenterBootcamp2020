@@ -32,5 +32,6 @@ Each assignment typically includes one or more of the following.
     assignment_C1
     # assignment_C2
     assignment_C2_solution
-    assignment_C3    
+    assignment_C3
+    assignment_C4        
 
