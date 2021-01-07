@@ -37,9 +37,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TACC-Frontera" href="TACC.html" />
-    <link rel="prev" title="C: Day 1 In Class Exercises" href="assignment_C1.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,28 +82,11 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setupInstructions.html">Setup Instructions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lecture_videos.html">Self-Study Videos</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="assignments.html">Assignments</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="assignment_day1.html">Python: Assignments Day 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignment_day2.html">Python: Assignments Day 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignment_day3.html">Python: Assignments Day 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignment_day4.html">Python: Assignments Day 4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignment_day5.html">Python: Assignments Day 5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignmentPreC.html">C: Assignment to Test Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assignment_C1.html">C: Day 1 In Class Exercises</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">C: Day 2 In Class Exercises</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#problem-1-reviewing-the-stress-transformation-problem">Problem 1: Reviewing the stress transformation problem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#problem-2-using-structures">Problem 2: Using structures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#problem-3-writing-data-for-use-by-other-programs-csv">Problem 3: Writing data for use by other programs: CSV</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#problem-4-writing-to-a-binary-file">Problem 4: Writing to a binary file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#problem-5-reading-from-a-binary-file-and-memory-allocation">Problem 5: Reading From a binary file and Memory Allocation</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="assignments.html">Assignments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TACC.html">TACC-Frontera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
@@ -156,8 +137,6 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="assignments.html">Assignments</a> &raquo;</li>
-        
       <li>C: Day 2 In Class Exercises</li>
     
     
@@ -205,14 +184,21 @@ file is a plain text file, so you can and should check out how it is written.</p
 <p>The compile process now becomes</p>
 <p>1. a configuration step - done only once or every time you are adding a file to the project.  Inside the
 source folder, execute</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mkdir build
+$ cd build
+$ cmake ..
 </pre></div>
 </div>
 <p>This will check your system for compilers and other development tool and create a <strong>Makefile</strong> in each
 source folder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Placing the compile files into a <em>build</em> folder makes cleanup easier: simply delete
+the entire <em>build</em> folder when done.  It can be regenerated easily using the above procedure.</p>
+</div>
 <p>2. From now on, every time you make changes to any of the files within your project, simply
 type</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make
 </pre></div>
 </div>
 <p>to recompile all portions necessary and link all parts to one executable.  That process remains exactly the
@@ -223,11 +209,11 @@ especially for projects provided by somebody else.</p>
 <h2>Problem 2: Using structures<a class="headerlink" href="#problem-2-using-structures" title="Permalink to this headline">¶</a></h2>
 <p>The implementation of <code class="code docutils literal notranslate"><span class="pre">StressTransform()</span></code> was intentionally done a bit clumsy, just the way a beginner might
 write it. Your task in this exercise is to create a structure</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">struct</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">typedef</span> <span class="n">struct</span> <span class="p">{</span>
         <span class="n">double</span> <span class="n">sigx</span><span class="p">;</span>
         <span class="n">double</span> <span class="n">sigy</span><span class="p">;</span>
         <span class="n">double</span> <span class="n">tau</span><span class="p">;</span>
-<span class="p">}</span> <span class="n">stress</span> <span class="p">;</span>
+<span class="p">}</span> <span class="n">STRESS</span> <span class="p">;</span>
 </pre></div>
 </div>
 <p>and modify the code from the previous exercise to utilize the much easier to read data structure provided
@@ -294,7 +280,7 @@ folder where you placed <strong>list.csv</strong> run</p>
 </div>
 <div class="section" id="problem-4-writing-to-a-binary-file">
 <h2>Problem 4: Writing to a binary file<a class="headerlink" href="#problem-4-writing-to-a-binary-file" title="Permalink to this headline">¶</a></h2>
-<p>Modify the code generated in the previous exercise to write a binary file names __mohrcircle.dta__ instead
+<p>Modify the code generated in the previous exercise to write a binary file names <em>mohrcircle.dta</em> instead
 of the formatted ASCII data.  The data shall be exported in clocks composed of <code class="code docutils literal notranslate"><span class="pre">double</span> <span class="pre">theta</span></code>
 followed by a block of <code class="code docutils literal notranslate"><span class="pre">STRESS</span></code> (or the three components of stress as <code class="code docutils literal notranslate"><span class="pre">double</span></code>).</p>
 <p>You may be working of your code or use the provided code skeleton in <strong>/code/c/ExerciseDay2/ex2-4</strong>.</p>
@@ -329,7 +315,7 @@ correct code.</p>
 <p class="admonition-title">Note</p>
 <p>Binary files are not readable by traditional ASCII editors (text editors).  Doings so, usually shows
 some unintelligible scramble of characters, sometimes leaving your terminal in an unusable state.</p>
-<p>However, you may view binary files using a _hex-<a href="#id1"><span class="problematic" id="id2">dump_</span></a> utility.  That approach may help you understand
+<p>However, you may view binary files using a <em>hex-dump</em> utility.  That approach may help you understand
 and recover the structure of a binary file (though it still requires some practice and skill and
 <strong>luck</strong>).  You may try such a tool on your binary file using</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ xxd mohrcircle.dta | less
@@ -475,15 +461,6 @@ jump pages forward and backward, or move to any specific line.  Press <code clas
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="TACC.html" class="btn btn-neutral float-right" title="TACC-Frontera" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="assignment_C1.html" class="btn btn-neutral float-left" title="C: Day 1 In Class Exercises" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

@@ -74,3 +74,26 @@ C Struts, Data Structures and Abstraction
    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_ewhjB45tTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
+C++ Abstraction and OOP
+-----------------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9VYn7g96cxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+C++ Language
+------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0YJdjzSEN78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+C++ Class Example
+-----------------
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/YzpMBOlhpq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+   

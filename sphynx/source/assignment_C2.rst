@@ -9,7 +9,7 @@ compare when transitioning from python to C (and later C++).
 
 
 Problem 1: Reviewing the stress transformation problem
-------------------------------
+------------------------------------------------------
 Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation
 problem.  The main difference to Frank's solution is that this one places functions in separate files, as
 well as adds a header file that contains the definition of the function without its implementation.
@@ -33,47 +33,56 @@ process.  One of those tools is **cmake**, a member of the **make** family of to
 configuration file names **CMakeList.txt** in the source folder. The configuration
 file is a plain text file, so you can and should check out how it is written.
 
+
 The compile process now becomes 
 
 1. a configuration step - done only once or every time you are adding a file to the project.  Inside the
 source folder, execute
 
 .. code::
-	
-	cmake .
+
+	$ mkdir build
+	$ cd build
+	$ cmake ..
+
 
 This will check your system for compilers and other development tool and create a **Makefile** in each
-source folder.  
+source folder. 
+
+.. note:: 
+
+    Placing the compile files into a *build* folder makes cleanup easier: simply delete
+    the entire *build* folder when done.  It can be regenerated easily using the above procedure.
 
 2. From now on, every time you make changes to any of the files within your project, simply
 type
 
 .. code::
 
-	make
+	$ make
 
 to recompile all portions necessary and link all parts to one executable.  That process remains exactly the
 same regardless of the number of files in your project.  Give it a try and see how convenient this is
 especially for projects provided by somebody else.
-	
+	    
 
 	
 
       
    
 Problem 2: Using structures
----------------------------------
+---------------------------
 
 The implementation of :code:`StressTransform()` was intentionally done a bit clumsy, just the way a beginner might
 write it. Your task in this exercise is to create a structure 
 
 .. code::
 
-	struct {
+	typedef struct {
 		double sigx;
 		double sigy;
 		double tau;
-	} stress ;
+	} STRESS ;
 
 and modify the code from the previous exercise to utilize the much easier to read data structure provided
 by this :code:`struct`.  Use the code skeleton provided in **/code/c/ExerciseDay2/ex2-2** to develop that
@@ -106,7 +115,7 @@ code.  The included :code:`CMakeList.txt` shall be used to compile your code.
 
 
 Problem 3: Writing data for use by other programs: CSV
-_________________________________
+-----------------------------------------------------
 
 While C is very powerful for numeric computations, it can be impractical to generate graphs or fancy
 images using the computed values.  A more efficient way is to use C to do the analysis, write results to
@@ -163,10 +172,10 @@ Once your code outputs the information, run it once more and save the results to
 
 
 Problem 4: Writing to a binary file
-_________________________________
+-----------------------------------
 
 
-Modify the code generated in the previous exercise to write a binary file names __mohrcircle.dta__ instead
+Modify the code generated in the previous exercise to write a binary file names *mohrcircle.dta* instead
 of the formatted ASCII data.  The data shall be exported in clocks composed of :code:`double theta`
 followed by a block of :code:`STRESS` (or the three components of stress as :code:`double`).
 
@@ -214,7 +223,7 @@ of the data file. For the next steps, run your program with the following parame
     Binary files are not readable by traditional ASCII editors (text editors).  Doings so, usually shows
     some unintelligible scramble of characters, sometimes leaving your terminal in an unusable state.
 
-    However, you may view binary files using a _hex-dump_ utility.  That approach may help you understand
+    However, you may view binary files using a *hex-dump* utility.  That approach may help you understand
     and recover the structure of a binary file (though it still requires some practice and skill and
     **luck**).  You may try such a tool on your binary file using
 
@@ -226,19 +235,31 @@ of the data file. For the next steps, run your program with the following parame
     jump pages forward and backward, or move to any specific line.  Press :code:`q` to exit this utility.
 
 
-Problem 4: Reading From a binary file
-_____________________________________
 
-Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of nputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending files has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
+Problem 5: Reading From a binary file and Memory Allocation
+-----------------------------------------------------------
+
+
+Reading of data from files and placing them into containers such as Vectors is easy if you know the size of the data you are reading. If this is unknown the problem becomes more tricky. The solution presented on slide 22 worked for a small number of inputs, but failed with a segmentation fault for larger problems. You are to fix the problem. A copy of the offending file **file3.c** has been placed in the directory ex2-5 along with two files. The program can handle the first **small.txt**, it will fail with the second **big.txt**. Can you make the program work. The solution will test your understanding of file I/O,  memory management and pointers.
+
+The **file3.c** is as shown below. You need to put some code to replace comment at the line 41.
+
+.. literalinclude:: ./assignments/c2/file3.c
+  :language: c
+  :linenos:
+
+The **small.txt** file is as shown below.
+
+.. literalinclude:: ./assignments/c2/small.txt
+  :linenos:     
 
 .. note::
-
+   
    No cmake or Makefile has been provided. You can compile the file with icc or whatever compiler you are using. The program takes a single input, the file to read. To compile and test the program, issue the following at the terminal prompt.
+
 
    .. code::
 
-      icc file2.c -o file2
+      icc file3.c -o file3
       ./file2 small.txt
-      ./file2 big.txt
- 
-
+      ./file2 big.txt   
