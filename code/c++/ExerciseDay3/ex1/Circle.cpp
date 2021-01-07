@@ -12,7 +12,7 @@ Circle::Circle(double radius, string color)
 
 double
 Circle::getArea(void) {
-  return r*getPI();
+  return r*r*getPI();
 }
 
 double
