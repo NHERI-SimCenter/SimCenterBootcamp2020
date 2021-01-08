@@ -188,4 +188,10 @@ We now have an application ready and wating to compile our code and run it!
 Step 4: Submitting a Job
 ------------------------
 
-Last exercise is to actually submit a job. For this we will use the jobs service. 
+Last exercise is to actually submit a job using a file. In the **code/agave** folder there is a file **piMPI.c** and a json file **cloneSubmit.json**. The **piMPI.c** we have alredy used in files and placed in a demo folder at designsafe off our remote home folder. To submit a job to run at TACC through tapis we need to create the input file telling tapis what to do. The input file is application specific. An input file template for our app is found in **cloneSubmit.json** which is shown below:
+
+.. literalinclude:: ./assignments/c5/cloneSubmit.json
+  :language: json
+  :linenos:
+
+     
