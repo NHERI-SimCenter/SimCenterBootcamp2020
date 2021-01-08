@@ -78,8 +78,8 @@ Once the file has been completed, you can create the system by invoking one of t
 
 for Frontera:
 
-   .. code::
-      
+.. code::
+  
       tapis systems create  -F fronteraSystem.json
 
  Now have a look for it. In the file we named it demo something.
