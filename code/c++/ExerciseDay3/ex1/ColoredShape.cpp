@@ -17,7 +17,7 @@ ColoredShape::getColor() {
 
 void
 ColoredShape::printArea(std::ostream &s) {
-  s << "Color: " << color << "UNKOWN area: " << this->getArea() << "\n";
+  s << "Color: " << color << " UNKOWN area: " << this->getArea() << "\n";
 }
   
 

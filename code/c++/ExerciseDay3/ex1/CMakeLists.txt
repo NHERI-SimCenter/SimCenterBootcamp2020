@@ -4,7 +4,7 @@ set (CMAKE_C_STANDARD 99)
 project (Shapes)
 
 include_directories(${PROJECT_SOURCE_DIR})
-add_library(ShapeLib ColoredShape.cpp Rectangle.cpp Circle.cpp)
+add_library(ShapeLib ColoredShape.cpp Rectangle.cpp Circle.cpp Ellipse.cpp)
 
 add_executable(ex1 main1.cpp)
 target_link_libraries (ex1 ShapeLib)
