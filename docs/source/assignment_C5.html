@@ -1,0 +1,639 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>C: Tapis-cli &mdash; Programming Bootcamp 2020  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TACC-Frontera" href="TACC.html" />
+    <link rel="prev" title="C: Parallel Programming" href="assignment_C4.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setupInstructions.html">Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_videos.html">Self-Study Videos</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="assignments.html">Assignments</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="assignment_day1.html">Python: Assignments Day 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_day2.html">Python: Assignments Day 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_day3.html">Python: Assignments Day 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_day4.html">Python: Assignments Day 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_day5.html">Python: Assignments Day 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignmentPreC.html">C: Assignment to Test Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_C1.html">C Variables and Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_C2_solution.html">C: Day 2 In Class Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_C3.html">C++ Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment_C4.html">C: Parallel Programming</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">C: Tapis-cli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-setting-up-an-execution-system">Step 1: Setting Up an Execution System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-exploring-file-system-commands">Step 2: Exploring File System Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-build-a-tapis-app">Step 3: Build a Tapis app</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-submitting-a-job">Step 4: Submitting a Job</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TACC.html">TACC-Frontera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emacs.html">Emacs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Questions, Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Additional Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Programming Bootcamp 2020</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="assignments.html">Assignments</a> &raquo;</li>
+        
+      <li>C: Tapis-cli</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/assignment_C5.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="c-tapis-cli">
+<h1>C: Tapis-cli<a class="headerlink" href="#c-tapis-cli" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<blockquote>
+<div><p>Initial setup is required of the <strong>Tapis-cli</strong>. This is done by invoking the dollowing in a linux (see warning below) shell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Once the cli is installed you need to configure it to use deignsafe and you need to provide your username and password:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">auth</span> <span class="n">init</span>
+</pre></div>
+</div>
+<p>The application will prompt for a number of things. For tenant enter <strong>designsafe</strong>, for username and password your DesignSafe username and password. For others, ignore by just hitting enter.</p>
+</div></blockquote>
+</div>
+<p>Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commnds in the terminal of your desktop utilizing DesignSafe resources for storing files and results.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>At time of writing, the <strong>-F</strong> option was failing <strong>tapis</strong> commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the <strong>Ubuntu system for Windows</strong> and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>How to install the Ubuntu subsystem on Windows 10</strong></p>
+<p>The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
+Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
+it on your Windows system.  See
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a>
+for details.</p>
+<p><span class="red">Warning</span>: If you are running Windows in a virtual environment such as VMware or Parallels,
+installing the Ubuntu subsystem in Windows will fail.  Install Ubuntu in a separate virtual machine
+instead.</p>
+</div>
+<p>There are 4 steps to this process that follow the videos presented in class:</p>
+<div class="section" id="step-1-setting-up-an-execution-system">
+<h2>Step 1: Setting Up an Execution System<a class="headerlink" href="#step-1-setting-up-an-execution-system" title="Permalink to this headline">¶</a></h2>
+<p>Tapis provides <strong>systems</strong> which provide access to the file systems and hardware resources, e.g. Frontera and Stampede, at TACC. For our <strong>Storage System</strong> we will be using the default provided by DesignSafe (designsafe.storage.default). In this exercise we are going to create an execution system by providing a .json file containing basic information to one of our machine logins, e.g. username, password, and locations within our machine account of directories to place temporary files (the location the files are placed when we run an app).</p>
+<p>Before you create a system, you might want to issue some tapis commands to get comfortable with the tapis-cli.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="o">-</span><span class="n">h</span>
+<span class="n">tapis</span> <span class="n">systems</span> <span class="o">-</span><span class="n">h</span>
+<span class="n">tapis</span> <span class="n">systems</span> <span class="n">search</span> <span class="o">--</span><span class="n">default</span> <span class="n">eq</span> <span class="n">true</span>
+<span class="n">tapis</span> <span class="n">systems</span> <span class="n">show</span> <span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span>
+<span class="n">tapis</span> <span class="n">systems</span> <span class="nb">list</span>
+<span class="n">tapis</span> <span class="n">systems</span> <span class="n">search</span> <span class="o">--</span><span class="n">execution</span><span class="o">-</span><span class="nb">type</span> <span class="n">eq</span> <span class="n">HPC</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>You first need to edit a file provided in the <strong>code/agave/</strong> agave directory. We have two template systems to chooose from , <strong>fronteraSystem.json</strong> and <strong>stampede2Syatem.json</strong>, which to use depends on which TACC system you have been logging into.</p>
+<p>The Frontera file is shown below:</p>
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;maxSystemJobs&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+    <span class="nt">&quot;executionType&quot;</span><span class="p">:</span> <span class="s2">&quot;HPC&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Frontera has two computing subsystems, a primary computing system focused on double precision performance, and a second subsystem focused on single precision streaming-memory computing.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;storage&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;proxy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;protocol&quot;</span><span class="p">:</span> <span class="s2">&quot;SFTP&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mirror&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;frontera.tacc.utexas.edu&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+        <span class="nt">&quot;auth&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PASSWORD&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;${USERNAME}&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;${PASSWORD}&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;homeDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rootDir&quot;</span><span class="p">:</span> <span class="s2">&quot;${SCRATCH_DIR}&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;EXECUTION&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;login&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;proxy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;protocol&quot;</span><span class="p">:</span> <span class="s2">&quot;SSH&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+        <span class="nt">&quot;auth&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PASSWORD&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;${USERNAME}&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;${PASSWORD}&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;frontera.tacc.utexas.edu&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;startupScript&quot;</span><span class="p">:</span> <span class="s2">&quot;~/.bashrc&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;scheduler&quot;</span><span class="p">:</span> <span class="s2">&quot;SLURM&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;public&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;maxSystemJobsPerUser&quot;</span><span class="p">:</span> <span class="mi">250</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;demo.exec.frontera.${USERNAME}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;workDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;site&quot;</span><span class="p">:</span> <span class="s2">&quot;tacc.utexas.edu&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;environment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;queues&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;192GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;48:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">28672</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;development&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;192GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;02:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">2240</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;large&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;192GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;48:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">2048</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">114688</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;flex&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;192GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;48:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">128</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">7168</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;rtx&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;128GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;48:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;rtx-dev&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;maxJobs&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;maxMemoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;128GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;maxRequestedTime&quot;</span><span class="p">:</span> <span class="s2">&quot;02:00:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxNodes&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;maxProcessorsPerNode&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&quot;mappedName&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;maxUserJobs&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;customDirectives&quot;</span><span class="p">:</span> <span class="s2">&quot;${ALLOCATION}&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;globalDefault&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;${USERNAME} Frontera HPC DEMO Execution System for DesignSafe&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;UP&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;scratchDir&quot;</span><span class="p">:</span> <span class="s2">&quot;${SCRATCH_DIR}&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>In this file you need to search for the following and replace them with appropriate text. The <strong>${ALLOCATION}</strong> text is replaced with <strong>-A FTA-DD-SimCenter</strong> if using Frontera and with <a href="#id1"><span class="problematic" id="id2">**</span></a>-A <a href="#id3"><span class="problematic" id="id4">**</span></a>:</p>
+<p>${USERNAME},
+${PASSWORD},
+${SCRATCH_DIR} and
+${ALLOCATION}.</p>
+<p>Once the file has been completed, you can create the system by invoking one of the the following command.</p>
+<p>for Frontera:</p>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">systems</span> <span class="n">create</span>  <span class="o">-</span><span class="n">F</span> <span class="n">fronteraSystem</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Now have a look for it. In the file we named it demo something.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">systems</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">demo</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
+</pre></div>
+</div>
+<p>The system should appear in what is returned.</p>
+</div></blockquote>
+<p>Thats it, congratulations you have created an execution system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To change name of app for subsequent use, you can edit the app id on line <strong>37</strong>, you just cannot use an existing name.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Never check the file into github unless you remove your <strong>password</strong>.</p>
+</div>
+</div>
+<div class="section" id="step-2-exploring-file-system-commands">
+<h2>Step 2: Exploring File System Commands<a class="headerlink" href="#step-2-exploring-file-system-commands" title="Permalink to this headline">¶</a></h2>
+<p>Tapis provide commands for doing file operartions. It providess commands for uploading and downloading files to and from the storage systems as well as typical commands dealing with file system opeartions at thr remove stoarge system.</p>
+<p>Some commands we would like you to try.</p>
+<p>Begin by listing the files in your home directory</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span>
+</pre></div>
+</div>
+<p>Add a directory tmp to your home folder at DesignSafe</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">mkdir</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span> <span class="n">tmp</span>
+</pre></div>
+</div>
+<p>Copy a small file <strong>SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c</strong> to your current directory. From there send it to your new folder at DesignSafe.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">upload</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span>  <span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
+</pre></div>
+</div>
+<p>Remove your local copy and try and copy the file you just uploaded.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">download</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
+</pre></div>
+</div>
+<p>List the other <strong>tapis</strong> file commands and explore what they do.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="o">-</span><span class="n">h</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-3-build-a-tapis-app">
+<h2>Step 3: Build a Tapis app<a class="headerlink" href="#step-3-build-a-tapis-app" title="Permalink to this headline">¶</a></h2>
+<p>A Tapis <strong>apps</strong> is a containerized application. Each app has a description that describes it’s name, inputs and parameters. This description can be obtained using the <strong>tapis apps show</strong> command. The description contains information about where the container for the application resides, inputs and outputs, information about the execution system on which the app will run and  and information about the bash script, <strong>wrapper.sh</strong>. <strong>wrapper.sh</strong> is the sript that is run when the application is started running at a HPC resource. <strong>wrapper.sh</strong> will have access to all the files in the app container when it is run.</p>
+<p>We are going a tapis container application we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app <strong>mpiCompileRun</strong> and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.</p>
+<p>The app we have in mind is one that will compile a program we have uploaded <strong>mpiPI.c</strong> say and run it. A wrapper.sh file for this purpose is shown below:</p>
+<p>We are first going to search for an app to clone. Let us look at simcenter apps.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apps</span> <span class="n">tapis</span> <span class="n">apps</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">simcenter</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
+</pre></div>
+</div>
+<p>You should see one with an id <strong>simcenter-dakota-1.0.0u1</strong>. Have a look at it’s description.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">show</span> <span class="n">simcenter</span><span class="o">-</span><span class="n">dakota</span><span class="o">-</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span><span class="n">u1</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
+</pre></div>
+</div>
+<p>You will see it takes an input directory and some parameters to run. We will use it to clone our app. Have a look at the inputs for <strong>tapis apps clone</strong> with the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">clone</span> <span class="o">-</span><span class="n">h</span>
+</pre></div>
+</div>
+<p>After having reviewed results of previous, you should be able to understand the following. The command to clone is some modifications based on your account to the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">clone</span> <span class="o">-</span><span class="n">e</span> <span class="n">designsafe</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">exec</span><span class="o">.</span><span class="n">frontera</span><span class="o">.</span><span class="n">fmk</span> <span class="o">-</span><span class="n">n</span> <span class="n">mpiCompileRun</span> <span class="o">-</span><span class="n">x</span> <span class="mf">0.0</span><span class="o">.</span><span class="mi">1</span>  <span class="n">simcenter</span><span class="o">-</span><span class="n">dakota</span><span class="o">-</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span><span class="n">u1</span>
+</pre></div>
+</div>
+<p>Having cloned the app, let us look at it’s description to see the inputs and outputs. We can get this description using the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">show</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span> <span class="n">mpiCompileRun</span><span class="o">-</span><span class="mf">0.0</span><span class="o">.</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="n">mpiCompileRun</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>This command as placed the description of the <strong>mpiCompileRun</strong> to json file mpiCompileRun.json. Open it up and have a look. You will see the input and parameters section for this app. Also you will see the application directory, which is in your home/applications foler at designsafe. From the application directory download the wrapper.sh script. We will modify it a bit. We will only have one input parameter <strong>inputFile</strong>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">upload</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">applications</span><span class="o">/</span><span class="n">mpiCompileRun</span><span class="o">-</span><span class="mf">0.0</span><span class="o">.</span><span class="mf">1.</span> <span class="n">wrapper</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>After editing the app description file, we can update the app.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">update</span> <span class="o">-</span><span class="n">F</span> <span class="n">mpiCompileRun</span><span class="o">.</span><span class="n">json</span> <span class="n">mpiCompileRun</span><span class="o">-</span><span class="mf">0.0</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>We now have an application ready and wating to compile our code and run it!</p>
+</div>
+<div class="section" id="step-4-submitting-a-job">
+<h2>Step 4: Submitting a Job<a class="headerlink" href="#step-4-submitting-a-job" title="Permalink to this headline">¶</a></h2>
+<p>Last exercise is to actually submit a job. For this we will use the jobs service.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="TACC.html" class="btn btn-neutral float-right" title="TACC-Frontera" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="assignment_C4.html" class="btn btn-neutral float-left" title="C: Parallel Programming" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

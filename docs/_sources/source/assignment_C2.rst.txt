@@ -1,5 +1,5 @@
-C: Day 2 In Class Exercises
-===========================
+C Arrays and File I/O
+=====================
 
 Today we have several problems for you to tackle. 
 Parts should look and feel familiar from Day 1, though we will add more features as we go.
@@ -10,8 +10,7 @@ compare when transitioning from python to C (and later C++).
 
 Problem 1: Reviewing the stress transformation problem
 ------------------------------------------------------
-Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation
-problem.  The main difference to Frank's solution is that this one places functions in separate files, as
+Navigate to **/code/c/ExerciseDay2/ex2-1/** to find another solution for the stress transformation problem.  The main difference to Frank's solution is that this one places functions in separate files, as
 well as adds a header file that contains the definition of the function without its implementation.
 
 Compiling this version requires multiple steps:

@@ -1,41 +1,42 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>C: Day 2 In Class Exercises &mdash; Programming Bootcamp 2020  documentation</title>
+  <title>C Arrays and File I/O &mdash; Programming Bootcamp 2020  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
@@ -51,7 +52,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
           
 
           
@@ -74,6 +75,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -97,6 +99,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -135,9 +138,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>C: Day 2 In Class Exercises</li>
+      <li>C Arrays and File I/O</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -156,16 +159,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="c-day-2-in-class-exercises">
-<h1>C: Day 2 In Class Exercises<a class="headerlink" href="#c-day-2-in-class-exercises" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="c-arrays-and-file-i-o">
+<h1>C Arrays and File I/O<a class="headerlink" href="#c-arrays-and-file-i-o" title="Permalink to this headline">¶</a></h1>
 <p>Today we have several problems for you to tackle.
 Parts should look and feel familiar from Day 1, though we will add more features as we go.
 Those problems are modeled after exercises in Python and, thus, allow you to learn how data structures
 compare when transitioning from python to C (and later C++).</p>
 <div class="section" id="problem-1-reviewing-the-stress-transformation-problem">
 <h2>Problem 1: Reviewing the stress transformation problem<a class="headerlink" href="#problem-1-reviewing-the-stress-transformation-problem" title="Permalink to this headline">¶</a></h2>
-<p>Navigate to <strong>/code/c/ExerciseDay2/ex2-1/</strong> to find another solution for the stress transformation
-problem.  The main difference to Frank’s solution is that this one places functions in separate files, as
+<p>Navigate to <strong>/code/c/ExerciseDay2/ex2-1/</strong> to find another solution for the stress transformation problem.  The main difference to Frank’s solution is that this one places functions in separate files, as
 well as adds a header file that contains the definition of the function without its implementation.</p>
 <p>Compiling this version requires multiple steps:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gcc</span> <span class="n">stresstransform</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">c</span>
@@ -467,11 +469,19 @@ jump pages forward and backward, or move to any specific line.  Press <code clas
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -482,7 +492,6 @@ jump pages forward and backward, or move to any specific line.  Press <code clas
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
