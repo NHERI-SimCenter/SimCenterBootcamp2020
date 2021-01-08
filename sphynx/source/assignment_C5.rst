@@ -23,8 +23,21 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
 
 .. warning:: 
 
-   At time of writing, the **-F** option was failing **tapis** commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the ***Ubuntu system for Windows** and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!
+   At time of writing, the **-F** option was failing **tapis** commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the **Ubuntu system for Windows** and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!
       
+.. note::
+
+   **How to install the Ubuntu subsystem on Windows 10**
+
+   The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
+   Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
+   it on your Windows system.  See
+   `https://docs.microsoft.com/en-us/windows/wsl/install-win10 <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`__
+   for details.
+ 
+   :red:`Warning`: If you are running Windows in a virtual environment such as VMware or Parallels,
+   installing the Ubuntu subsystem in Windows will fail.  Install Ubuntu in a separate virtual machine
+   instead.
 
 There are 4 steps to this process that follow the videos presented in class:
 
