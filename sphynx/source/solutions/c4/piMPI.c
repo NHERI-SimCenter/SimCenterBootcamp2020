@@ -48,13 +48,17 @@ int main(int argc, char **argv) {
   if (pid == 0) {
     globalSum = (double *)malloc(numP * sizeof(double) );
   }
+  
   MPI_Gather(&pi, 1, MPI_DOUBLE, globalSum, 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
   if (pid == 0) {
-    for (int i=1; i<numP; i++) // 1 as pi already has p0 contribution
+    for (int i=1; i<numP; i++) // 0 as pi already as p0 contribution
       pi += globalSum[i];
   }
 
+  if (pid == 0)
+    free(globalSum);
+  
   // 
   // end timer
   //

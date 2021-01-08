@@ -54,11 +54,22 @@ The submit script is as shown below.
 
 .. literalinclude:: ./assignments/c4/submit.sh
   :linenos:
-      
+
+
+One possible solution, which includes multiple approaches, is as shown in the following:
+
+.. literalinclude:: ./solutions/c4/piMPI.c
+  :linenos:
+     
 Problem 2: Parallelize using OpenMP
 -----------------------------------
 
 You are to modify the **pi.c** application and run it to use mpi. I have included a few files in code/parallel/ExercisesDay4/ex1 to help you. They include **pi.c** above and submitPI.sh script. **submitPI.sh** is as shown:
 
-.. literalinclude:: ./assignments/c4/submitPI.sh
+.. literalinclude:: ./solutions/c4/submitPI.sh
+  :linenos:
+
+One possible solution, which includes multiple approaches, is as shown in the following:
+
+.. literalinclude:: ./solutions/c4/piOpenMP.c
   :linenos:

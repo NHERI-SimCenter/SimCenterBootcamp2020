@@ -1,4 +1,8 @@
 
+//
+// file to compute pi numerically using a number of different approaches
+//   - demonstrates various OpenMP approaches
+
 #include <omp.h>
 #include <stdio.h>
 #include <time.h>
@@ -28,10 +32,10 @@ int main() {
     pi*=dx;
   }
 
-  printf("Serially: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);
+  printf("Serial: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);
 
   //  
-  // compute in parallel
+  // Compute in Parallel with false sharing issue
   //
 
   start = omp_get_wtime();  
@@ -49,7 +53,7 @@ int main() {
     
     for (int i=tid; i<numSteps; i+=numT) {
       double x = (i+0.5)*dx;  
-      pSum[tid] += 4./(1.+x*x);
+      pSum[tid] += 4./(1.+x*x);  // line with false sharing issue
     }
   }  
 
@@ -60,9 +64,13 @@ int main() {
   pi *= dx;
 
   printf("\nParallel Results: %d Threads\n",nThreads);
-  printf("Basic no padding: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);  
+  printf("Basic False Sharing: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);  
 
 
+  //
+  // Basic with padded array to remove false sharing
+  //  
+  
   start = omp_get_wtime();
 
   double padSum[32][64];
@@ -78,7 +86,8 @@ int main() {
     
     for (int i=tid; i<numSteps; i+=numT) {
       double x = (i+0.5)*dx;  
-      padSum[tid][0] += 4./(1.+x*x);
+      padSum[tid][0] += 4./(1.+x*x);  // padSum .. now no longer assesing
+                                      //   array values next to each other
     }
   }  
 
@@ -88,10 +97,13 @@ int main() {
   }
   pi *= dx;
 
-  printf("Basic with padding: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);  
+  printf("Fix Previous with array padding: PI = %16.8f in %.4g sec\n",pi, omp_get_wtime()-start);  
 
+
+  //
+  // Demonstration #omp parallel for reduction
+  //     
   
-  // compute using #omp parallel for reduction
   start = omp_get_wtime();
 
 #pragma omp parallel for reduction(+:pi) private(x)
@@ -103,8 +115,11 @@ int main() {
   pi *= dx;
   
   printf("Reduction: PI = %16.8f in %.4g sec\n", pi,omp_get_wtime()-start);
+
+  //
+  // Replace Reduction with Synchronization section: critical
+  //
   
-  // compute using Synchronization: critical
   start = omp_get_wtime();  
 #pragma omp parallel 
   {
@@ -118,7 +133,7 @@ int main() {
 #pragma omp critical
     {
       pi += sum;
-      // OTHER STUFF .. NOT TOO MUCH
+      // OTHER STUFF IF YOU WANT .. NOT TOO MUCH
     }
   }
   
