@@ -25,7 +25,7 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
 
    At time of writing, the **-F** option was failing **tapis** commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the **Ubuntu system for Windows** and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!
       
-.. note::
+.. tip::
 
    **How to install the Ubuntu subsystem on Windows 10**
 
