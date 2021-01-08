@@ -11,11 +11,11 @@
         "port": 22,
         "auth": {
             "type": "PASSWORD",
-            "username": "pmackenz",
-            "password": "PM9882jb!"
+            "username": "${USERNAME}",
+            "password": "${PASSWORD}"
         },
         "homeDir": "/",
-        "rootDir": "/scratch1/04834/pmackenz"
+        "rootDir": "${SCRATCH_DIR}"
     },
     "type": "EXECUTION",
     "login": {
@@ -24,8 +24,8 @@
         "port": 22,
         "auth": {
             "type": "PASSWORD",
-            "username": "pmackenz",
-            "password": "PM9882jb!"
+            "username": "${USERNAME}",
+            "password": "${PASSWORD}"
         },
         "host": "frontera.tacc.utexas.edu"
     },
@@ -34,7 +34,7 @@
     "default": false,
     "public": false,
     "maxSystemJobsPerUser": 250,
-    "id": "demo.exec.frontera.pmackenz",
+    "id": "demo.exec.frontera.${USERNAME}",
     "workDir": "",
     "site": "tacc.utexas.edu",
     "environment": "",
@@ -50,7 +50,7 @@
             "maxProcessorsPerNode": 28672,
             "mappedName": null,
             "maxUserJobs": 50,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         },
         {
             "name": "development",
@@ -63,7 +63,7 @@
             "maxProcessorsPerNode": 2240,
             "mappedName": null,
             "maxUserJobs": 1,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         },
         {
             "name": "large",
@@ -76,7 +76,7 @@
             "maxProcessorsPerNode": 114688,
             "mappedName": null,
             "maxUserJobs": 5,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         },
         {
             "name": "flex",
@@ -89,7 +89,7 @@
             "maxProcessorsPerNode": 7168,
             "mappedName": null,
             "maxUserJobs": 50,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         },
         {
             "name": "rtx",
@@ -102,7 +102,7 @@
             "maxProcessorsPerNode": -1,
             "mappedName": null,
             "maxUserJobs": 5,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         },
         {
             "name": "rtx-dev",
@@ -115,11 +115,11 @@
             "maxProcessorsPerNode": -1,
             "mappedName": null,
             "maxUserJobs": 2,
-            "customDirectives": "-A FTA-DD-SimCenter"
+            "customDirectives": "${ALLOCATION}"
         }
     ],
     "globalDefault": false,
-    "name": "pmackenz Frontera HPC DEMO Execution System for DesignSafe",
+    "name": "${USERNAME} Frontera HPC DEMO Execution System for DesignSafe",
     "status": "UP",
-    "scratchDir": "/scratch1/04834/pmackenz"
+    "scratchDir": "${SCRATCH_DIR}"
 }
