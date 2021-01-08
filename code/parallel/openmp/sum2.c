@@ -1,7 +1,8 @@
 #include <omp.h>
 #include <stdio.h>
 #include <math.h>
-#define DATA_SIZE 10000
+
+#define DATA_SIZE 10000000
 
 int main(int argc, const char **argv) {
   double a[DATA_SIZE], b[DATA_SIZE], c[DATA_SIZE];

@@ -1,7 +1,8 @@
 #include <omp.h>
 #include <stdio.h>
 #include <math.h>
-#define DATA_SIZE 10000
+
+#define DATA_SIZE 10000000
 
 int main(int argc, const char **argv) {
   double a[DATA_SIZE], b[DATA_SIZE], c[DATA_SIZE];
@@ -15,7 +16,7 @@ int main(int argc, const char **argv) {
       c[i] = a[i]+b[i];
 
   tdata = omp_get_wtime() - tdata;
-  printf("first %f last %f in time %f using %d threads\n",c[0], c[DATA_SIZE-1], tdata);
+  printf("first %f last %f in time %f using %d\n",c[0], c[DATA_SIZE-1], tdata);
   return 0;
 }
 
