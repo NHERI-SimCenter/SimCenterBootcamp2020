@@ -252,7 +252,6 @@ This results in a long list of output. Buried in it is the **archivePath** secti
 
 .. code:: 
 
-
      "accepted": "2021-01-08T10:19:45.773Z",
      "appId": "mpiCompileSimCenter-0.0.1",
      "appUuid": "7984683744829894165-242ac117-0001-005",
@@ -264,8 +263,15 @@ This results in a long list of output. Buried in it is the **archivePath** secti
      "ended": "7 hours ago",
 
 
-The results folder can be viewed using the **tapis files list** command, i.e. for my job I would list the files ini the following way:
+The results folder can be viewed using the **tapis files list** command, i.e. for my job I would list the files in the following way:
 
 .. code::
 
-   tapis files list 
+   tapis files list agave://designsafe.storage.default/tg457427/archive/jobs/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007
+
+In this folder you will see a long file name ending in **.out**. This you can download with the **tapis files download**. The results of the file I submitted is as shown below.
+
+
+.. literalinclude:: ./assignments/c5/results.json
+  :language: json
+  :linenos:

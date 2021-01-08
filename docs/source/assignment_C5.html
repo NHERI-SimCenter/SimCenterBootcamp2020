@@ -664,10 +664,64 @@ ${ALLOCATION}.</p>
 <span class="s2">&quot;ended&quot;</span><span class="p">:</span> <span class="s2">&quot;7 hours ago&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
-<p>The results folder can be viewed using the <strong>tapis files list</strong> command, i.e. for my job I would list the files ini the following way:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span>
+<p>The results folder can be viewed using the <strong>tapis files list</strong> command, i.e. for my job I would list the files in the following way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">tg457427</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">jobs</span><span class="o">/</span><span class="n">job</span><span class="o">-</span><span class="mi">507792</span><span class="n">d1</span><span class="o">-</span><span class="mi">35</span><span class="n">b0</span><span class="o">-</span><span class="mi">4</span><span class="n">dc0</span><span class="o">-</span><span class="n">abd2</span><span class="o">-</span><span class="mi">421</span><span class="n">cfba7ddc3</span><span class="o">-</span><span class="mi">007</span>
 </pre></div>
 </div>
+<p>In this folder you will see a long file name ending in <strong>.out</strong>. This you can download with the <strong>tapis files download</strong>. The results of the file I submitted is as shown below.</p>
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="highlight"><pre><span></span>Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod&#39;s output
+Shell debugging restarted
+program file is piMPI.c
+/scratch1/00477/tg457427/scratch1/00477/tg457427/tg457427/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007-run-1
+total 33
+4 drwx------ 4 tg457427 G-80610 4096 Jan  8 04:21 .
+4 drwx------ 3 tg457427 G-80610 4096 Jan  8 04:19 ..
+4 -rw------- 1 tg457427 G-80610  345 Jan  8 04:19 .agave.archive
+4 -rw------- 1 tg457427 G-80610   28 Jan  8 04:19 .agave.log
+4 drwx------ 2 tg457427 G-80610 4096 Jan  8 04:19 demo2
+1 -rw------- 1 tg457427 G-80610  653 Jan  8 04:22 run-1-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007.err
+1 -rw------- 1 tg457427 G-80610  239 Jan  8 04:22 run-1-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007.out
+4 -rwx------ 1 tg457427 G-80610 2132 Jan  8 04:19 run-1.ipcexe
+4 drwx------ 3 tg457427 G-80610 4096 Jan  8 04:19 test
+4 -rw------- 1 tg457427 G-80610  401 Jan  8 04:19 wrapper.sh
+currentDIR
+/scratch1/00477/tg457427/scratch1/00477/tg457427/tg457427/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007-run-1/demo2
+directory listing
+total 12
+4 drwx------ 2 tg457427 G-80610 4096 Jan  8 04:19 .
+4 drwx------ 4 tg457427 G-80610 4096 Jan  8 04:21 ..
+4 -rw------- 1 tg457427 G-80610 1286 Jan  8 04:19 piMPI.c
+TACC:  Starting up job 2332652 
+TACC:  Starting parallel tasks... 
+PI =       3.14159265, duration: 0.080000 s
+TACC:  Shutdown complete. Exiting. 
+</pre></div>
+</td></tr></table></div>
 </div>
 </div>
 
