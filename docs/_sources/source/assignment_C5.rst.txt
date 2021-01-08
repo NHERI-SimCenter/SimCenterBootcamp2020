@@ -114,13 +114,13 @@ Begin by listing the files in your home directory
 
 .. code::
 
-   tapis files list agave://desihnsafe.storage/default/YOUR_NAME
+   tapis files list agave://designsafe.storage/default/YOUR_NAME
 
 Add a directory tmp to your home folder at DesignSafe
 
 .. code::
 
-   tapis files mkdir agave://desihnsafe.storage/default/YOUR_NAME tmp
+   tapis files mkdir agave://designsafe.storage/default/YOUR_NAME tmp
 
 Copy a small file **SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c** to your current directory. From there send it to your new folder at DesignSafe.
 
@@ -132,7 +132,7 @@ Remove your local copy and try and copy the file you just uploaded.
 
 .. code::
 
-   tapis files download agave://desihnsafe.storage/default/YOUR_NAME/tmp/mpiPI.c
+   tapis files download agave://designsafe.storage/default/YOUR_NAME/tmp/mpiPI.c
 
 List the other **tapis** file commands and explore what they do.
 
@@ -157,7 +157,7 @@ We are first going to search for an app to clone. Let us look at simcenter apps.
 
 .. code::
    
-   apps tapis apps search --name like simcenter -f json
+   tapis apps search --name like simcenter -f json
 
 You should see one with an id **simcenter-dakota-1.0.0u1**. Have a look at it's description.
 
