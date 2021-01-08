@@ -1,5 +1,5 @@
-C++: Day 3 In Class Exercises
-===========================
+C++ Exercises
+=============
 
 Today we have two problems for you to tackle.
 

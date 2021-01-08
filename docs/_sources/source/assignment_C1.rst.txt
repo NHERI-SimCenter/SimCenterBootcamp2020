@@ -1,5 +1,5 @@
-C: Day 1 In Class Exercises
-===========================
+C Variables and Functions
+=========================
 
 Today we have three problems for you to tackle. Two are familiar and you performed them in Python as part of day 1 exercises and assignments. The third **pi** is new.
 

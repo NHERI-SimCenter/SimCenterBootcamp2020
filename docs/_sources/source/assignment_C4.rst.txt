@@ -1,5 +1,5 @@
-C: Day 4 In Class Exercises
-===========================
+C: Parallel Programming
+=======================
 
 Today we have two problems for you to tackle. They both parallelize the **pi.c** code you developed for day 1. Both programs will need to be compiled at one of the TACC supercomputers.
 
