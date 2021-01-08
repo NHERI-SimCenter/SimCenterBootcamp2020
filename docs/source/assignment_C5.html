@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,30 +11,32 @@
   
 
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="TACC-Frontera" href="TACC.html" />
@@ -53,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
           
 
           
@@ -76,6 +77,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -118,6 +120,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -156,7 +159,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="assignments.html">Assignments</a> &raquo;</li>
         
@@ -200,7 +203,19 @@
 <p>Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commnds in the terminal of your desktop utilizing DesignSafe resources for storing files and results.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>At time of writing, the <strong>-F</strong> option was failing <strong>tapis</strong> commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the <strong>*Ubuntu system for Windows</strong> and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!</p>
+<p>At time of writing, the <strong>-F</strong> option was failing <strong>tapis</strong> commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the <strong>Ubuntu system for Windows</strong> and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>How to install the Ubuntu subsystem on Windows 10</strong></p>
+<p>The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
+Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
+it on your Windows system.  See
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a>
+for details.</p>
+<p><span class="red">Warning</span>: If you are running Windows in a virtual environment such as VMware or Parallels,
+installing the Ubuntu subsystem in Windows will fail.  Install Ubuntu in a separate virtual machine
+instead.</p>
 </div>
 <p>There are 4 steps to this process that follow the videos presented in class:</p>
 <div class="section" id="step-1-setting-up-an-execution-system">
@@ -585,11 +600,19 @@ ${ALLOCATION}.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -600,7 +623,6 @@ ${ALLOCATION}.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
