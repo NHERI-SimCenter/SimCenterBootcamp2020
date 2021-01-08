@@ -1,8 +1,8 @@
 {
-    "name": "example",
-    "appId": "myClone2-0.0.1",
+    "name": "Run 1",
+    "appId": "mpiCompileSimCenter-0.0.1",
     "inputs": {
-      "inputDirectory": "agave://designsafe.storage.default/tg457427/testClone"
+      "inputDirectory": "agave://designsafe.storage.default/tg457427/demo2"
     },
     "parameters" : {
       "programFile":"piMPI.c"

@@ -7,11 +7,11 @@ ${AGAVE_JOB_CALLBACK_RUNNING}
 module load intel
 
 echo "program file is ${programFile}"
-
+pwd
+ls -sal
 cd "${inputDirectory}"
 echo "currentDIR"
 pwd
-
 echo "directory listing"
 ls -sal
 
