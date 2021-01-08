@@ -23,11 +23,24 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
 
 .. warning:: 
 
-   At time of writing, the **-F** option was failing **tapis** commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the **Ubuntu system for Windows** and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!
-      
-.. tip::
+   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. You have 3 options.
 
-   **How to install the Ubuntu subsystem on Windows 10**
+   1. Try and update to the latest code:
+
+     .. code::
+
+        git clone https://github.com/TACC-Cloud/tapis-cli.git
+        $ cd tapis-cli
+        $ pip install --upgrade --user .
+   
+   2. Run exercise at TACC using either Frontera or Stampede2. To do this you need to install **tapis-cli** as a local user.
+
+
+     .. code::
+
+	pip intall tapis-cli -- user
+      
+   3. **How to install the Ubuntu subsystem on Windows 10**
 
    The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
    Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
@@ -201,4 +214,29 @@ We now have an application ready and wating to compile our code and run it!
 Step 4: Submitting a Job
 ------------------------
 
-Last exercise is to actually submit a job. For this we will use the jobs service. 
+Last exercise is to actually submit a job using a file. In the **code/agave** folder there is a file **piMPI.c** and a json file **cloneSubmit.json**. The **piMPI.c** we have alredy used in files and placed in a demo folder at designsafe off our remote home folder. To submit a job to run at TACC through tapis we need to create the input file telling tapis what to do. The input file is application specific. An input file template for our app is found in **cloneSubmit.json** which is shown below:
+
+.. literalinclude:: ./assignments/c5/cloneSubmit.json
+  :language: json
+  :linenos:
+
+There are 3 lines in this file needing changing. In Line 3 you need to set the **appID** to be equal to name of the app you created in step 3. You need to set the **inputDirectory** equal to the location you placed the **piMPI.c** file on line 5 and finally the name of the program to compile and run **programName** needs to be set on line 8. Other options are set for the piMPI application such as runTime, numNodes and numCores.
+
+After file has been saved the use submits it to tapis job service by typing the following:
+
+.. code::
+
+   tapis jobs submit -F cloneSubmit.json
+
+Tapis will respond with a message that hopefully says job was submitted sucessfully and will provide a **jobID**. That **jobID** is important, as you will use it to query status of job and download job information when job finished.
+
+To look up job status, type:
+
+.. code::
+
+   tapis jobs status **jobID**
+
+There are a number of states a job might be in, **queued**, **running**, **finished**, and the dreaded **failed**. Once a job has finished you can download the results with
+     
+
+     

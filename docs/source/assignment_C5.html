@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,32 +12,30 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="TACC-Frontera" href="TACC.html" />
@@ -54,7 +53,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
           
 
           
@@ -77,7 +76,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -120,7 +118,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -159,7 +156,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="assignments.html">Assignments</a> &raquo;</li>
         
@@ -203,11 +200,28 @@
 <p>Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commnds in the terminal of your desktop utilizing DesignSafe resources for storing files and results.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>At time of writing, the <strong>-F</strong> option was failing <strong>tapis</strong> commands for all python versions tested running on Windows. Try the command, if not fixed you will have to install the <strong>Ubuntu system for Windows</strong> and run this exercise from a Ubutu shell. If that fails, you can complete the exercise logged into Frontera or Stampede2!</p>
+<p>If you fail in last part of first exercise it means that the <strong>tapis-cli</strong> is not going to work. You have 3 options.</p>
+<ol class="arabic simple">
+<li><p>Try and update to the latest code:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/TACC-Cloud/tapis-cli.git
+$ cd tapis-cli
+$ pip install --upgrade --user .
+</pre></div>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>How to install the Ubuntu subsystem on Windows 10</strong></p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Run exercise at TACC using either Frontera or Stampede2. To do this you need to install <strong>tapis-cli</strong> as a local user.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">intall</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span> <span class="o">--</span> <span class="n">user</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>How to install the Ubuntu subsystem on Windows 10</strong></p></li>
+</ol>
 <p>The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
 Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
 it on your Windows system.  See
@@ -576,7 +590,67 @@ ${ALLOCATION}.</p>
 </div>
 <div class="section" id="step-4-submitting-a-job">
 <h2>Step 4: Submitting a Job<a class="headerlink" href="#step-4-submitting-a-job" title="Permalink to this headline">¶</a></h2>
-<p>Last exercise is to actually submit a job. For this we will use the jobs service.</p>
+<p>Last exercise is to actually submit a job using a file. In the <strong>code/agave</strong> folder there is a file <strong>piMPI.c</strong> and a json file <strong>cloneSubmit.json</strong>. The <strong>piMPI.c</strong> we have alredy used in files and placed in a demo folder at designsafe off our remote home folder. To submit a job to run at TACC through tapis we need to create the input file telling tapis what to do. The input file is application specific. An input file template for our app is found in <strong>cloneSubmit.json</strong> which is shown below:</p>
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Run 1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;mpiCompileSimCenter-0.0.1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;inputDirectory&quot;</span><span class="p">:</span> <span class="s2">&quot;agave://designsafe.storage.default/tg457427/demo2&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;parameters&quot;</span> <span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;programFile&quot;</span><span class="p">:</span><span class="s2">&quot;piMPI.c&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;maxRunTime&quot;</span><span class="p">:</span> <span class="s2">&quot;00:01:00&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;memoryPerNode&quot;</span><span class="p">:</span> <span class="s2">&quot;1GB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nodeCount&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;processorsPerNode&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="nt">&quot;maxRunTime&quot;</span><span class="p">:</span> <span class="s2">&quot;00:01:00&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;archive&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;archiveOnAppError&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;archiveSystem&quot;</span><span class="p">:</span><span class="s2">&quot;designsafe.storage.default&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;notifications&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;url&quot;</span> <span class="p">:</span> <span class="s2">&quot;fmckenna@berkeley.edu&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;event&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>There are 3 lines in this file needing changing. In Line 3 you need to set the <strong>appID</strong> to be equal to name of the app you created in step 3. You need to set the <strong>inputDirectory</strong> equal to the location you placed the <strong>piMPI.c</strong> file on line 5 and finally the name of the program to compile and run <strong>programName</strong> needs to be set on line 8. Other options are set for the piMPI application such as runTime, numNodes and numCores.</p>
+<p>After file has been saved the use submits it to tapis job service by typing the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">submit</span> <span class="o">-</span><span class="n">F</span> <span class="n">cloneSubmit</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Tapis will respond with a message that hopefully says job was submitted sucessfully and will provide a <strong>jobID</strong>. That <strong>jobID</strong> is important, as you will use it to query status of job and download job information when job finished.</p>
+<p>To look up job status, type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">status</span> <span class="o">**</span><span class="n">jobID</span><span class="o">**</span>
+</pre></div>
+</div>
+<p>There are a number of states a job might be in, <strong>queued</strong>, <strong>running</strong>, <strong>finished</strong>, and the dreaded <strong>failed</strong>. Once a job has finished you can download the results with</p>
 </div>
 </div>
 
@@ -600,19 +674,11 @@ ${ALLOCATION}.</p>
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -623,6 +689,7 @@ ${ALLOCATION}.</p>
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

@@ -102,7 +102,7 @@ Introduction to C - Jan 4-8, 2021
   * C++ Example
 
 
-* Day 9 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Parallel.pdf>`_
+* Day 9 - `Parallel Programming <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/C-Day4.pdf>`_
 
   * Parallel Computers  
   * MessagePassing & MPI
@@ -110,7 +110,7 @@ Introduction to C - Jan 4-8, 2021
 
     
 
-* Day 10 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave.pdf>`_
+* Day 10 - `DesignSafe & Agave <https://github.com/NHERI-SimCenter/SimCenterBootcamp2020/blob/master/presentations/Agave2.pdf>`_
 
   * Review: Exercise
   * Intro to DesignSafe & Tapis
