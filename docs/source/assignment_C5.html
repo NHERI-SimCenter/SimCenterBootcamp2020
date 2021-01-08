@@ -509,11 +509,9 @@ ${ALLOCATION}.</p>
 <p>Once the file has been completed, you can create the system by invoking one of the the following command.</p>
 <p>for Frontera:</p>
 <blockquote>
-<div><blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">systems</span> <span class="n">create</span>  <span class="o">-</span><span class="n">F</span> <span class="n">fronteraSystem</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Now have a look for it. In the file we named it demo something.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">systems</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">demo</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
 </pre></div>
@@ -535,11 +533,11 @@ ${ALLOCATION}.</p>
 <p>Tapis provide commands for doing file operartions. It providess commands for uploading and downloading files to and from the storage systems as well as typical commands dealing with file system opeartions at thr remove stoarge system.</p>
 <p>Some commands we would like you to try.</p>
 <p>Begin by listing the files in your home directory</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span>
 </pre></div>
 </div>
 <p>Add a directory tmp to your home folder at DesignSafe</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">mkdir</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span> <span class="n">tmp</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">mkdir</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span> <span class="n">tmp</span>
 </pre></div>
 </div>
 <p>Copy a small file <strong>SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c</strong> to your current directory. From there send it to your new folder at DesignSafe.</p>
@@ -547,7 +545,7 @@ ${ALLOCATION}.</p>
 </pre></div>
 </div>
 <p>Remove your local copy and try and copy the file you just uploaded.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">download</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">download</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
 </pre></div>
 </div>
 <p>List the other <strong>tapis</strong> file commands and explore what they do.</p>
@@ -561,7 +559,7 @@ ${ALLOCATION}.</p>
 <p>We are going a tapis container application we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app <strong>mpiCompileRun</strong> and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.</p>
 <p>The app we have in mind is one that will compile a program we have uploaded <strong>mpiPI.c</strong> say and run it. A wrapper.sh file for this purpose is shown below:</p>
 <p>We are first going to search for an app to clone. Let us look at simcenter apps.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apps</span> <span class="n">tapis</span> <span class="n">apps</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">simcenter</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">simcenter</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
 </pre></div>
 </div>
 <p>You should see one with an id <strong>simcenter-dakota-1.0.0u1</strong>. Have a look at it’s description.</p>

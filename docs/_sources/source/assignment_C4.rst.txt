@@ -73,5 +73,3 @@ One possible solution, which includes multiple approaches, is as shown in the fo
 
 .. literalinclude:: ./solutions/c4/piOpenMP.c
   :linenos:
-
-kjhf;gjf
