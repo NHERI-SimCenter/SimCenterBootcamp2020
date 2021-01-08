@@ -4,7 +4,7 @@ Syllabus
 
 .. raw:: HTML
 
-	<p><font color=red> last updated: Dec 14, 2020 </font></p>
+	<p><font color=red> last updated: Jan 8, 2021 </font></p>
 
 Welcome to the SimCenter Programming Bootcamp 2020.  Due to COVID-19, this year's offering will be solely online. A drawback of an online offering is the lack of interaction among the participants. The SimCenter team is putting in all effort to recreate some
 of the community building benefits through discussion sessions and social time.
