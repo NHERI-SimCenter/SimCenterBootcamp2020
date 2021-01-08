@@ -234,9 +234,32 @@ To look up job status, type:
 
 .. code::
 
-   tapis jobs status **jobID**
+   tapis jobs status json 5ce7f59d-0c4f-46c1-806a-35965317525f-007
 
 There are a number of states a job might be in, **queued**, **running**, **finished**, and the dreaded **failed**. Once a job has finished you can download the results with
      
 
-     
+tapis jobs  show –f json 5ce7f59d-0c4f-46c1-806a-35965317525f-007
+
+This results in a long list of output. Buried in it is the **archiveData** section. This is where the results have been stored.
+
+.. code:: 
+
+      },
+         "archiveSystem": {
+         "href": "https://agave.designsafe-ci.org/systems/v2/designsafe.storage.de\
+       fault"
+      },
+      "archiveData": {
+          "href": "https://agave.designsafe-ci.org/jobs/v2/507792d1-35b0-4dc0-abd2-\
+421cfba7ddc3-007/outputs/listings"
+      },
+      "owner": {
+          "href": "https://agave.designsafe-ci.org/profiles/v2/tg457427"
+      },
+
+The results folder can be viewed using the **tapis files list** command, i.e. for my job I would list the files ini the following way:
+
+.. code::
+
+   tapis files list 

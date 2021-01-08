@@ -647,10 +647,34 @@ ${ALLOCATION}.</p>
 </div>
 <p>Tapis will respond with a message that hopefully says job was submitted sucessfully and will provide a <strong>jobID</strong>. That <strong>jobID</strong> is important, as you will use it to query status of job and download job information when job finished.</p>
 <p>To look up job status, type:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">status</span> <span class="o">**</span><span class="n">jobID</span><span class="o">**</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">status</span> <span class="n">json</span> <span class="mi">5</span><span class="n">ce7f59d</span><span class="o">-</span><span class="mi">0</span><span class="n">c4f</span><span class="o">-</span><span class="mi">46</span><span class="n">c1</span><span class="o">-</span><span class="mi">806</span><span class="n">a</span><span class="o">-</span><span class="mi">35965317525</span><span class="n">f</span><span class="o">-</span><span class="mi">007</span>
 </pre></div>
 </div>
 <p>There are a number of states a job might be in, <strong>queued</strong>, <strong>running</strong>, <strong>finished</strong>, and the dreaded <strong>failed</strong>. Once a job has finished you can download the results with</p>
+<p>tapis jobs  show –f json 5ce7f59d-0c4f-46c1-806a-35965317525f-007</p>
+<p>This results in a long list of output. Buried in it is the <strong>archiveData</strong> section. This is where the results have been stored.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">},</span>
+   <span class="s2">&quot;archiveSystem&quot;</span><span class="p">:</span> <span class="p">{</span>
+   <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://agave.designsafe-ci.org/systems/v2/designsafe.storage.de</span><span class="se">\</span>
+<span class="s2"> fault&quot;</span>
+<span class="p">},</span>
+<span class="s2">&quot;archiveData&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://agave.designsafe-ci.org/jobs/v2/507792d1-35b0-4dc0-abd2-</span><span class="se">\</span>
+</pre></div>
+</div>
+<dl>
+<dt>421cfba7ddc3-007/outputs/listings”</dt><dd><p>},
+“owner”: {</p>
+<blockquote>
+<div><p>“href”: “<a class="reference external" href="https://agave.designsafe-ci.org/profiles/v2/tg457427">https://agave.designsafe-ci.org/profiles/v2/tg457427</a>”</p>
+</div></blockquote>
+<p>},</p>
+</dd>
+</dl>
+<p>The results folder can be viewed using the <strong>tapis files list</strong> command, i.e. for my job I would list the files ini the following way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span>
+</pre></div>
+</div>
 </div>
 </div>
 
