@@ -184,7 +184,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <blockquote>
-<div><p>Initial setup is required of the <strong>Tapis-cli</strong>. This is done by invoking the dollowing in a linux (see warning below) shell:</p>
+<div><p>Initial setup is required of the <strong>Tapis-cli</strong>. This is done by invoking the dollowing in a linux (see warning below) shell. For some systems, i.e. <strong>ubuntu</strong> you should use <strong>pip3</strong> instead of <strong>pip</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span>
 </pre></div>
 </div>
@@ -207,7 +207,7 @@
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/TACC-Cloud/tapis-cli.git
 $ cd tapis-cli
-$ pip install --upgrade --user .
+$ pip install --upgrade .
 </pre></div>
 </div>
 </div></blockquote>
@@ -215,7 +215,7 @@ $ pip install --upgrade --user .
 <li><p>Run exercise at TACC using either Frontera or Stampede2. To do this you need to install <strong>tapis-cli</strong> as a local user.</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">intall</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span> <span class="o">--</span> <span class="n">user</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">intall</span> <span class="n">tapis</span><span class="o">-</span><span class="n">cli</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -499,11 +499,13 @@ instead.</p>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
-<p>In this file you need to search for the following and replace them with appropriate text. The <strong>${ALLOCATION}</strong> text is replaced with <strong>-A FTA-DD-SimCenter</strong> if using Frontera and with <a href="#id1"><span class="problematic" id="id2">**</span></a>-A <a href="#id3"><span class="problematic" id="id4">**</span></a>:</p>
+<p>In this file you need to search for the following and replace them with appropriate text. The <strong>${ALLOCATION}</strong> text is replaced with <strong>-A FTA-DD-SimCenter</strong> if using Frontera.</p>
+<p>These are the four values that need to be replaced:</p>
 <p>${USERNAME},
 ${PASSWORD},
 ${SCRATCH_DIR} and
 ${ALLOCATION}.</p>
+<p>The sscratch_dir can be found by logging into Frontera, issuing the commands cds (change dir to scratch) and then pwd (print working directory). The results of pwd is your scratch dir.</p>
 <p>Once the file has been completed, you can create the system by invoking one of the the following command.</p>
 <p>for Frontera:</p>
 <blockquote>
@@ -570,7 +572,7 @@ ${ALLOCATION}.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">clone</span> <span class="o">-</span><span class="n">h</span>
 </pre></div>
 </div>
-<p>After having reviewed results of previous, you should be able to understand the following. The command to clone is some modifications based on your account to the following:</p>
+<p>After having reviewed results of previous, you should be able to understand the following. The command to clone is some <strong>modifications based on your account</strong>, i.e. the -e refers to the execution service and for that you need to enter the <strong>id</strong> of the execution service you created:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">clone</span> <span class="o">-</span><span class="n">e</span> <span class="n">designsafe</span><span class="o">.</span><span class="n">demo</span><span class="o">.</span><span class="n">exec</span><span class="o">.</span><span class="n">frontera</span><span class="o">.</span><span class="n">fmk</span> <span class="o">-</span><span class="n">n</span> <span class="n">mpiCompileRun</span> <span class="o">-</span><span class="n">x</span> <span class="mf">0.0</span><span class="o">.</span><span class="mi">1</span>  <span class="n">simcenter</span><span class="o">-</span><span class="n">dakota</span><span class="o">-</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span><span class="n">u1</span>
 </pre></div>
 </div>
@@ -652,25 +654,18 @@ ${ALLOCATION}.</p>
 </div>
 <p>There are a number of states a job might be in, <strong>queued</strong>, <strong>running</strong>, <strong>finished</strong>, and the dreaded <strong>failed</strong>. Once a job has finished you can download the results with</p>
 <p>tapis jobs  show –f json 5ce7f59d-0c4f-46c1-806a-35965317525f-007</p>
-<p>This results in a long list of output. Buried in it is the <strong>archiveData</strong> section. This is where the results have been stored.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">},</span>
-   <span class="s2">&quot;archiveSystem&quot;</span><span class="p">:</span> <span class="p">{</span>
-   <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://agave.designsafe-ci.org/systems/v2/designsafe.storage.de</span><span class="se">\</span>
-<span class="s2"> fault&quot;</span>
-<span class="p">},</span>
-<span class="s2">&quot;archiveData&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://agave.designsafe-ci.org/jobs/v2/507792d1-35b0-4dc0-abd2-</span><span class="se">\</span>
+<p>This results in a long list of output. Buried in it is the <strong>archivePath</strong> section. This is where the results have been stored.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;accepted&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-01-08T10:19:45.773Z&quot;</span><span class="p">,</span>
+<span class="s2">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;mpiCompileSimCenter-0.0.1&quot;</span><span class="p">,</span>
+<span class="s2">&quot;appUuid&quot;</span><span class="p">:</span> <span class="s2">&quot;7984683744829894165-242ac117-0001-005&quot;</span><span class="p">,</span>
+<span class="s2">&quot;archive&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+<span class="s2">&quot;archivePath&quot;</span><span class="p">:</span> <span class="s2">&quot;tg457427/archive/jobs/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007&quot;</span><span class="p">,</span>
+<span class="s2">&quot;archiveSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;designsafe.storage.default&quot;</span><span class="p">,</span>
+<span class="s2">&quot;blockedCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-01-08T10:19:45.779Z&quot;</span><span class="p">,</span>
+<span class="s2">&quot;ended&quot;</span><span class="p">:</span> <span class="s2">&quot;7 hours ago&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
-<dl>
-<dt>421cfba7ddc3-007/outputs/listings”</dt><dd><p>},
-“owner”: {</p>
-<blockquote>
-<div><p>“href”: “<a class="reference external" href="https://agave.designsafe-ci.org/profiles/v2/tg457427">https://agave.designsafe-ci.org/profiles/v2/tg457427</a>”</p>
-</div></blockquote>
-<p>},</p>
-</dd>
-</dl>
 <p>The results folder can be viewed using the <strong>tapis files list</strong> command, i.e. for my job I would list the files ini the following way:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span>
 </pre></div>

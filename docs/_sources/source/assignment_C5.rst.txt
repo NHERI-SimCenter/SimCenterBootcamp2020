@@ -3,12 +3,13 @@ C: Tapis-cli
 
 .. note::
 
-   Initial setup is required of the **Tapis-cli**. This is done by invoking the dollowing in a linux (see warning below) shell:
+   Initial setup is required of the **Tapis-cli**. This is done by invoking the dollowing in a linux (see warning below) shell. For some systems, i.e. **ubuntu** you should use **pip3** instead of **pip**:
 
    .. code:: 
 
        pip install tapis-cli
 
+ 
  Once the cli is installed you need to configure it to use deignsafe and you need to provide your username and password:
 
    .. code::  
@@ -31,14 +32,14 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
 
         git clone https://github.com/TACC-Cloud/tapis-cli.git
         $ cd tapis-cli
-        $ pip install --upgrade --user .
+        $ pip install --upgrade .
    
    2. Run exercise at TACC using either Frontera or Stampede2. To do this you need to install **tapis-cli** as a local user.
 
 
      .. code::
 
-	pip intall tapis-cli -- user
+	pip intall tapis-cli --user
       
    3. **How to install the Ubuntu subsystem on Windows 10**
 
@@ -80,12 +81,16 @@ The Frontera file is shown below:
   :language: json
   :linenos:
 
-In this file you need to search for the following and replace them with appropriate text. The **${ALLOCATION}** text is replaced with **-A FTA-DD-SimCenter** if using Frontera and with **-A **:
+In this file you need to search for the following and replace them with appropriate text. The **${ALLOCATION}** text is replaced with **-A FTA-DD-SimCenter** if using Frontera.
+
+These are the four values that need to be replaced:
 
 ${USERNAME}, 
 ${PASSWORD}, 
 ${SCRATCH_DIR} and
 ${ALLOCATION}.
+
+The sscratch_dir can be found by logging into Frontera, issuing the commands cds (change dir to scratch) and then pwd (print working directory). The results of pwd is your scratch dir.
 
 Once the file has been completed, you can create the system by invoking one of the the following command.
 
@@ -184,7 +189,7 @@ You will see it takes an input directory and some parameters to run. We will use
 
       tapis apps clone -h
 
-After having reviewed results of previous, you should be able to understand the following. The command to clone is some modifications based on your account to the following:
+After having reviewed results of previous, you should be able to understand the following. The command to clone is some **modifications based on your account**, i.e. the -e refers to the execution service and for that you need to enter the **id** of the execution service you created:
 
 .. code:: 
 
@@ -241,22 +246,21 @@ There are a number of states a job might be in, **queued**, **running**, **finis
 
 tapis jobs  show –f json 5ce7f59d-0c4f-46c1-806a-35965317525f-007
 
-This results in a long list of output. Buried in it is the **archiveData** section. This is where the results have been stored.
+This results in a long list of output. Buried in it is the **archivePath** section. This is where the results have been stored.
 
 .. code:: 
 
-      },
-         "archiveSystem": {
-         "href": "https://agave.designsafe-ci.org/systems/v2/designsafe.storage.de\
-       fault"
-      },
-      "archiveData": {
-          "href": "https://agave.designsafe-ci.org/jobs/v2/507792d1-35b0-4dc0-abd2-\
-421cfba7ddc3-007/outputs/listings"
-      },
-      "owner": {
-          "href": "https://agave.designsafe-ci.org/profiles/v2/tg457427"
-      },
+
+     "accepted": "2021-01-08T10:19:45.773Z",
+     "appId": "mpiCompileSimCenter-0.0.1",
+     "appUuid": "7984683744829894165-242ac117-0001-005",
+     "archive": true,
+     "archivePath": "tg457427/archive/jobs/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007",
+     "archiveSystem": "designsafe.storage.default",
+     "blockedCount": 0,
+     "created": "2021-01-08T10:19:45.779Z",
+     "ended": "7 hours ago",
+
 
 The results folder can be viewed using the **tapis files list** command, i.e. for my job I would list the files ini the following way:
 
