@@ -134,25 +134,25 @@ Begin by listing the files in your home directory
 
 .. code::
 
-   tapis files list agave://designsafe.storage/default/YOUR_NAME
+   tapis files list agave://designsafe.storage.default/YOUR_NAME
 
 Add a directory tmp to your home folder at DesignSafe
 
 .. code::
 
-   tapis files mkdir agave://designsafe.storage/default/YOUR_NAME tmp
+   tapis files mkdir agave://designsafe.storage.default/YOUR_NAME tmp
 
-Copy a small file **SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c** to your current directory. From there send it to your new folder at DesignSafe.
+Copy a small file **SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/piMPI.c** to your current directory. From there send it to your new folder at DesignSafe.
 
 .. code::
 
-   tapis files upload agave://desihnsafe.storage/default/YOUR_NAME/tmp  mpiPI.c
+   tapis files upload agave://designsafe.storage.default/YOUR_NAME/tmp  piMPI.c
 
 Remove your local copy and try and copy the file you just uploaded.
 
 .. code::
 
-   tapis files download agave://designsafe.storage/default/YOUR_NAME/tmp/mpiPI.c
+   tapis files download agave://designsafe.storage.default/YOUR_NAME/tmp/piMPI.c
 
 List the other **tapis** file commands and explore what they do.
 
@@ -170,7 +170,7 @@ A Tapis **apps** is a containerized application. Each app has a description that
 We are going a tapis container application we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app **mpiCompileRun** and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.
 
 
-The app we have in mind is one that will compile a program we have uploaded **mpiPI.c** say and run it. A wrapper.sh file for this purpose is shown below:
+The app we have in mind is one that will compile a program we have uploaded **piMPI.c** say and run it. A wrapper.sh file for this purpose is shown below:
 
 
 We are first going to search for an app to clone. Let us look at simcenter apps.
@@ -241,7 +241,7 @@ To look up job status, type:
 
 .. code::
 
-   tapis jobs status json 5ce7f59d-0c4f-46c1-806a-35965317525f-007
+   tapis jobs status -f json 5ce7f59d-0c4f-46c1-806a-35965317525f-007
 
 There are a number of states a job might be in, **queued**, **running**, **finished**, and the dreaded **failed**. Once a job has finished you can download the results with
      

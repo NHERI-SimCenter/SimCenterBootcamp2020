@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,30 +11,32 @@
   
 
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/hacks.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="TACC-Frontera" href="TACC.html" />
@@ -53,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Programming Bootcamp 2020
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Programming Bootcamp 2020
           
 
           
@@ -76,6 +77,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -118,6 +120,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -156,7 +159,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="assignments.html">Assignments</a> &raquo;</li>
         
@@ -533,19 +536,19 @@ ${ALLOCATION}.</p>
 <p>Tapis provide commands for doing file operartions. It providess commands for uploading and downloading files to and from the storage systems as well as typical commands dealing with file system opeartions at thr remove stoarge system.</p>
 <p>Some commands we would like you to try.</p>
 <p>Begin by listing the files in your home directory</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="nb">list</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span>
 </pre></div>
 </div>
 <p>Add a directory tmp to your home folder at DesignSafe</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">mkdir</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span> <span class="n">tmp</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">mkdir</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span> <span class="n">tmp</span>
 </pre></div>
 </div>
-<p>Copy a small file <strong>SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c</strong> to your current directory. From there send it to your new folder at DesignSafe.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">upload</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">desihnsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span>  <span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
+<p>Copy a small file <strong>SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/piMPI.c</strong> to your current directory. From there send it to your new folder at DesignSafe.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">upload</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span>  <span class="n">piMPI</span><span class="o">.</span><span class="n">c</span>
 </pre></div>
 </div>
 <p>Remove your local copy and try and copy the file you just uploaded.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">download</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mpiPI</span><span class="o">.</span><span class="n">c</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">files</span> <span class="n">download</span> <span class="n">agave</span><span class="p">:</span><span class="o">//</span><span class="n">designsafe</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">default</span><span class="o">/</span><span class="n">YOUR_NAME</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">piMPI</span><span class="o">.</span><span class="n">c</span>
 </pre></div>
 </div>
 <p>List the other <strong>tapis</strong> file commands and explore what they do.</p>
@@ -557,7 +560,7 @@ ${ALLOCATION}.</p>
 <h2>Step 3: Build a Tapis app<a class="headerlink" href="#step-3-build-a-tapis-app" title="Permalink to this headline">¶</a></h2>
 <p>A Tapis <strong>apps</strong> is a containerized application. Each app has a description that describes it’s name, inputs and parameters. This description can be obtained using the <strong>tapis apps show</strong> command. The description contains information about where the container for the application resides, inputs and outputs, information about the execution system on which the app will run and  and information about the bash script, <strong>wrapper.sh</strong>. <strong>wrapper.sh</strong> is the sript that is run when the application is started running at a HPC resource. <strong>wrapper.sh</strong> will have access to all the files in the app container when it is run.</p>
 <p>We are going a tapis container application we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app <strong>mpiCompileRun</strong> and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.</p>
-<p>The app we have in mind is one that will compile a program we have uploaded <strong>mpiPI.c</strong> say and run it. A wrapper.sh file for this purpose is shown below:</p>
+<p>The app we have in mind is one that will compile a program we have uploaded <strong>piMPI.c</strong> say and run it. A wrapper.sh file for this purpose is shown below:</p>
 <p>We are first going to search for an app to clone. Let us look at simcenter apps.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">apps</span> <span class="n">search</span> <span class="o">--</span><span class="n">name</span> <span class="n">like</span> <span class="n">simcenter</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span>
 </pre></div>
@@ -647,7 +650,7 @@ ${ALLOCATION}.</p>
 </div>
 <p>Tapis will respond with a message that hopefully says job was submitted sucessfully and will provide a <strong>jobID</strong>. That <strong>jobID</strong> is important, as you will use it to query status of job and download job information when job finished.</p>
 <p>To look up job status, type:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">status</span> <span class="n">json</span> <span class="mi">5</span><span class="n">ce7f59d</span><span class="o">-</span><span class="mi">0</span><span class="n">c4f</span><span class="o">-</span><span class="mi">46</span><span class="n">c1</span><span class="o">-</span><span class="mi">806</span><span class="n">a</span><span class="o">-</span><span class="mi">35965317525</span><span class="n">f</span><span class="o">-</span><span class="mi">007</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tapis</span> <span class="n">jobs</span> <span class="n">status</span> <span class="o">-</span><span class="n">f</span> <span class="n">json</span> <span class="mi">5</span><span class="n">ce7f59d</span><span class="o">-</span><span class="mi">0</span><span class="n">c4f</span><span class="o">-</span><span class="mi">46</span><span class="n">c1</span><span class="o">-</span><span class="mi">806</span><span class="n">a</span><span class="o">-</span><span class="mi">35965317525</span><span class="n">f</span><span class="o">-</span><span class="mi">007</span>
 </pre></div>
 </div>
 <p>There are a number of states a job might be in, <strong>queued</strong>, <strong>running</strong>, <strong>finished</strong>, and the dreaded <strong>failed</strong>. Once a job has finished you can download the results with</p>
@@ -745,11 +748,19 @@ TACC:  Shutdown complete. Exiting.
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, Peter Mackenzie-Helnwein, Frank McKenna
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -760,7 +771,6 @@ TACC:  Shutdown complete. Exiting.
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
