@@ -18,16 +18,11 @@ C: Tapis-cli
 
    The application will prompt for a number of things. For tenant enter **designsafe**, for username and password your DesignSafe username and password. For others, ignore by just hitting enter.
 
-
-Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commnds in the terminal of your desktop utilizing DesignSafe resources for storing files and results.
-
-
 .. warning:: 
 
+   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. You can still use the fwork you have done up until this point, but you need to do something different. We provide 3 solutions, in order of time to proceed:
 
-   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. You have 3 options.
-
-   1. Try and update to the latest code:
+   1. Try and update to the latest version of **tapis-cli**:
 
      .. code::
 
@@ -42,7 +37,7 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
 
 	pip intall tapis-cli --user
       
-   3. **How to install the Ubuntu subsystem on Windows 10**
+   3. Install and use the **Ubuntu subsystem on Windows 10**
 
    The Ubuntu subsystem is actually a full Ubuntu linux system running within a virtual machine while
    Windows is running as the primary OS. Microsoft provides step-by-step instructions on how to install
@@ -54,7 +49,10 @@ Today we have a number of exercises. The purpose of these exercisess is to set i
    installing the Ubuntu subsystem in Windows will fail.  Install Ubuntu in a separate virtual machine
    instead.
 
-There are 4 steps to this process that follow the videos presented in class:
+
+Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commands in the terminal of your desktop. Time permitting we will share the applications with fellow classmates. The advantage of beong able to do this from a terminal is convenience and speed. In addition, for those teaching, you can set the applications up for others, i.e. students to use your applications.
+
+There are 5 steps to this process that follow the videos presented for class (that are enclosed in hints herein):
 
 Step 1: Setting Up an Execution System
 --------------------------------------
@@ -91,7 +89,7 @@ ${PASSWORD},
 ${SCRATCH_DIR} and
 ${ALLOCATION}.
 
-The sscratch_dir can be found by logging into Frontera, issuing the commands cds (change dir to scratch) and then pwd (print working directory). The results of pwd is your scratch dir.
+The scratch_dir can be found by logging into Frontera, issuing the commands cds (change dir to scratch) and then pwd (print working directory). The results of pwd is your scratch dir.
 
 Once the file has been completed, you can create the system by invoking one of the the following command.
 
@@ -114,15 +112,20 @@ for Frontera:
 Thats it, congratulations you have created an execution system.
 
 
-.. note::
-
-   To change name of app for subsequent use, you can edit the app id on line **37**, you just cannot use an existing name.
-   
 .. warning::
 
    Never check the file into github unless you remove your **password**.
 
+.. hint::
 
+   A demonstartion is contained at end of the Video
+
+   .. raw:: html
+	 
+       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/TddwsA5MY_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+   
 Step 2: Exploring File System Commands
 --------------------------------------
 
@@ -148,6 +151,10 @@ Copy a small file **SimCenterBootcamp2020/code/agave/ExerciseDays4/ex1/mpiPI.c**
 
    tapis files upload agave://desihnsafe.storage/default/YOUR_NAME/tmp  mpiPI.c
 
+.. note::
+
+   We will be using this file in our app. We compile it and run it. If yours worked from yesterday, upload your file instead. It makes the exercise somewhat more meaningful. If your file has a different name, you should be able to identify what small change you have to make in the **submitClone.json** file you will edit later.
+   
 Remove your local copy and try and copy the file you just uploaded.
 
 .. code::
@@ -161,6 +168,15 @@ List the other **tapis** file commands and explore what they do.
    tapis files -h
 
 
+.. hint::
+
+   A demonstartion is contained at end of the Video   
+
+   .. raw:: html
+	 
+         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eh7Etvuvo7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+   
 
 Step 3: Build a Tapis app
 -------------------------
@@ -191,24 +207,27 @@ You will see it takes an input directory and some parameters to run. We will use
 
       tapis apps clone -h
 
-After having reviewed results of previous, you should be able to understand the following. The command to clone is some **modifications based on your account**, i.e. the -e refers to the execution service and for that you need to enter the **id** of the execution service you created:
+After having reviewed results of previous, you should be able to understand the following. The command to clone is some **modifications based on your account**, i.e. the -e refers to the execution service and for that you need to enter the **id** of the execution service you created. Also replace YOUR_NAME with yor login name:
 
 .. code:: 
 
-   tapis apps clone -e designsafe.demo.exec.frontera.fmk -n mpiCompileRun -x 0.0.1  simcenter-dakota-1.0.0u1
+   tapis apps clone -e designsafe.demo.exec.frontera.fmk -n mpiCompileRunYOUR_NAME -x 0.0.1  simcenter-dakota-1.0.0u1
 
 Having cloned the app, let us look at it's description to see the inputs and outputs. We can get this description using the following:
 
+.. note::
+
+   Your name is not needed, it will be used in part 5 so that we can share applications and as such we will want to be able to distinguish between applications. For normal application development, you may not need or want it.
+
 .. code::
    
-   tapis apps show -f json mpiCompileRun-0.0.1 > mpiCompileRun.json
-
+   tapis apps show -f json mpiCompileRunYOUR_NAME-0.0.1 > mpiCompileRunYOUR_NAME.json
 
 This command as placed the description of the **mpiCompileRun** to json file mpiCompileRun.json. Open it up and have a look. You will see the input and parameters section for this app. Also you will see the application directory, which is in your home/applications foler at designsafe. From the application directory download the wrapper.sh script. We will modify it a bit. We will only have one input parameter **inputFile**.
 
 .. code::
 
-   tapis files upload agave://designsafe.storage.default/YOUR_NAME/applications/mpiCompileRun-0.0.1. wrapper.sh
+   tapis files upload agave://designsafe.storage.default/YOUR_NAME/applications/mpiCompileRunYOUR_NAME-0.0.1 wrapper.sh
 
 After editing the app description file, we can update the app.
 
@@ -217,11 +236,20 @@ After editing the app description file, we can update the app.
    tapis apps update -F mpiCompileRun.json mpiCompileRun-0.0.1
 
 We now have an application ready and wating to compile our code and run it!
-   
+
+.. hint::
+
+   A demonstartion is contained at end of the Video
+
+   .. raw:: html
+	 
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/f2-Qg6sMsQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
 Step 4: Submitting a Job
 ------------------------
 
-Last exercise is to actually submit a job using a file. In the **code/agave** folder there is a file **piMPI.c** and a json file **cloneSubmit.json**. The **piMPI.c** we have alredy used in files and placed in a demo folder at designsafe off our remote home folder. To submit a job to run at TACC through tapis we need to create the input file telling tapis what to do. The input file is application specific. An input file template for our app is found in **cloneSubmit.json** which is shown below:
+Now we want to actually submit a job and have it compile and run on a HPC. In the **code/agave** folder there is a file **piMPI.c** and a json file **cloneSubmit.json**. The **piMPI.c** we have alredy used in files and placed in a demo folder at designsafe off our remote home folder. To submit a job to run at TACC through tapis we need to create the input file telling tapis what to do. The input file is application specific. An input file template for our app is found in **cloneSubmit.json** which is shown below:
 
 .. literalinclude:: ./assignments/c5/cloneSubmit.json
   :language: json
@@ -275,3 +303,97 @@ In this folder you will see a long file name ending in **.out**. This you can do
 .. literalinclude:: ./assignments/c5/results.json
   :language: json
   :linenos:
+
+
+.. hint::
+
+   A demonstartion is contained at end of the Video
+     
+   .. raw:: html
+	 
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HDo5QzwOjTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+     
+Step 5: Allowing Others to Use your App
+---------------------------------------
+
+Sharing of resources is something built into **Tapis**, which  allows researchers to share resoures (execution sytems, files, and apps). Check out the following commands:
+
+.. code::
+   
+        tapis files pems drop
+        tapis files pems grant
+        tapis files pems list
+        tapis files pems revoke
+        tapis files pems show
+        tapis systems roles drop
+        tapis systems roles grant
+        tapis systems roles list
+        tapis systems roles revoke
+        tapis systems roles show
+        tapis apps pems grant
+        tapis apps pems list
+        tapis apps pems revoke
+        tapis apps pems show
+
+.. note::
+
+   There are other tapis options that will allow you to **publish** and **unpblish** your resources, but these are not available to you to use.
+
+For this exercise you need to select a partner, each of you need to swap usernames. You are then going to allow your partner to use your app and then you are going to run your job with their app.
+
+To first look at your existing permissions issue the following:
+
+.. code::
+
+   tapis apps pems show mpiCompileRunYOUR_NAME-0.0.1
+
+To add someone to your app who can execute issue
+
+.. code::
+
+   tapis apps pems show mpiCompileRunYOUR_NAME-0.0.1
+
+You should see something like:
+
+.. code::
+
+   +----------+------+-------+---------+
+   | username | read | write | execute |
+   +----------+------+-------+---------+
+   | tg457427 | True | True  | True    |
+   +----------+------+-------+---------+
+
+
+Now to allow the user fmk to execute your app, you would issue the command shown below. Change **fmk** to your partners name and issue the following:
+
+   .. code::
+
+   tapis apps pems grant mpiCompileRunYOUR_NAME-0.0.1 fmk EXECUTE
+
+
+Now you should see something like:
+
+.. code::
+
+   +----------+-------+-------+---------+
+   | username | read  | write | execute |
+   +----------+-------+-------+---------+
+   | tg457427 | True  | True  | True    |
+   | fmk      | False | False | True    |
+   +----------+-------+-------+---------+
+
+Now see if you can figure out how to do the following:
+
+#. Find your partners application using tapis apps search
+
+#. Edit your job script to point to your partners app.
+
+#. Launch the job using your partners application.
+
+#. Check your program still works!
+
+
+   
+
+
