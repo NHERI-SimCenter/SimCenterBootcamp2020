@@ -1,6 +1,7 @@
 #include <omp.h>
 #include <stdio.h>
-#define DATA_SIZE 10000
+
+#define DATA_SIZE 10000000
 
 void sumVectors(int N, double *A, double *B, double *C, int tid, int numT);
 
