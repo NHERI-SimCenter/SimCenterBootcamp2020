@@ -1,9 +1,16 @@
+
 C: Tapis-cli
 ============
 
+Today we have a number of exercises. The purpose of these exercises is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commands in the terminal of your desktop using your DesignSafe account and resources it makes available to you. Time permitting we will share the applications with fellow classmates. The advantage of being able to do this from a terminal is convenience and speed, e.g. you no longer will be required to login and find a token, cd to appropriate directories, edit submit scripts, and so on. Ultimately, which as you progress in your careers you will begin to understand, the ability to share your work is one of the really great advantages provided.
+
+There are **5** steps to the exercise today. The steps follow the videos presented for todays class (these are enclosed in hints herein). The exercises are outlined below the **hint**.
+
+However, before you can begin, you need to make sure the **tapis** command is working from a terminal application on your desktop. The **note** contains setup instructions for this, the **warning** a warning about possible changes that you may need to make if you are running **Windows 10**.
+
 .. note::
 
-   Initial setup is required of the **Tapis-cli**. This is done by invoking the dollowing in a linux (see warning below) shell. For some systems, i.e. **ubuntu** you should use **pip3** instead of **pip**:
+   Before you can proceed, initial setup is required of the **Tapis-cli**. This is done by invoking the dollowing in a linux (see warning below) shell. For some systems, i.e. **ubuntu** you should use **pip3** instead of **pip**:
 
    .. code:: 
 
@@ -20,18 +27,17 @@ C: Tapis-cli
 
 .. warning:: 
 
-   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. You can still use the fwork you have done up until this point, but you need to do something different. We provide 3 solutions, in order of time to proceed:
+   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. From past experience we have found the install works for some, but not all, and we are not sure why. You can still use the work you have done up until that point in the exercise, but you need to do something different different to complete it. We provide 3 solutions, in order of time to proceed:
 
    1. Try and update to the latest version of **tapis-cli**:
 
      .. code::
 
-        git clone https://github.com/TACC-Cloud/tapis-cli.git
+        $ git clone https://github.com/TACC-Cloud/tapis-cli.git
         $ cd tapis-cli
         $ pip install --upgrade .
    
-   2. Run exercise at TACC using either Frontera or Stampede2. To do this you need to install **tapis-cli** as a local user.
-
+   2. Run the exercise at TACC using either Frontera or Stampede2. To do this you need to login to your TACC machine and install **tapis-cli** as a local user.
 
      .. code::
 
@@ -49,10 +55,6 @@ C: Tapis-cli
    installing the Ubuntu subsystem in Windows will fail.  Install Ubuntu in a separate virtual machine
    instead.
 
-
-Today we have a number of exercises. The purpose of these exercisess is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commands in the terminal of your desktop. Time permitting we will share the applications with fellow classmates. The advantage of beong able to do this from a terminal is convenience and speed. In addition, for those teaching, you can set the applications up for others, i.e. students to use your applications.
-
-There are 5 steps to this process that follow the videos presented for class (that are enclosed in hints herein):
 
 Step 1: Setting Up an Execution System
 --------------------------------------
@@ -100,7 +102,7 @@ for Frontera:
   
       tapis systems create  -F fronteraSystem.json
 
- Now have a look for it. In the file we named it demo something.
+ Now have a look for it. In the file we named it demo something (see line 27 above).
 
  .. code::
 
@@ -114,11 +116,11 @@ Thats it, congratulations you have created an execution system.
 
 .. warning::
 
-   Never check the file into github unless you remove your **password**.
+   Never ever ever check the file into github unless you remove your **password**. We suggest editing this file elasewhere and then removing it when the task is completed.
 
 .. hint::
 
-   A demonstartion is contained at end of the Video
+   A demonstration is contained at end of the Video
 
    .. raw:: html
 	 
@@ -181,12 +183,14 @@ List the other **tapis** file commands and explore what they do.
 Step 3: Build a Tapis app
 -------------------------
 
-A Tapis **apps** is a containerized application. Each app has a description that describes it's name, inputs and parameters. This description can be obtained using the **tapis apps show** command. The description contains information about where the container for the application resides, inputs and outputs, information about the execution system on which the app will run and  and information about the bash script, **wrapper.sh**. **wrapper.sh** is the sript that is run when the application is started running at a HPC resource. **wrapper.sh** will have access to all the files in the app container when it is run.
+A Tapis **apps** is a containerized application. Each app has a description that describes it's name, inputs and parameters. This description can be obtained using the **tapis apps show** command. The description contains information about where the container for the application resides, inputs and outputs, information about the execution system on which the app will run and  and information about a bash script, typically called **wrapper.sh**. The bash script is the srcipt that is run when the application is started running at a HPC resource. The will have access to all the files in the app container when it is run as well as all files and directories provided through the **inputs**.
 
-We are going a tapis container application we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app **mpiCompileRun** and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.
+We are going a develop tapis container application and we are going to use some tapis apps and files comamnds to do so. To build our app, like all programmers do, we are going to start by cloning an existing one that has similar inputs to the one we want, basically an input directory and a parameter. We will name the app **mpiCompileRun** and associate it with the exe srvice we created in exercise 1. (You will need the name). Use the following command to see what is needed.
 
+The app we have in mind is one that will compile a program we have uploaded **piMPI.c** say and run it. The wrapper will utilize two variables **programFile**, the name of the file to compile and run, and **inputDirectory** the location of directory containg the file. A wrapper.sh file for this purpose is shown below. Line 1 through 4 and 13 through 17 are required for Tapis. The other lines are linux commands you have been using, module load to load the intel compiler, we next change directory to inputDirectory, and finally compile the program and then run it  with **ibrun**:
 
-The app we have in mind is one that will compile a program we have uploaded **piMPI.c** say and run it. A wrapper.sh file for this purpose is shown below:
+.. literalinclude:: ./assignments/c5/wrapper.sh
+  :linenos:
 
 
 We are first going to search for an app to clone. Let us look at simcenter apps.
@@ -201,45 +205,63 @@ You should see one with an id **simcenter-dakota-1.0.0u1**. Have a look at it's 
    
    tapis apps show simcenter-dakota-1.0.0u1 -f json
 
-You will see it takes an input directory and some parameters to run. We will use it to clone our app. Have a look at the inputs for **tapis apps clone** with the following:
+
+Amidst the results returned, you will see it takes an input directory and some parameters to run:
+
+.. literalinclude:: ./assignments/c5/simcenter-dakota-1.0.0u1.json
+  :linenos:
+
+
+
+We are going to use this app as our starting point. We are going to **clone** the app. Have a look at the inputs for **tapis apps clone** with the following:
+
 
 .. code::
 
       tapis apps clone -h
 
-After having reviewed results of previous, you should be able to understand the following. The command to clone is some **modifications based on your account**, i.e. the -e refers to the execution service and for that you need to enter the **id** of the execution service you created. Also replace YOUR_NAME with yor login name:
+After having reviewed results of previous, you should be able to understand the following. The command to clone is some **modifications based on your account**, i.e. the -e refers to the execution service and for that you need to enter the **id** of the execution service you created in step 1 (the id was on line 37). Also replace YOUR_NAME with yor login name:
 
 .. code:: 
 
-   tapis apps clone -e designsafe.demo.exec.frontera.fmk -n mpiCompileRunYOUR_NAME -x 0.0.1  simcenter-dakota-1.0.0u1
+   tapis apps clone -e demo.exec.frontera.YOUR_NAME -n mpiCompileRun.YOUR_NAME -x 0.0.1  simcenter-dakota-1.0.0u1
 
-Having cloned the app, let us look at it's description to see the inputs and outputs. We can get this description using the following:
 
 .. note::
 
    Your name is not needed, it will be used in part 5 so that we can share applications and as such we will want to be able to distinguish between applications. For normal application development, you may not need or want it.
 
+   
+Having cloned the app, let us look at it's description to see the inputs and outputs. We can get this description using the following:
+
 .. code::
    
-   tapis apps show -f json mpiCompileRunYOUR_NAME-0.0.1 > mpiCompileRunYOUR_NAME.json
+   tapis apps show -f json mpiCompileRun.YOUR_NAME-0.0.1 > mpiCompileRunYOUR_NAME.json
 
-This command as placed the description of the **mpiCompileRun** to json file mpiCompileRun.json. Open it up and have a look. You will see the input and parameters section for this app. Also you will see the application directory, which is in your home/applications foler at designsafe. From the application directory download the wrapper.sh script. We will modify it a bit. We will only have one input parameter **inputFile**.
+This command as placed the description of the **mpiCompileRun** to json file mpiCompileRun.json. Open it up and have a look. It will be similar to what was shown above, differences will be the **id** and **executionSystem**. You will see the input and parameters section for this app. Also you will see the application directory, which is in your home/applications foler at designsafe. From the application directory download the wrapper.sh script. We will modify it a bit. We will keep **inputDirectory** but will only have one input parameter **programName**. You need to edit the file before continuing, the edits should be obvious.
 
-.. code::
+.. note::
 
-   tapis files upload agave://designsafe.storage.default/YOUR_NAME/applications/mpiCompileRunYOUR_NAME-0.0.1 wrapper.sh
+   There is a difference between **inputs** and **parameters** arguments. **input** arguments are file or directory resources that will be copied by tapis to the directory where the wrapper script is run. **paramaters** are arguments used in the script. In our example we could have just spcified **programFile** as being an input, but we wanted to show use of **inputs** and **parameters** (and also this would allow you to compile programs with many files in an input directory).
 
 After editing the app description file, we can update the app.
 
 .. code::
 
-   tapis apps update -F mpiCompileRun.json mpiCompileRun-0.0.1
+   tapis apps update -F mpiCompileRunYOUR_NAME.json mpiCompileRun.YOUR_NAME-0.0.1
+
+Finally we need to replace the **wrapper.sh** of the existing app with our one. We do this with one of the tapis files system commands:
+   
+.. code::
+
+   tapis files upload agave://designsafe.storage.default/YOUR_NAME/applications/mpiCompileRun.YOUR_NAME-0.0.1 wrapper.sh
+
 
 We now have an application ready and wating to compile our code and run it!
 
 .. hint::
 
-   A demonstartion is contained at end of the Video
+   A demonstration is contained at end of the Video
 
    .. raw:: html
 	 
@@ -281,7 +303,7 @@ This results in a long list of output. Buried in it is the **archivePath** secti
 .. code:: 
 
      "accepted": "2021-01-08T10:19:45.773Z",
-     "appId": "mpiCompileSimCenter-0.0.1",
+     "appId": "mpiCompileSimCenter.tg457427-0.0.1",
      "appUuid": "7984683744829894165-242ac117-0001-005",
      "archive": true,
      "archivePath": "tg457427/archive/jobs/job-507792d1-35b0-4dc0-abd2-421cfba7ddc3-007",
@@ -307,7 +329,7 @@ In this folder you will see a long file name ending in **.out**. This you can do
 
 .. hint::
 
-   A demonstartion is contained at end of the Video
+   A demonstration is contained at end of the Video
      
    .. raw:: html
 	 
