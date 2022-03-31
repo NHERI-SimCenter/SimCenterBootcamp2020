@@ -2,34 +2,34 @@
 C: Tapis-cli
 ============
 
-Today we have a number of exercises. The purpose of these exercises is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commands in the terminal of your desktop using your DesignSafe account and resources it makes available to you. Time permitting we will share the applications with fellow classmates. The advantage of being able to do this from a terminal is convenience and speed, e.g. you no longer will be required to login and find a token, cd to appropriate directories, edit submit scripts, and so on. Ultimately, which as you progress in your careers you will begin to understand, the ability to share your work is one of the really great advantages provided.
+Today we have a number of exercises. The purpose of these exercises is to set it up so that you are able to run your parallel application on Frontera or Stampede2 by issuing commands in the terminal of your desktop using your DesignSafe account and resources it makes available to you. Time permitting we will share the applications with fellow classmates. The advantage of being able to do this from a terminal is convenience and speed, e.g. you no longer will be required to login and find a token, cd to appropriate directories, edit submit scripts, and so on. Ultimately, as you progress in your careers you will begin to understand, the ability to share your work is one of the really great advantages provided.
 
-There are **5** steps to the exercise today. The steps follow the videos presented for todays class (these are enclosed in hints herein). The exercises are outlined below the **hint**.
+There are **5** steps to the exercise today. The steps follow the videos presented for today's class (these are enclosed in hints herein). The exercises are outlined below the **hint**.
 
-However, before you can begin, you need to make sure the **tapis** command is working from a terminal application on your desktop. The **note** contains setup instructions for this, the **warning** a warning about possible changes that you may need to make if you are running **Windows 10**.
+However, before you can begin, you need to make sure the **tapis** command is working from a terminal application on your desktop. The **note** contains setup instructions for this. The **warning** is a warning about possible changes that you may need to make if you are running **Windows 10**.
 
 .. note::
 
-   Before you can proceed, initial setup is required of the **Tapis-cli**. This is done by invoking the dollowing in a linux (see warning below) shell. For some systems, i.e. **ubuntu** you should use **pip3** instead of **pip**:
+   Before you can proceed, initial setup is required of the **Tapis-cli**. This is done by invoking the following command in a linux (see warning below) shell. For some systems, i.e. **ubuntu** you should use **pip3** instead of **pip**:
 
    .. code:: 
 
        pip install tapis-cli
 
  
- Once the cli is installed you need to configure it to use deignsafe and you need to provide your username and password:
+ Once the cli is installed you need to configure it to use deignsafe. For this purpose you need to provide your username and password:
 
    .. code::  
 
       tapis auth init
 
-   The application will prompt for a number of things. For tenant enter **designsafe**, for username and password your DesignSafe username and password. For others, ignore by just hitting enter.
+   The application will prompt for a number of things. For tenant enter **designsafe**, for username and password your DesignSafe username and password. For other things, ignore by just hitting enter.
 
 .. warning:: 
 
-   If you fail in last part of first exercise it means that the **tapis-cli** is not going to work. From past experience we have found the install works for some, but not all, and we are not sure why. You can still use the work you have done up until that point in the exercise, but you need to do something different different to complete it. We provide 3 solutions, in order of time to proceed:
+   If you fail the last part of this first exercise it means that the **tapis-cli** is not going to work. From past experience we have found that the install works for some, but not all, and we are not sure why. You can still use the work you have done up until that point in the exercise, but you need to do something different different to complete it. We provide 3 solutions, in order of time to proceed:
 
-   1. Try and update to the latest version of **tapis-cli**:
+   1. Try to update to the latest version of **tapis-cli**:
 
      .. code::
 
@@ -59,7 +59,7 @@ However, before you can begin, you need to make sure the **tapis** command is wo
 Step 1: Setting Up an Execution System
 --------------------------------------
 
-Tapis provides **systems** which provide access to the file systems and hardware resources, e.g. Frontera and Stampede, at TACC. For our **Storage System** we will be using the default provided by DesignSafe (designsafe.storage.default). In this exercise we are going to create an execution system by providing a .json file containing basic information to one of our machine logins, e.g. username, password, and locations within our machine account of directories to place temporary files (the location the files are placed when we run an app).
+Tapis provides **systems** which provide access to the file systems and hardware resources, e.g. Frontera and Stampede, at TACC. For our **Storage System** we will be using the default provided by DesignSafe (designsafe.storage.default). In this exercise we are going to create an execution system by creating a .json file containing basic information to one of our machine logins (e.g. username, password), and locations within our machine account of directories to place temporary files (the location where files are placed when we run an app).
 
 
 Before you create a system, you might want to issue some tapis commands to get comfortable with the tapis-cli.
@@ -74,7 +74,7 @@ Before you create a system, you might want to issue some tapis commands to get c
       tapis systems search --execution-type eq HPC
 
 
-You first need to edit a file provided in the **code/agave/** agave directory. We have two template systems to chooose from , **fronteraSystem.json** and **stampede2Syatem.json**, which to use depends on which TACC system you have been logging into.
+You first need to edit the file provided in the **code/agave/** agave directory. In this folder we have provided two template systems to chooose from , **fronteraSystem.json** and **stampede2Syatem.json**. Which one to use depends on which TACC system you have been logging into.
 
 The Frontera file is shown below:
 
@@ -102,7 +102,7 @@ for Frontera:
   
       tapis systems create  -F fronteraSystem.json
 
- Now have a look for it. In the file we named it demo something (see line 27 above).
+ Next, search for it. In the file we named it demo something (see line 27 above).
 
  .. code::
 
@@ -120,7 +120,7 @@ Thats it, congratulations you have created an execution system.
 
 .. hint::
 
-   A demonstration is contained at end of the Video
+   A demonstration is contained at the end of the Video
 
    .. raw:: html
 	 
